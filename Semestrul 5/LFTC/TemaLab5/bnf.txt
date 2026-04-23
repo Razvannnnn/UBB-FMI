@@ -1,0 +1,15 @@
+<file>           ::= <states_line> "\n" <alphabet_line> "\n" <initial_state_line> "\n" <final_states_line> "\n" <transitions_lines>
+
+<states_line>    ::= "Stari:" <states>
+<alphabet_line>  ::= "Alfabet:" <symbols>
+<initial_state_line> ::= "Stare_Initiala:" <state>
+<final_states_line>  ::= "Stari_Finale:" <states>
+<transitions_lines>  ::= <transition_line> | <transition_line> "\n" <transitions_lines>
+
+<states>         ::= <state> | <state> "," <states>
+<symbols>        ::= <symbol> | <symbol> "," <symbols>
+
+<transition_line>::= <state> "," <symbol> "->" <states>
+
+<state>          ::= S | SIGN | ZERO | DEC | OCT | HEX_PRE | HEX | DEAD | q0 | q1 | q2 | q3 | qf
+<symbol>         ::= "+" | "-" | "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | A | B | C | D | E | F | a | b | c | d | e | f | x | X

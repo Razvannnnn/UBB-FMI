@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="347.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iss.parkingapp.LoginController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="67.0" layoutY="92.0" prefHeight="192.0" prefWidth="240.0" spacing="20.0">
+            <children>
+                <TextField fx:id="textFieldUsername" prefHeight="0.0" prefWidth="240.0" promptText="Email" />
+                <PasswordField fx:id="passwordField" promptText="Password" />
+                <Button fx:id="buttonLogin" mnemonicParsing="false" onAction="#handleButtonLogin" text="Login">
+                    <VBox.margin>
+                        <Insets top="60.0" />
+                    </VBox.margin></Button>
+            <Button fx:id="buttonCreateAccount" mnemonicParsing="false" onAction="#handleCreateAccount" text="Create Account" />
+            </children>
+        </VBox>
+        <Label layoutX="125.0" layoutY="24.0" prefHeight="45.0" prefWidth="124.0" text="Parking App">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

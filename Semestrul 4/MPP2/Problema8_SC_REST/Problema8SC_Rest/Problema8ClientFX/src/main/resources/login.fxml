@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="347.0" prefWidth="373.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="problema8.client.gui.LoginController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="112.0" prefHeight="209.0" prefWidth="240.0" spacing="20.0">
+         <children>
+            <TextField fx:id="textFieldUsername" prefHeight="25.0" prefWidth="230.0" promptText="Username" />
+            <PasswordField fx:id="passwordField" promptText="Password" />
+            <Button fx:id="buttonLogin" mnemonicParsing="false" onAction="#handleButtonLogin" text="Login">
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+      <Label layoutX="65.0" layoutY="23.0" prefHeight="45.0" prefWidth="280.0" text="Sistem Concurs Atletism">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

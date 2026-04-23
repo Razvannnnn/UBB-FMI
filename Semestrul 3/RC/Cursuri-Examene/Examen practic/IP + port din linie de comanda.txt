@@ -1,0 +1,17 @@
+int main(int argc,char* argv[]){
+        int c;
+        struct sockaddr_in server;
+        if(argc!=3){
+                printf("Eroare: numar de parametri invalid!\n");
+                return 1;
+        }
+        c=socket(AF_INET,SOCK_STREAM,0);
+        if(c<0){
+                printf("Eroare la crearea socketului client\n");
+                return 1;
+        }
+        memset(&server,0,sizeof(server));
+        int port=atoi(argv[2]);
+        server.sin_port=htons(port);
+        server.sin_family=AF_INET;
+        server.sin_addr.s_addr=inet_addr(argv[1]);

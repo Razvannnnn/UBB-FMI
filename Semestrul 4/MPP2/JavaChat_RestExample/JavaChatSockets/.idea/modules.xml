@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JavaChatSockets.iml" filepath="$PROJECT_DIR$/.idea/modules/JavaChatSockets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatClient/JavaChatSockets.ChatClient.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatClient/JavaChatSockets.ChatClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatClient/JavaChatSockets.ChatClient.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatClient/JavaChatSockets.ChatClient.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatClient/JavaChatSockets.ChatClient.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatClient/JavaChatSockets.ChatClient.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatModel/JavaChatSockets.ChatModel.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatModel/JavaChatSockets.ChatModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatModel/JavaChatSockets.ChatModel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatModel/JavaChatSockets.ChatModel.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatModel/JavaChatSockets.ChatModel.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatModel/JavaChatSockets.ChatModel.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatNetworking/JavaChatSockets.ChatNetworking.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatNetworking/JavaChatSockets.ChatNetworking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatNetworking/JavaChatSockets.ChatNetworking.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatNetworking/JavaChatSockets.ChatNetworking.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatNetworking/JavaChatSockets.ChatNetworking.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatNetworking/JavaChatSockets.ChatNetworking.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatPersistence/JavaChatSockets.ChatPersistence.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatPersistence/JavaChatSockets.ChatPersistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatPersistence/JavaChatSockets.ChatPersistence.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatPersistence/JavaChatSockets.ChatPersistence.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatPersistence/JavaChatSockets.ChatPersistence.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatPersistence/JavaChatSockets.ChatPersistence.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServer/JavaChatSockets.ChatServer.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServer/JavaChatSockets.ChatServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServer/JavaChatSockets.ChatServer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServer/JavaChatSockets.ChatServer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServer/JavaChatSockets.ChatServer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServer/JavaChatSockets.ChatServer.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServices/JavaChatSockets.ChatServices.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServices/JavaChatSockets.ChatServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServices/JavaChatSockets.ChatServices.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServices/JavaChatSockets.ChatServices.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServices/JavaChatSockets.ChatServices.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServices/JavaChatSockets.ChatServices.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestServices/JavaChatSockets.RestServices.iml" filepath="$PROJECT_DIR$/.idea/modules/RestServices/JavaChatSockets.RestServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestServices/JavaChatSockets.RestServices.main.iml" filepath="$PROJECT_DIR$/.idea/modules/RestServices/JavaChatSockets.RestServices.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/RestServices/JavaChatSockets.RestServices.test.iml" filepath="$PROJECT_DIR$/.idea/modules/RestServices/JavaChatSockets.RestServices.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JavaChatSockets.main.iml" filepath="$PROJECT_DIR$/.idea/modules/JavaChatSockets.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JavaChatSockets.test.iml" filepath="$PROJECT_DIR$/.idea/modules/JavaChatSockets.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NewReact-chat-client/NewReact-chat-client.iml" filepath="$PROJECT_DIR$/NewReact-chat-client/NewReact-chat-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gs-rest-service/untitled/.idea/modules/RestServices.iml" filepath="$PROJECT_DIR$/../gs-rest-service/untitled/.idea/modules/RestServices.iml" group="RestServices" />
+      <module fileurl="file://$PROJECT_DIR$/chat-rest-client/chat-rest-client.iml" filepath="$PROJECT_DIR$/chat-rest-client/chat-rest-client.iml" />
+    </modules>
+  </component>
+</project>

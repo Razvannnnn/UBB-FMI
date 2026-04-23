@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:properties id="jdbcProps1">
+        <prop key="tasks.jdbc.url">jdbc:sqlite:/Users/grigo/didactic/MPP/ExempleCurs/2021/TemaLab4/RepairShopDB.db</prop>
+    </util:properties>
+
+    <util:properties id="jdbcProps" location="classpath:bd.config"/>
+
+   
+
+
+
+</beans>

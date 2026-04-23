@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Programare Examen Auto</title>
+</head>
+<body>
+
+    <h1>Programare Examen Auto</h1>
+    <div>
+        <p><strong>Bine ați venit!</strong></p>
+    </div>
+
+    <form method="POST">
+        <fieldset>
+            <legend>Detalii Programare</legend>
+            <table>
+                <tr>
+                    <th colspan="2">Formular de înscriere</th>
+                </tr>
+                <tr>
+                    <td colspan="1">
+                        <table>
+                            <tr>
+                                <th>Tip Examen</th>
+                                <th>Disponibilitate</th>
+                            </tr>
+                            <tr>
+                                <td>Teoretic</td>
+                                <td>Disponibil</td>
+                            </tr>
+                            <tr>
+                                <td>Practic</td>
+                                <td>Disponibil</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <th>Teoretic</th>
+                                <th>Practic</th>
+                            </tr>
+                            <tr>
+                                <td>70% promovați</td>
+                                <td>80% promovați</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nume">Nume:</label>
+                        <input type="text" id="nume" name="nume" required readonly value="Exemplu">
+                    </td> 
+                    <td>
+                        <label for="prenume">Prenume:</label>
+                        <input type="text" id="prenume" name="prenume" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="data">Data nașterii:</label>
+                        <input type="date" id="data" name="data" required>
+                    </td>
+                    <td>
+                        <label>Gen:</label><br>
+                        <input type="radio" id="masculin" name="gen" value="M" required checked>
+                        <label for="masculin">Masculin</label>
+                        <input type="radio" id="feminin" name="gen" value="F">
+                        <label for="feminin">Feminin</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <label for="judet">Județ:</label>
+                        <select id="judet" name="judet" required multiple>
+                            <option value="" disabled selected>Selecteaza un judet</option>
+                            <option value="Alba">Alba</option>
+                            <option value="Arad">Arad</option>
+                            <option value="Bacău">Bacău</option>
+                            <option value="Bihor">Bihor</option>
+                            <option value="Brașov">Brașov</option>
+                            <option value="Cluj">Cluj</option>
+                            <option value="Constanța">Constanța</option>
+                            <option value="Dolj">Dolj</option>
+                            <option value="Iași">Iași</option>
+                            <option value="Timiș">Timiș</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required size="39">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="cnp">CNP:</label>
+                        <input type="text" id="cnp" name="cnp" pattern="[0-9]{13}" maxlength="13" required size="40">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="categorie">Categorie permis:</label><br>
+                        <select id="categorie" name="categorie" required>
+                            <option value="" disabled selected>Alege</option>
+                            <option value="B">B</option>
+                            <option value="B1">B1</option>
+                            <option value="A">A</option>
+                            <option value="A1">A1</option>
+                            <option value="A2">A2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="codunic">Cod unic de înregistrare:</label>
+                        <input type="number" min="1000" max="100000" step="5" id="codunic" name="codunic" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="programare">Data programarea:</label>
+                        <input type="date" id="programare" name="programare" required>
+                        <p>
+                            <label for="oraprogramare">Ora programarii:</label>
+                            <select id="oraprogramare" name="oraprogramare" required>
+                                <option value="" disabled selected>Alege</option>
+                                <option value="08:00">08:00</option>
+                                <option value="08:15">08:15</option>
+                                <option value="08:30">08:30</option>
+                                <option value="08:45">08:45</option>
+                                <option value="09:00">09:00</option>
+                                <option value="09:15">09:15</option>
+                                <option value="09:30">09:30</option>
+                                <option value="09:45">09:45</option>
+                                <option value="10:00">10:00</option>
+                                <option value="10:15">10:15</option>
+                                <option value="10:30">10:30</option>
+                                <option value="10:45">10:45</option>
+                                <option value="11:00">11:00</option>
+                                <option value="11:15">11:15</option>
+                                <option value="11:30">11:30</option>
+                            </select>
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label for="observatii">Observații:</label><br>
+                        <textarea id="observatii" name="observatii" rows="4" cols="54"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Opțiuni suplimentare:</label><br>
+                        <input type="checkbox" id="teorie" name="optiuni" value="teorie">
+                        <label for="teorie">Pregătire teoretică</label>
+                        <input type="checkbox" id="practica" name="optiuni" value="practica">
+                        <label for="practica">Pregătire practică</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="termeni" name="termeni" required>
+                        <label for="termeni">
+                            <a href="https://www.example.com" target="_blank" title="Link exemplu">Accept termenii și condițiile</a>
+                        </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Trimite</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <h3>
+        <span>
+            <b>Lista documentelor necesare:</b>
+        </span>
+    </h3>
+    <ul>
+        <li>Carte de identitate</li>
+        <li>Fișa medicală</li>
+        <li>Chitanță plată examen</li>
+        <li>Alte documente:
+            <ul>
+                <li>Fotografie tip pașaport</li>
+                <li>Adeverință de la medic</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Etapele examenului:</h3>
+    <ol type="I" start="1">
+        <li>Înscriere</li>
+        <li>Pregătire
+            <ol type="A">
+                <li>Teoretică</li>
+                <li>Practică</li>
+            </ol>
+        </li>
+        <li>Examinare</li>
+    </ol>
+
+    <div>
+        <img src="drpciv.png" alt="DRPCIV" title="Imagine" width="150" height="150">
+    </div>
+</body>
+</html>

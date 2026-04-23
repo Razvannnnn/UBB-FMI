@@ -1,0 +1,137 @@
+#include <mpi.h>
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+#include <cstring>
+
+// Definim tag-uri pentru comunicare
+#define TAG_DATA 0
+#define TAG_END 1
+#define MAX_WORD_LEN 30 // [cite: 1] Dimensiune maxima 20 + spatiu pentru modificari
+
+// [cite: 3] Functia h(word, Y)
+void processWord(char* word, int Y) {
+    std::string s(word);
+    int len = s.length();
+
+    // [cite: 4] Daca lungimea <= Y, adaugati @ la final
+    if (len <= Y) {
+        s += "@";
+    } 
+    // [cite: 5] Daca lungimea > Y, adaugati * la inceput
+    else {
+        s = "*" + s;
+    }
+    strcpy(word, s.c_str());
+}
+
+int main(int argc, char** argv) {
+    MPI_Init(&argc, &argv);
+
+    int rank, size;
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    int Y;
+
+    // Citirea parametrului Y
+    if (rank == 0) {
+        // [cite: 2] Citeste un numar Y
+        // Pentru testare, il putem citi de la tastatura sau hardcoda conform cerintei
+        std::cout << "Introduceti Y: ";
+        std::cin >> Y;
+    }
+
+    // Trimitem Y la toate procesele (Broadcast)
+    MPI_Bcast(&Y, 1, MPI_INT, 0, MPI_COMM_WORLD);
+
+    if (rank == 0) {
+        // --- LOGICA PROCESULUI 0 (MASTER) ---
+        std::ifstream fin("words.txt");
+        std::ofstream fout("words_out.txt");
+        std::string word_str;
+        std::vector<int> sender_history; // Pentru a tine minte ordinea trimiterii
+        
+        int current_worker = 1; //  curent incepe de la id=1
+        int total_words = 0;
+
+        // [cite: 1] Se considera un fisier words.txt care contine N cuvinte
+        if (!fin.is_open()) {
+            std::cerr << "Eroare la deschiderea words.txt" << std::endl;
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
+
+        // ETAPA 1: DISTRIBUTIE (SCATTER MANUAL)
+        // [cite: 8] Se repeta pana cand citeste toate cuvintele
+        while (fin >> word_str) {
+            char buffer[MAX_WORD_LEN];
+            strcpy(buffer, word_str.c_str());
+
+            //  Trimite la procesul curent
+            MPI_Send(buffer, MAX_WORD_LEN, MPI_CHAR, current_worker, TAG_DATA, MPI_COMM_WORLD);
+            
+            // Retinem cui am trimis pentru a primi inapoi in aceeasi ordine
+            sender_history.push_back(current_worker);
+            total_words++;
+
+            //  curent++, daca curent = p atunci curent = 1
+            current_worker++;
+            if (current_worker >= size) {
+                current_worker = 1;
+            }
+        }
+        fin.close();
+
+        // Trimitem semnal de oprire la toti workerii
+        for (int i = 1; i < size; i++) {
+            MPI_Send(NULL, 0, MPI_CHAR, i, TAG_END, MPI_COMM_WORLD);
+        }
+
+        // ETAPA 2: COLECTARE (GATHER MANUAL)
+        //  Procesul 0 primeste pe rand cuvinte (in ordinea in care le-a trimis)
+        for (int worker_id : sender_history) {
+            char received_buffer[MAX_WORD_LEN];
+            MPI_Status status;
+            
+            MPI_Recv(received_buffer, MAX_WORD_LEN, MPI_CHAR, worker_id, TAG_DATA, MPI_COMM_WORLD, &status);
+            
+            //  Pe masura ce primeste, adauga in fisier
+            fout << received_buffer << "\n";
+        }
+        fout.close();
+
+        // [cite: 13] Se va afisa la final numarul total de cuvinte
+        std::cout << "Numar total de cuvinte procesate: " << total_words << std::endl;
+
+    } else {
+        // --- LOGICA PROCESELOR WORKER (1 -> P-1) ---
+        char buffer[MAX_WORD_LEN];
+        MPI_Status status;
+        long local_sum_lengths = 0; //  Suma totala a lungimilor pe acest proces
+
+        while (true) {
+            MPI_Recv(buffer, MAX_WORD_LEN, MPI_CHAR, 0, MPI_ANY_TAG, MPI_COMM_WORLD, &status);
+
+            if (status.MPI_TAG == TAG_END) {
+                break; // Iesim din bucla daca primim semnalul de stop
+            }
+
+            // [cite: 9] Modifica cuvintele conform functiei h(word, Y)
+            processWord(buffer, Y);
+
+            //  Calculeaza lungimea fiecarui cuvant si suma totala
+            int current_len = strlen(buffer);
+            local_sum_lengths += current_len;
+
+            // Trimitem rezultatul inapoi la Procesul 0
+            MPI_Send(buffer, MAX_WORD_LEN, MPI_CHAR, 0, TAG_DATA, MPI_COMM_WORLD);
+        }
+        
+        // Optional: Afisam statistica interna (nu e cerut explicit sa fie trimisa la 0, dar e calculata)
+        // std::cout << "Proces " << rank << " suma lungimilor: " << local_sum_lengths << std::endl;
+    }
+
+    MPI_Finalize();
+    return 0;
+}

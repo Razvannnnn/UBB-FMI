@@ -1,0 +1,3 @@
+C:/Users/razva/Desktop/PPD/PentruMPI/cmake-build-debug-visual-studio/CMakeFiles/PentruMPI.dir
+C:/Users/razva/Desktop/PPD/PentruMPI/cmake-build-debug-visual-studio/CMakeFiles/edit_cache.dir
+C:/Users/razva/Desktop/PPD/PentruMPI/cmake-build-debug-visual-studio/CMakeFiles/rebuild_cache.dir

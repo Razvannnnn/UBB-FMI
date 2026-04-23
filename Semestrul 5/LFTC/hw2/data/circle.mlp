@@ -1,0 +1,19 @@
+float pi;
+pi = 3.14;
+
+struct Circle {
+    float radius;
+    float perim;
+    float area;
+};
+
+int main() {
+    struct Circle circle;
+    std::cin >> circle.radius;
+    if (circle.radius > 0) {
+        circle.perim = 2 * pi * circle.radius;
+        circle.area = pi * circle.radius * circle.radius;
+        std::cout << circle.perim << std::endl;
+        std::cout << circle.area;
+    }
+}

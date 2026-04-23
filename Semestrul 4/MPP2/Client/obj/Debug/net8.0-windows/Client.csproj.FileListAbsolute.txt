@@ -1,0 +1,5 @@
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Client\obj\Debug\net8.0-windows\Client.csproj.AssemblyReference.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Client\obj\Debug\net8.0-windows\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Client\obj\Debug\net8.0-windows\Client.AssemblyInfoInputs.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Client\obj\Debug\net8.0-windows\Client.AssemblyInfo.cs
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Client\obj\Debug\net8.0-windows\Client.csproj.CoreCompileInputs.cache

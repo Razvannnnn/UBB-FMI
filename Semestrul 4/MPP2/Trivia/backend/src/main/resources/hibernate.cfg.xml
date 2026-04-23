@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.url">jdbc:sqlite:C:\Users\razva\Desktop\Trivia\backend\JocTriviaMPP</property>
+        <property name="hibernate.dialect">org.hibernate.community.dialect.SQLiteDialect</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <mapping class="mpp2025.domain.User"/>
+        <mapping class="mpp2025.domain.Game"/>
+        <mapping class="mpp2025.domain.Question"/>
+
+    </session-factory>
+</hibernate-configuration>

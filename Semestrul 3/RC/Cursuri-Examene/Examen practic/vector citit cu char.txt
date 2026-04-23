@@ -1,0 +1,16 @@
+char input[1000];
+        int arr[100];
+        int num_count=0;
+
+        printf("Introdu un sir de numere separate prin spatiu");
+        fgets(input, sizeof(input), stdin);
+
+        char *p = strtok(input, " ");
+        while( p!=NULL){
+                sscanf(p, "%d", &numbers[num_count]);
+                num_count++;
+                p = strtok(NULL, " ");
+        }
+
+        num_count = htons(num_count);
+        send(num_count, sizeof(num_count), 0);

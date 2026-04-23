@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="left-pane" stylesheets="@../../../Style/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.reteasocializare.MenuController">
+   <children>
+
+
+      <VBox alignment="CENTER" layoutX="360.0" layoutY="57.0" prefHeight="272.0" prefWidth="219.0">
+         <children>
+            <Button fx:id="addNewFriends" mnemonicParsing="false" onAction="#handleAddNewFriends" styleClass="menu-button" text="Add New Friends">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonDeleteFriend" mnemonicParsing="false" onAction="#handleDeleteFriend" styleClass="menu-button" text="Delete Friend">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="buttonMessage" mnemonicParsing="false" onAction="#handleMessage" styleClass="menu-button" text="Message">
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="buttonFriendRequests" mnemonicParsing="false" onAction="#handleFriendRequests" styleClass="menu-button" stylesheets="@../../../Style/style.css" text="See Friend Requests">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="buttonLogOut" mnemonicParsing="false" onAction="#handleLogOut" style="-fx-background-color: transparent;" styleClass="log-out-button" text="Log Out" textFill="WHITE" underline="true">
+               <VBox.margin>
+                  <Insets top="38.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <Text fill="WHITE" layoutX="109.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page-title" text="My Friends" AnchorPane.leftAnchor="109.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ListView fx:id="listPrietenii" layoutX="35.0" layoutY="51.0" prefHeight="280.0" prefWidth="301.0" />
+      <Button fx:id="buttonPrevious" layoutX="35.0" layoutY="349.0" mnemonicParsing="false" onAction="#handlePrevious" styleClass="nav-button" text="&lt;" />
+      <Button fx:id="buttonNext" layoutX="311.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleNext" styleClass="nav-button" text="&gt;" />
+      <Label fx:id="pageNumberLabel" layoutX="154.0" layoutY="353.0" text="?/?" textFill="WHITE" />
+      <Button fx:id="buttonBegin" layoutX="76.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleBegin" styleClass="nav-button" text="&lt;&lt;" />
+      <Button fx:id="buttonEnd" layoutX="264.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleEnd" styleClass="nav-button" text="&gt;&gt;" />
+   </children>
+</AnchorPane>

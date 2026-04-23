@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mpp2025.practic.controllers.LoginController">
+   <children>
+      <TextField fx:id="usernameField" layoutX="226.0" layoutY="51.0" promptText="Username" />
+      <Button fx:id="buttonStart" layoutX="274.0" layoutY="105.0" mnemonicParsing="false" onAction="#handleStart" text="Start joc" />
+      <Label fx:id="infoText" contentDisplay="CENTER" layoutX="151.0" layoutY="150.0" text="Introduceti un username valid pentru a putea incepe jocul" />
+   </children>
+</AnchorPane>

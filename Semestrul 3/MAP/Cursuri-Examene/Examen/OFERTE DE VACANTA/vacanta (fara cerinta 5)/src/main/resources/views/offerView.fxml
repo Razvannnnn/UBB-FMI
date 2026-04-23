@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vacanta_var_2.controller.OffController">
+   <children>
+      <Text layoutX="363.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="END DATE" textAlignment="CENTER" wrappingWidth="155.13671875" />
+      <DatePicker fx:id="endDate" layoutX="354.0" layoutY="53.0" />
+      <DatePicker fx:id="startDate" layoutX="73.0" layoutY="53.0" />
+      <Text layoutX="85.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="START DATE" textAlignment="CENTER" wrappingWidth="149.13671875" />
+      <ListView fx:id="offList" layoutY="94.0" prefHeight="191.0" prefWidth="600.0" />
+      <Button fx:id="searchBtn" layoutX="274.0" layoutY="306.0" mnemonicParsing="false" onAction="#handleSearch" text="CAUTA OFERTE" />
+   </children>
+</AnchorPane>

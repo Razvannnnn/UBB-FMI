@@ -1,0 +1,62 @@
+x=[-2,-1,0,1,2];
+p=[0.2,0.15,0.25,0.14,0.26];
+
+
+#a----------------------------------------------------------------------------------------------------
+
+%vectorul, cate extrageri sunt
+%extragem din x de 1000 de ori cu probabilitatile din p de extragere
+simulari=randsample(x,1000,replacement=true,p); %practic cu returnare
+
+%prim argument: extrageri, argument2: nr unice daca x nu era unic faceam unique(x)
+%cu coloane
+frecvente=hist(simulari,x);
+
+%cu bare
+bar(unique(simulari),frecvente)
+
+%daca erau frecvente relative, 1000 e nr simulari si 1 naiba stie
+bar(unique(simulari),frecvente/1000,1)
+
+
+
+
+#b-----------------------------------------------------------------------------------------------------
+nr_mai_mici_0=0;
+for i=1:1000
+  if simulari(i)<=0
+    nr_mai_mici_0++;
+  endif
+endfor
+#pot cu empirical(val maxima,simulari)
+
+%disp(nr_mai_mici_0)
+
+printf("PROB NR <= 0: %d\n",nr_mai_mici_0/1000);
+
+x_patrat_4=0;
+for i=1:1000
+  if simulari(i)==2 || simulari(i)==-2
+    x_patrat_4++;
+  endif
+endfor
+#sau cu empirical_pdf(2,simulari)+empirical_pdf(-2,simulari);
+
+printf("PROB NR x^2=4: %d\n",x_patrat_4/1000);
+
+%media valorilor din x
+printf("MEDIA VALORILOR: %d\n",mean(simulari));
+
+%valoarea deviatiei standard
+printf("DEVIATIA STANDARD: %d\n",std(simulari));
+
+%valoarea variatiei
+printf("VARIATIA: %d\n",var(simulari));
+
+
+#c-----------------------------------------------------------------------------------------------------
+%functia de repartitie de selectie
+%repartitie de selectie e functia de densitate cumulativa (cdf)
+y=empirical_cdf(-2:0.01:2,simulari)
+plot(-2:0.01:2,y)
+

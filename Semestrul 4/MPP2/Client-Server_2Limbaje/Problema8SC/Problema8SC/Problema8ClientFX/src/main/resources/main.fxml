@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="problema8.client.gui.MainController">
+   <children>
+      <TabPane layoutX="-2.0" layoutY="-1.0" prefHeight="406.0" prefWidth="606.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Menu">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ComboBox fx:id="comboBoxVarsta" layoutX="35.0" layoutY="23.0" prefWidth="150.0" promptText="Grupe Varsta" />
+                        <ComboBox fx:id="comboBoxProbe" layoutX="211.0" layoutY="23.0" prefWidth="150.0" promptText="Probe" />
+                        <TableView fx:id="tableView" layoutX="28.0" layoutY="64.0" prefHeight="286.0" prefWidth="282.0">
+                          <columns>
+                            <TableColumn fx:id="nameChild" prefWidth="140.66669273376465" text="Name" />
+                            <TableColumn fx:id="cnpChild" minWidth="0.0" prefWidth="138.66666158040363" text="CNP" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="buttonLogout" layoutX="505.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleButtonLogout" text="Log Out" />
+                        <TableView fx:id="tableView2" layoutX="322.0" layoutY="64.0" prefHeight="285.0" prefWidth="264.0">
+                          <columns>
+                            <TableColumn fx:id="nameChild2" prefWidth="106.66668701171875" text="Name" />
+                            <TableColumn fx:id="ageChild2" prefWidth="72.33331298828125" text="Age" />
+                              <TableColumn fx:id="nrEventsChild2" prefWidth="82.66668701171875" text="Nr events" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Inscriere">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="122.0" layoutY="13.0" prefHeight="337.0" prefWidth="354.0" spacing="20.0">
+                           <children>
+                              <Label text="Inscrie participant">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <TextField fx:id="textFieldNume" promptText="Nume" />
+                              <TextField fx:id="textFieldCNP" promptText="CNP" />
+                              <HBox prefHeight="127.0" prefWidth="354.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="103.0" prefWidth="179.0">
+                                       <Label text="Proba 1">
+                                          <VBox.margin>
+                                             <Insets bottom="10.0" />
+                                          </VBox.margin>
+                                       </Label>
+                                     <ComboBox fx:id="comboBoxVarsta1" layoutX="35.0" layoutY="23.0" prefWidth="150.0" promptText="Grupe Varsta">
+                                          <VBox.margin>
+                                             <Insets bottom="5.0" />
+                                          </VBox.margin></ComboBox>
+                                     <ComboBox fx:id="comboBoxProbe1" layoutX="211.0" layoutY="23.0" prefWidth="150.0" promptText="Probe" />
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="103.0" prefWidth="179.0">
+                                       <Label text="Proba 2">
+                                          <VBox.margin>
+                                             <Insets bottom="10.0" />
+                                          </VBox.margin>
+                                       </Label>
+                                     <ComboBox fx:id="comboBoxVarsta2" layoutX="35.0" layoutY="23.0" prefWidth="150.0" promptText="Grupe Varsta">
+                                          <VBox.margin>
+                                             <Insets bottom="5.0" />
+                                          </VBox.margin></ComboBox>
+                                     <ComboBox fx:id="comboBoxProbe2" layoutX="211.0" layoutY="23.0" prefWidth="150.0" promptText="Probe" />
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                              <Button fx:id="buttonInscriere" mnemonicParsing="false" onAction="#handleButtonInscriere" text="Inscriere">
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin></Button>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,377 @@
+2025-05-12 18:33:00,495 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-12 18:33:00,503 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:33:00,503 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:33:00,617 [12] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:33:00,617 [13] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:33:00,618 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:33:00,618 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-12 18:33:00,618 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:33:00,618 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:33:00,620 [15] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:33:00,620 [16] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:33:00,621 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:33:00,621 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-12 18:33:00,621 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:33:00,622 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:33:00,622 [17] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:33:00,622 [18] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:33:00,622 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:33:00,622 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-12 18:33:45,492 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-12 18:33:45,500 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:33:45,500 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:33:45,637 [12] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:33:45,637 [13] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:33:45,637 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:33:45,637 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-12 18:33:45,637 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:33:45,637 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:33:45,638 [15] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:33:45,639 [16] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:33:45,639 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:33:45,639 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-12 18:33:45,639 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:33:45,639 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:33:45,639 [17] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:33:45,639 [18] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:33:45,640 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:33:45,640 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-12 18:34:25,781 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-12 18:36:01,087 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-12 18:36:01,095 [13] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:36:01,095 [14] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:36:01,208 [13] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:36:01,208 [14] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:36:01,208 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:36:01,208 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-12 18:36:01,209 [16] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:36:01,209 [17] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:36:01,210 [16] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:36:01,210 [17] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:36:01,210 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:36:01,210 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-12 18:36:01,210 [18] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:36:01,211 [19] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:36:01,211 [18] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:36:01,211 [19] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:36:01,211 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:36:01,211 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-12 18:36:23,495 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-12 18:36:23,503 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:36:23,503 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:36:23,628 [13] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:36:23,628 [12] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:36:23,629 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:36:23,629 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-12 18:36:23,629 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:36:23,629 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:36:23,631 [16] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:36:23,631 [15] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:36:23,631 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:36:23,631 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-12 18:36:23,631 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:36:23,631 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:36:23,632 [17] ERROR Tema4.Program - Thread 1 error: Invalid object name 'Sponsori'.
+2025-05-12 18:36:23,633 [18] ERROR Tema4.Program - Thread 2 error: Invalid object name 'Evenimente'.
+2025-05-12 18:36:23,633 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:36:23,633 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-12 18:37:10,685 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-12 18:37:10,693 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:37:10,693 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:37:10,817 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-12 18:37:10,817 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-12 18:37:12,307 [12] ERROR Tema4.Program - Thread 1 error: Transaction (Process ID 51) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-12 18:37:12,307 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:37:12,307 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-12 18:37:12,307 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:37:12,307 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:37:12,308 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-12 18:37:12,309 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-12 18:37:17,307 [16] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 51) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-12 18:37:17,308 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:37:17,308 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-12 18:37:17,309 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-12 18:37:17,309 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-12 18:37:17,310 [17] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-12 18:37:17,311 [18] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-12 18:37:19,817 [18] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 51) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-12 18:37:19,818 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-12 18:37:19,819 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-16 16:53:14,504 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-16 16:53:14,531 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-16 16:53:14,531 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-16 16:53:14,806 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-16 16:53:14,806 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-16 16:53:17,210 [13] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 52) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-16 16:53:17,210 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-16 16:53:17,211 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-16 16:53:17,211 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-16 16:53:17,211 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-16 16:53:17,212 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-16 16:53:17,212 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-16 16:53:22,224 [15] ERROR Tema4.Program - Thread 1 error: Transaction (Process ID 52) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-16 16:53:22,228 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-16 16:53:22,228 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-16 16:53:22,229 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-16 16:53:22,230 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-16 16:53:22,231 [17] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-16 16:53:22,233 [18] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-16 16:53:24,733 [18] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 52) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-16 16:53:24,741 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-16 16:53:24,742 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:10:16,654 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:10:16,667 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:10:16,667 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:10:16,895 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:10:16,895 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:10:19,506 [12] ERROR Tema4.Program - Thread 1 error: Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:10:19,507 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:10:19,507 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-21 14:10:19,507 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:10:19,507 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:10:19,509 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:10:19,509 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:10:24,518 [16] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:10:24,522 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:10:24,523 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:10:24,529 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:10:24,553 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:10:24,565 [17] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:10:24,566 [18] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:10:27,030 [18] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:10:27,039 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:10:27,050 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:13:36,236 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:13:36,246 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:13:36,246 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:13:36,471 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:13:36,471 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:13:38,086 [13] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:13:38,087 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:13:38,087 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-21 14:13:38,088 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:13:38,088 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:13:38,092 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:13:38,093 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:13:43,104 [16] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:13:43,120 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:13:43,122 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:13:43,123 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:13:43,124 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:13:43,130 [17] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:13:43,132 [18] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:13:45,618 [18] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:13:45,628 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:13:45,638 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:15:46,755 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:15:46,764 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:15:46,764 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:15:46,926 [12] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:15:46,943 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:15:46,943 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:15:51,495 [13] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 77) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:15:51,496 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:15:51,496 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-21 14:15:51,497 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:15:51,497 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:15:51,500 [15] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:15:51,500 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:15:51,501 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:15:56,503 [16] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 77) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:15:56,508 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:15:56,509 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:15:56,512 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:15:56,515 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:15:56,516 [17] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:15:56,518 [18] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:15:56,520 [17] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:15:59,021 [18] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 77) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:15:59,034 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:15:59,034 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:16:32,524 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:16:32,534 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:16:32,535 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:16:32,697 [12] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:16:32,715 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:16:32,715 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:16:34,723 [13] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 63) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:16:34,723 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:16:34,723 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-21 14:16:34,723 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:16:34,724 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:16:34,724 [15] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:16:34,725 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:16:34,725 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:16:39,726 [16] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 63) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:16:39,728 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:16:39,728 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:16:39,735 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:16:39,737 [17] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:16:39,739 [17] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:16:39,750 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:16:39,752 [18] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:16:42,248 [18] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 63) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:16:42,254 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:16:42,255 [1] INFO  Tema4.Program - Tentativa 4 de executie...
+2025-05-21 14:16:42,256 [19] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:16:42,257 [20] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:16:42,258 [19] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:16:42,259 [20] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:16:42,260 [19] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:16:43,511 [20] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 63) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:16:43,517 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:16:43,518 [1] INFO  Tema4.Program - Tentativa 5 de executie...
+2025-05-21 14:16:43,522 [21] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:16:43,524 [21] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:16:43,534 [22] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:16:43,537 [21] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:16:43,539 [22] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:16:45,108 [22] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 63) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:16:45,113 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:16:45,113 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:17:13,411 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:17:13,424 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:17:13,424 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:17:13,615 [12] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:17:13,616 [13] INFO  Tema4.Program - Thread 2 set deadlock priority to LOW
+2025-05-21 14:17:13,634 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:17:13,634 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:17:15,800 [13] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 76) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:17:15,801 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:17:15,801 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-21 14:17:15,801 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:17:15,802 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:17:15,803 [16] INFO  Tema4.Program - Thread 2 set deadlock priority to LOW
+2025-05-21 14:17:15,803 [15] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:17:15,804 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:17:15,804 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:17:20,822 [16] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 76) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:17:20,827 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:17:20,827 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:17:20,828 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:17:20,828 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:17:20,829 [17] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:17:20,829 [18] INFO  Tema4.Program - Thread 2 set deadlock priority to LOW
+2025-05-21 14:17:20,830 [17] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:17:20,830 [18] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:17:23,321 [18] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 76) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:17:23,334 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:17:23,335 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:51:50,351 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:51:50,364 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:51:50,365 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:51:50,659 [12] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:51:50,676 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:51:50,676 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:51:52,540 [13] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 77) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:51:52,541 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:51:52,541 [1] INFO  Tema4.Program - Tentativa 2 de executie...
+2025-05-21 14:51:52,544 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:51:52,545 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:51:52,548 [15] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:51:52,549 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:51:52,551 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:51:57,535 [16] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 67) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:51:57,537 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:51:57,537 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:51:57,538 [17] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:51:57,541 [18] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:51:57,541 [17] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:51:57,542 [18] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:51:57,545 [17] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:52:00,058 [18] ERROR Tema4.Program - Thread 2 error: Transaction (Process ID 67) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+2025-05-21 14:52:00,061 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:52:00,062 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:54:12,520 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:54:12,534 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:54:12,534 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:54:12,700 [12] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:54:12,716 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:54:12,716 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:54:15,989 [13] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:54:15,998 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:54:15,999 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:54:15,999 [15] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:54:15,999 [16] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:54:16,004 [15] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:54:16,004 [16] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:54:16,005 [15] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:54:20,999 [16] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:54:21,005 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:54:21,006 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:54:48,697 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:54:48,707 [14] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:54:48,707 [13] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:54:48,878 [13] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:54:48,891 [14] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:54:48,891 [13] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:54:52,308 [14] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:54:52,316 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:54:52,316 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:54:52,317 [16] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:54:52,317 [17] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:54:52,320 [16] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:54:52,320 [17] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:54:52,321 [16] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:54:57,316 [17] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:54:57,322 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:54:57,322 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:55:33,476 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:55:33,485 [11] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:55:33,485 [12] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:55:33,660 [11] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:55:33,675 [11] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:55:33,675 [12] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:55:38,652 [12] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:55:38,659 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:55:38,660 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:55:38,660 [14] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:55:38,661 [15] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:55:38,665 [14] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:55:38,666 [15] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:55:38,666 [14] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:55:43,655 [15] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:55:43,658 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:55:43,659 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:56:37,856 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:56:37,876 [11] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:56:37,889 [12] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:56:38,235 [11] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:56:38,250 [11] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:56:38,250 [12] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:56:45,025 [12] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:56:45,035 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:56:45,036 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:56:45,036 [14] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:56:45,038 [15] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:56:45,040 [14] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:56:45,041 [15] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:56:45,043 [14] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:56:50,047 [15] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:56:50,069 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:56:50,070 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.
+2025-05-21 14:57:16,611 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:57:16,624 [12] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:57:16,624 [13] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:57:16,799 [12] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:57:16,818 [13] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:57:16,818 [12] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:57:21,445 [13] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:57:21,454 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:57:53,913 [1] INFO  Tema4.Program - Tentativa 1 de executie...
+2025-05-21 14:57:53,922 [14] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:57:53,922 [13] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:57:54,080 [13] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:57:54,095 [13] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:57:54,095 [14] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:57:59,017 [14] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:57:59,025 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:57:59,025 [1] INFO  Tema4.Program - Tentativa 3 de executie...
+2025-05-21 14:57:59,026 [16] INFO  Tema4.Program - Thread 1 started
+2025-05-21 14:57:59,027 [17] INFO  Tema4.Program - Thread 2 started
+2025-05-21 14:57:59,028 [16] INFO  Tema4.Program - Thread 1 set deadlock priority to HIGH
+2025-05-21 14:57:59,037 [17] INFO  Tema4.Program - Thread 2 locked Evenimente
+2025-05-21 14:57:59,037 [16] INFO  Tema4.Program - Thread 1 locked Sponsori
+2025-05-21 14:58:04,033 [17] INFO  Tema4.Program - Transaction rolled back
+2025-05-21 14:58:04,045 [1] WARN  Tema4.Program - Deadlock detectat, se reincearca...
+2025-05-21 14:58:04,046 [1] ERROR Tema4.Program - Operatia a esuat dupa 3 incercari.

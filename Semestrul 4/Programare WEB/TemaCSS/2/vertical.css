@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    height: 72vh;
+}
+
+#menu {
+    background-color: yellow;
+    width: 20%;
+}
+
+#main {
+    width: 80%;
+    background-color: green;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: red;
+}
+
+footer {
+    background-color: pink;
+    margin-top: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+li {
+    border-bottom: 2px solid;
+}

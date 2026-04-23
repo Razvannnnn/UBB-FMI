@@ -1,0 +1,42 @@
+#a----------------------------------------------------------------
+clf; grid; hold on
+%1 rand si 1000 coloane
+%sqrt 4 pt ca e distr normala (si 4 e deviatia standard)
+simulariX=normrnd(-1,sqrt(4),1,1000);
+simulariY=normrnd(1,sqrt(4),1,1000);
+
+simulariSUMA=simulariX+simulariY;
+
+
+%histograma frecv relative cu 15 clase
+[x,xHelp]=hist(simulariSUMA,15);
+hist(simulariSUMA,xHelp,15/(max(simulariSUMA)-min(simulariSUMA)));
+
+%linespace da multe puncte in intervalul dat
+t=linspace(min(simulariSUMA),max(simulariSUMA),1000);
+
+%normpfd e functia de densitate pt distributia normala
+%dar mai jos mie mi-a dat deviatia standard ~5.5 si e mai buna decat 8
+%media a dat indeed 0.25 ceea ce e aproape de 0
+plot(t,normpdf(t,0,sqrt(8)));
+
+#b-----------------------------------------------------------------
+printf("MEDIA X+Y: %d\n",mean(simulariSUMA));
+printf("DEVIATIA STANDARD X+Y: %d\n",std(simulariSUMA));
+
+#c-----------------------------------------------------------------
+%|x+y|<1 <-> x+y apartine (-1,1)
+
+%valoarea estimata
+cnt=0;
+for i=1:1000
+  if simulariSUMA(i)>-1 && simulariSUMA(i)<1
+    cnt++;
+  endif
+endfor
+#sau empirical_cdf(1,simulariSUMA)-empirical_cdr(-1,simulariSUMA);
+
+printf("PROBABILITATEA ESTIMATA |X+Y|<1: %d\n",cnt/1000);
+
+%acum facem prob teoretica (cdf pdf astea toate is valori teoretice)
+printf("PROBABILITATEA TEORETICA |X+Y|<1: %d\n",normcdf(1,0,sqrt(8))-normcdf(-1,0,sqrt(8)));

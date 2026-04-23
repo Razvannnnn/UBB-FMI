@@ -1,0 +1,18 @@
+{
+	"bmi-installation" : null,
+	"compiler-frontend-variant" : "MSVC",
+	"compiler-id" : "MSVC",
+	"compiler-simulate-id" : "",
+	"config" : "Release",
+	"cxx-modules" : {},
+	"dir-cur-bld" : "C:/Users/razva/Desktop/PPD/TemaMPI/cmake-build-release-visual-studio",
+	"dir-cur-src" : "C:/Users/razva/Desktop/PPD/TemaMPI",
+	"dir-top-bld" : "C:/Users/razva/Desktop/PPD/TemaMPI/cmake-build-release-visual-studio",
+	"dir-top-src" : "C:/Users/razva/Desktop/PPD/TemaMPI",
+	"exports" : [],
+	"forward-modules-from-target-dirs" : [],
+	"include-dirs" : [],
+	"language" : "CXX",
+	"linked-target-dirs" : [],
+	"module-dir" : "C:/Users/razva/Desktop/PPD/TemaMPI/cmake-build-release-visual-studio/CMakeFiles/TemaMPI.dir"
+}

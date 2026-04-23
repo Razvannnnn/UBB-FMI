@@ -1,0 +1,3 @@
+C:/Users/Cosmin/Desktop/practic-ag/cmake-build-debug/CMakeFiles/practic_ag.dir
+C:/Users/Cosmin/Desktop/practic-ag/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Cosmin/Desktop/practic-ag/cmake-build-debug/CMakeFiles/rebuild_cache.dir

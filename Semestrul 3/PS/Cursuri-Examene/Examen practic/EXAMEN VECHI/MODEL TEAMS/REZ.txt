@@ -1,0 +1,106 @@
+#1--------------------------------------------------------------------------------------
+urna=['r','r','r','r','r','r','r','r','r','r','n','n','n','n','n','a','a','a','a','a'];
+
+#a-----------------
+cntA=0; cntB=0; cntC=0;
+
+for i=1:1000
+  simulari=randsample(urna,3,replacement=false);
+  if length(unique(simulari))==1
+    cntA++;
+  endif
+
+  if length(unique(simulari))==3
+    cntB++;
+  endif
+
+  if simulari(1)=='n' || simulari(2)=='n' || simulari(3)=='n'
+    cntC++;
+  endif
+
+  %ret indexul primei aparitii sau 0 daca nu exista
+  #if index(simulari,'n') >0
+      #cntC++;
+  #endif
+endfor
+
+printf('AU ACEEASI CULOARE: %d\n',cntA/1000);
+printf('AU CULORI DISTINCTE: %d\n',cntB/1000);
+printf('NU AU ACEEASI CULOARE: %d\n',1-(cntA/1000));
+printf('CEL PUTIN UNA NEAGRA: %d\n',cntC/1000);
+
+
+#b-------------------
+%sa fie toate acc culoare: succese,nr_total,nr_fav,extrageri
+p_rosii=hygepdf(3,20,10,3);
+p_negre_albe=hygepdf(3,20,5,3);
+
+printf("PROB TEORETICA A: %d\n",p_rosii+2*p_negre_albe);
+
+%culori distincte
+%facem prob inversa: minim 2 is la fel
+p_2_rosii=hygepdf(2,20,10,3);
+p_2_negre_albe=hygepdf(2,20,5,3);
+probB=1-(p_rosii+2*p_negre_albe+p_2_rosii+2*p_2_negre_albe);
+printf("PROB TEORETICA B: %d\n",probB);
+
+%cel putin una neagra
+%1-nu exista niciuna neagra
+probC=1-hygepdf(3,20,15,3);
+printf("PROB TEORETICA C: %d\n",probC);
+
+printf('\n\n\n');
+#2--------------------------------------------------------------------------------------
+#x~Exp(2)
+x=linspace(-2,5);
+y=exppdf(x,1/2);
+
+figure(1)
+plot(x,y)
+
+z=expcdf(x,1/2);
+figure(2)
+plot(x,z)
+
+#a-------------------------
+simulari=exprnd(1/2,1,1000);
+printf('VALOARE MEDIE: %d\n',mean(simulari));
+printf('DEVIATIA STANDART: %d\n',std(simulari));
+
+#b-------------------------
+probA=sum(simulari>0.7)/1000;
+printf('PROBABILITATE ESTIMATA : %d\n',probA);
+#sau
+probbA=1-empirical_cdf(0.7,simulari);
+
+#acum teoretic
+probATeoretic=1-expcdf(0.7,1/2);
+printf('PROBABILIATTE TEORETICA: %d\n',probATeoretic);
+
+printf('\n\n\n');
+#3--------------------------------------------------------------------------------------
+#a---------------------------
+
+%1000 generari si true ca e cu replacement
+simulariX=randsample([-2,-1,1,2],1000,true,[0.1,0.4,0.3,0.2]);
+simulariY=unifrnd(-1,4,1,1000);
+simulariU=simulariX .^3 + simulariY .^3;
+
+figure(3)
+%pt ca sunt frecvente absolute dam doar hist
+hist(simulariU,20);
+
+#b----------------------------
+printf('PROBABILITATE U<0: %d\n',empirical_cdf(0,simulariU));
+printf('VALOAREA MEDIE: %d\n',mean(simulariU));
+printf('VARIANTA: %d\n',var(simulariU));
+
+
+#c----------------------------
+
+printf('VAL MEDIE TEORETICA: %d\n',mean([-2,-1,1,2].^3.*[0.1,0.4,0.3,0.2]) );
+
+
+
+
+

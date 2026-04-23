@@ -1,0 +1,5 @@
+8 bile negre, 4 albe, 4 extrageri fără returnare, 5000 simulări. 
+Probabilitatea estimată și teoretică pt: 
+a) exact 2 bile albe 
+b)toate negre. 
+*Pt bilele albe extrase histograma frecventelor relative și media.

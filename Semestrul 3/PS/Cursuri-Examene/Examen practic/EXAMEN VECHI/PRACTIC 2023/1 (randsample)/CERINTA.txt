@@ -1,0 +1,6 @@
+Fie X o variabila aleatoare avand distributiile:
+P(X=-2)=0.2 ; P(X=-1)=0.15 ; P(X=0)=0.25 ; P(X=1)=0.14 ; P(X=2)=0.26.
+
+a) Simulati/Generati N=1000 de valori pt X si reprezentati grafic histograma frecventelor absolute corespunzatoare.
+b) Estimati: P(X<=0), P(X^2=4), valoarea medie si variatiei lui X.
+c) Reprezentati functia de repartitie de selectie pt valorile generate.

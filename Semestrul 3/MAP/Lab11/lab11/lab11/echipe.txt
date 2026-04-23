@@ -1,0 +1,28 @@
+﻿a0313f86-3368-4613-b9c3-dec5e2b05d64;Houston Rockets
+755f3cdd-64c8-4bde-b9e4-71ec57f1932c;Los Angeles Lakers
+a6b09a23-d961-4244-859d-cef7c544005c;LA Clippers
+0db76dc9-fef7-4760-91c3-d8c75b80691f;Chicago Bulls
+6ed59fa3-7994-4575-abe5-0d0220d6f20f;Cleveland Cavaliers
+dc784b41-1de8-4a82-8495-12d75d1b8b74;Utah Jazz
+8d974c1e-a7f3-41c3-8813-6ec140216232;Brooklyn Nets
+e6a605af-a002-4644-bdd0-4fffed5b5826;New Orleans Pelicans
+8ea6c664-714a-4e19-bacb-6d3242ce68b0;Indiana Pacers
+bb1524a2-268d-4705-af12-fa9b1f448c11;Toronto Raptors
+50cc759e-7d18-4e4e-ad56-8a181cc2991f;Charlotte Hornets
+bb3b8722-3fb6-4eef-a9f7-57ac997e18bb;Phoenix Suns
+bfc30542-2be0-48a7-b073-cb800c14ba7a;Portland TrailBlazers
+af0c77be-79fc-4c14-b35e-1cbbb7c852c2;Golden State Warriors
+ba1dff79-ed73-4e2f-a8e0-32aced1b6bb2;Washington Wizards
+fb405c95-41d4-4be7-8d3e-aa6c5af7283c;San Antonio Spurs
+f4869b63-2159-43b5-b5e9-adcb0a142611;Orlando Magic
+60c4ee7c-33cd-4339-8c4b-d5f820c0fd68;Denver Nuggets
+27bee2cc-576d-4852-aa16-2148f5a8de5e;Detroit Pistons
+683f11c5-ad8b-42e3-ac15-42bdd7f5c9df;Atlanta Hawks
+ce678a8f-fc91-45be-82e6-3c72ac5f4b9c;Dallas Mavericks
+b6461bdc-6a3b-49db-93b2-0a53d9507c18;Sacramento Kings
+3bdb8823-0abf-4e0e-87c7-896d9aef60c5;Oklahoma City Thunder
+32c88b29-6389-4008-af1d-c9a9c6291622;Boston Celtics
+3fdd23e3-7026-4454-aeb9-8f46c57cd82f;New York Knicks
+2e1142ed-e187-4232-899d-e74264ca8330;Minnesota Timberwolves
+e02784a2-ffe4-406a-9175-128522fa8c0a;Miami Heat
+5a9d2609-85ec-46e9-8d3a-27fbe9156ece;Milwaukee Bucks

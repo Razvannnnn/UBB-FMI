@@ -1,0 +1,14 @@
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\bin\Debug\net8.0\TestCSharp.exe
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\bin\Debug\net8.0\TestCSharp.deps.json
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\bin\Debug\net8.0\TestCSharp.runtimeconfig.json
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\bin\Debug\net8.0\TestCSharp.dll
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\bin\Debug\net8.0\TestCSharp.pdb
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\TestCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\TestCSharp.AssemblyInfoInputs.cache
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\TestCSharp.AssemblyInfo.cs
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\TestCSharp.csproj.CoreCompileInputs.cache
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\TestCSharp.dll
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\refint\TestCSharp.dll
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\TestCSharp.pdb
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\TestCSharp.genruntimeconfig.cache
+C:\Users\razva\Desktop\MPP2\Problema8_SC_REST\TestCSharp\TestCSharp\obj\Debug\net8.0\ref\TestCSharp.dll

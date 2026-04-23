@@ -1,0 +1,4 @@
+1	return
+2	std
+3	x
+4	y

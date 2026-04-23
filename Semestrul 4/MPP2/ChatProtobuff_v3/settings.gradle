@@ -1,0 +1,8 @@
+rootProject.name = 'ChatProtobuffv3'
+include 'ChatClient'
+include 'ChatModel'
+include 'ChatServices'
+include 'ChatPersistence'
+include 'ChatServer'
+include 'ChatNetworkingProtobuff'
+

@@ -1,0 +1,24 @@
+PROG -> STMT_LIST
+STMT_LIST -> STMT STMT_LIST
+STMT_LIST -> STMT
+STMT -> TYPE id ;
+STMT -> id = EXPR ;
+STMT -> if ( COND ) { STMT_LIST } else { STMT_LIST }
+STMT -> while ( COND ) { STMT_LIST }
+STMT -> read_int ( id ) ;
+STMT -> print ( EXPR ) ;
+TYPE -> int
+TYPE -> float
+TYPE -> struct Point
+EXPR -> EXPR + EXPR
+EXPR -> EXPR - EXPR
+EXPR -> EXPR * EXPR
+EXPR -> EXPR / EXPR
+EXPR -> EXPR % EXPR
+EXPR -> ( EXPR )
+EXPR -> id
+EXPR -> const_int
+EXPR -> const_real
+COND -> EXPR == EXPR
+COND -> EXPR < EXPR
+COND -> EXPR > EXPR

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Gestionare Angajati</title>
+<script src="jquery-2.0.3.js"></script>
+<style>
+  #selector { margin-bottom: 20px; }
+  button { margin-right: 10px; }
+</style>
+</head>
+<body>
+
+<h1>Gestionare Angajati</h1>
+
+<div id="selector">
+  <button id="usePlainJS">JavaScript simplu</button>
+  <button id="useJQuery">jQuery</button>
+</div>
+
+<label for="idSelect">Selecteaza ID:</label>
+<select id="idSelect"></select>
+
+<form id="detaliiForm" onsubmit="return false;">
+  <p><label>Nume: <input type="text" id="nume" name="nume"></label></p>
+  <p><label>Prenume: <input type="text" id="prenume" name="prenume"></label></p>
+  <p><label>Telefon: <input type="text" id="telefon" name="telefon"></label></p>
+  <p><label>Email: <input type="email" id="email" name="email"></label></p>
+  <button id="saveBtn" disabled>Save</button>
+</form>
+
+<script>
+  let formChanged = false;
+  let currentId = null;
+  let currentMode = null;
+
+  function setFormChanged(value) {
+    formChanged = value;
+    document.getElementById("saveBtn").disabled = !value;
+  }
+
+  function loadIdsJS() {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "getIds.php", true);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        const ids = JSON.parse(xhr.responseText);
+        let options = "";
+        ids.forEach(id => options += `<option value="${id}">${id}</option>`);
+        document.getElementById("idSelect").innerHTML = options;
+        if(ids.length > 0) {
+          currentId = ids[0];
+          loadDetailsJS(currentId);
+        }
+      }
+    };
+    xhr.send();
+  }
+
+  function loadDetailsJS(id) {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "getDetails.php?id=" + encodeURIComponent(id), true);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        const det = JSON.parse(xhr.responseText);
+        document.getElementById("nume").value = det.nume || "";
+        document.getElementById("prenume").value = det.prenume || "";
+        document.getElementById("telefon").value = det.telefon || "";
+        document.getElementById("email").value = det.email || "";
+        setFormChanged(false);
+      }
+    };
+    xhr.send();
+  }
+
+  function saveDetailsJS() {
+    const data = new FormData();
+    data.append("id", currentId);
+    data.append("nume", document.getElementById("nume").value);
+    data.append("prenume", document.getElementById("prenume").value);
+    data.append("telefon", document.getElementById("telefon").value);
+    data.append("email", document.getElementById("email").value);
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "saveDetails.php", true);
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        alert("Datele au fost salvate.");
+        setFormChanged(false);
+      } else {
+        alert("Eroare la salvare.");
+      }
+    };
+    xhr.send(data);
+  }
+
+  function activateJS() {
+    loadIdsJS();
+
+    document.getElementById("idSelect").onchange = function() {
+      let newId = this.value;
+      if(formChanged) {
+        if(confirm("Datele s-au modificat. Vrei sa salvezi inainte de a schimba?")) {
+          saveDetailsJS();
+          currentId = newId;
+          loadDetailsJS(newId);
+        } else {
+          this.value = currentId;
+        }
+      } else {
+        currentId = newId;
+        loadDetailsJS(newId);
+      }
+    };
+
+    ["nume","prenume","telefon","email"].forEach(id => {
+      document.getElementById(id).oninput = function() {
+        setFormChanged(true);
+      };
+    });
+
+    document.getElementById("saveBtn").onclick = function() {
+      saveDetailsJS();
+    };
+  }
+
+  function activateJQuery() {
+    $.ajax({
+      url: "getIds.php",
+      method: "GET",
+      success: function(data) {
+        const ids = JSON.parse(data);
+        let options = "";
+        ids.forEach(id => options += `<option value="${id}">${id}</option>`);
+        $("#idSelect").html(options);
+        if(ids.length > 0) {
+          currentId = ids[0];
+          loadDetailsJQuery(currentId);
+        }
+      }
+    });
+
+    $("#idSelect").off("change.jqueryHandler").on("change.jqueryHandler", function() {
+      let newId = $(this).val();
+      if(formChanged) {
+        if(confirm("Datele s-au modificat. Vrei sa salvezi inainte de a schimba?")) {
+          $("#saveBtn").click();
+          currentId = newId;
+          loadDetailsJQuery(newId);
+        } else {
+          $(this).val(currentId);
+        }
+      } else {
+        currentId = newId;
+        loadDetailsJQuery(newId);
+      }
+    });
+
+    $("#detaliiForm input").off("input.jqueryHandler").on("input.jqueryHandler", function() {
+      formChanged = true;
+      $("#saveBtn").prop("disabled", false);
+    });
+
+    $("#saveBtn").off("click.jqueryHandler").on("click.jqueryHandler", function() {
+      let dataToSave = {
+        id: currentId,
+        nume: $("#nume").val(),
+        prenume: $("#prenume").val(),
+        telefon: $("#telefon").val(),
+        email: $("#email").val()
+      };
+      $.ajax({
+        url: "saveDetails.php",
+        method: "POST",
+        data: dataToSave,
+        success: function() {
+          alert("Datele au fost salvate.");
+          formChanged = false;
+          $("#saveBtn").prop("disabled", true);
+        },
+        error: function() {
+          alert("Eroare la salvare.");
+        }
+      });
+    });
+  }
+
+  function loadDetailsJQuery(id) {
+    $.ajax({
+      url: "getDetails.php",
+      method: "GET",
+      data: { id: id },
+      success: function(data) {
+        let det = JSON.parse(data);
+        $("#nume").val(det.nume || "");
+        $("#prenume").val(det.prenume || "");
+        $("#telefon").val(det.telefon || "");
+        $("#email").val(det.email || "");
+        formChanged = false;
+        $("#saveBtn").prop("disabled", true);
+      }
+    });
+  }
+
+  function deactivateJQuery() {
+    $("#idSelect").off(".jqueryHandler");
+    $("#detaliiForm input").off(".jqueryHandler");
+    $("#saveBtn").off(".jqueryHandler");
+  }
+
+  function deactivateJS() {
+    document.getElementById("idSelect").onchange = null;
+    ["nume","prenume","telefon","email"].forEach(id => {
+      document.getElementById(id).oninput = null;
+    });
+    document.getElementById("saveBtn").onclick = null;
+  }
+
+  document.getElementById("usePlainJS").onclick = function() {
+    if(currentMode === "jquery") {
+      deactivateJQuery();
+    }
+    currentMode = "plain";
+    formChanged = false;
+    currentId = null;
+    document.getElementById("idSelect").innerHTML = "";
+    document.getElementById("nume").value = "";
+    document.getElementById("prenume").value = "";
+    document.getElementById("telefon").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("saveBtn").disabled = true;
+    activateJS();
+  };
+
+  document.getElementById("useJQuery").onclick = function() {
+    if(currentMode === "plain") {
+      deactivateJS();
+    }
+    currentMode = "jquery";
+    formChanged = false;
+    currentId = null;
+    $("#idSelect").html("");
+    $("#nume").val("");
+    $("#prenume").val("");
+    $("#telefon").val("");
+    $("#email").val("");
+    $("#saveBtn").prop("disabled", true);
+    activateJQuery();
+  };
+</script>
+
+</body>
+</html>

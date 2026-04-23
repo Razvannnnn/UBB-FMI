@@ -1,0 +1,23 @@
+#S1
+
+function out=server1(N = 1000)
+  server = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+  T = 0;
+  C = 0;
+  for i=1:1:N
+    #cred ca e implicit false
+    i = randsample(server, 1);
+    # exprnd(M: parametrul distributiei exponentiale care reprezinta media, nrLinii, nrColoana)
+    # exprnd ret numere (numar) generat conf distributiei exponentiale de parametru lambda (i in cazul asta)
+    t = exprnd(i); # t este timpul de procesare al email-ului
+    T += t;
+
+    if t >= 3
+      C++;
+    endif
+  endfor
+
+  fprintf("Prob. teoretica pentru ca email-ul sa fie procesat de serverul S3 sau S4: %d\n", 0.7);
+  fprintf("Val. medie a timpului(in secunde de procesare al email-ului): %d\n", T/N);
+  fprintf("Probabilitatea ca email-ul sa fie procesat in cel putin 3 secunde: %d\n", C/N);
+endfunction

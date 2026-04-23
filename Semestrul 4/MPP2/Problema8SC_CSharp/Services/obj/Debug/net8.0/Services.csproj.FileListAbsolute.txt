@@ -1,0 +1,17 @@
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\bin\Debug\net8.0\Services.deps.json
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\bin\Debug\net8.0\Services.runtimeconfig.json
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\bin\Debug\net8.0\Services.dll
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\bin\Debug\net8.0\Services.pdb
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\bin\Debug\net8.0\Model.dll
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\bin\Debug\net8.0\Model.pdb
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.csproj.AssemblyReference.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.AssemblyInfoInputs.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.AssemblyInfo.cs
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.csproj.Up2Date
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.dll
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\refint\Services.dll
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.pdb
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\Services.genruntimeconfig.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Services\obj\Debug\net8.0\ref\Services.dll

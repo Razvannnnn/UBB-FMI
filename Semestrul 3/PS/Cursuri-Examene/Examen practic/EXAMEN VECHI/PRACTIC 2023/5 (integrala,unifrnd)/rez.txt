@@ -1,0 +1,29 @@
+#a------------------------------------------------------------------------------
+%generare 1000 pct in patratul [0,1]x[0,1]
+simulariX=unifrnd(0,1,1,1000);
+simulariY=unifrnd(0,1,1,1000);
+
+%facem o medie a punctelor(atunci aria figurii ar trebui sa fie aceeasi)
+%deci generam 1000 de y-ci
+
+simulariF=unifrnd(0,1,1,1000);
+simulariFX=(simulariF+1).^(-2);
+
+printf('MEDIE INTEGRALA: %d\n',mean(simulariFX)); %asta e media lui f(x), inmultim cu 1 (cat e x)
+%latura de jos ar fi 1-0 de la integrala
+
+#b------------------------------------------------------------------------------
+%deci prob ca un punct simulat sa aiba y>F(x-ul lui)
+
+%aflam aria (val integralei de la 0 la 0.5) -> prob e 1-(ARIA INTEGRALEI/arie dreptumghi=A/0.5)
+
+%Calcul de integrale
+f=inline("(x+1).^(-2)");
+arie_integrala=quadgk(f,0,0.5);
+printf('PROBABILIATTE PUNCT PESTE GRAFIC: %d\n',1-(arie_integrala/0.5));
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+ul {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+li {
+    margin-left: 120px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.alice {
+    width: 30%;
+    position: relative;
+    background: lightblue;
+    border-radius: .8em;
+}
+
+.bob {
+    width: 30%;
+    position: relative;
+    background: lightgreen;
+    border-radius: .8em;
+}
+
+.alice:before {
+    background-image: url('kids.png');
+    background-position: -14px 0px;
+    background-size: 80px 100px;
+    display: inline-block;
+    width: 70px;
+    height: 50px;
+    content: '';
+    margin-left: -100px;
+    margin-right: 20px;
+}
+
+.bob:before {
+    background-image: url('kids.png');
+    background-position: -20px 45px;
+    background-size: 80px 100px;
+    display: inline-block;
+    width: 270px;
+    height: 50px;
+    content: '';
+    margin-left: -100px;
+    margin-right: 20px;
+}
+
+.bob:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border: 9px solid transparent;
+    border-right-color: lightgreen;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}
+
+.alice:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    border: 9px solid transparent;
+    border-right-color: lightblue;
+    border-left: 0;
+    border-top: 0;
+    margin-top: -4.5px;
+    margin-left: -9px;
+}

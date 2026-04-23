@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\error2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|solutionrelative:lab2\\error2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\error1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|solutionrelative:lab2\\error1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\cerc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|solutionrelative:lab2\\cerc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\cmmdc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|solutionrelative:lab2\\cmmdc.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\sum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{02BD72D4-3C83-49A1-BC25-0B6AD40448AB}|lab2\\lab2.vcxproj|solutionrelative:lab2\\sum.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cerc.cpp",
+              "DocumentMoniker": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\cerc.cpp",
+              "RelativeDocumentMoniker": "lab2\\cerc.cpp",
+              "ToolTip": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\cerc.cpp",
+              "RelativeToolTip": "lab2\\cerc.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-10T16:18:07.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "error1.cpp",
+              "DocumentMoniker": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\error1.cpp",
+              "RelativeDocumentMoniker": "lab2\\error1.cpp",
+              "ToolTip": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\error1.cpp",
+              "RelativeToolTip": "lab2\\error1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-10T16:03:55.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "error2.cpp",
+              "DocumentMoniker": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\error2.cpp",
+              "RelativeDocumentMoniker": "lab2\\error2.cpp",
+              "ToolTip": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\error2.cpp",
+              "RelativeToolTip": "lab2\\error2.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-10T15:57:55.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "sum.cpp",
+              "DocumentMoniker": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\sum.cpp",
+              "RelativeDocumentMoniker": "lab2\\sum.cpp",
+              "ToolTip": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\sum.cpp",
+              "RelativeToolTip": "lab2\\sum.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-10T12:45:04.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "cmmdc.cpp",
+              "DocumentMoniker": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\cmmdc.cpp",
+              "RelativeDocumentMoniker": "lab2\\cmmdc.cpp",
+              "ToolTip": "C:\\Users\\razva\\Desktop\\LFTC\\Tema Lab2\\programe\\lab2\\lab2\\cmmdc.cpp",
+              "RelativeToolTip": "lab2\\cmmdc.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-10T12:44:59.851Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

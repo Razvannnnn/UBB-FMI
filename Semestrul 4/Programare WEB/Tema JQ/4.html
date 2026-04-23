@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Sortabil jQuery</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+        th:hover {
+            background-color: #ddd;
+        }
+        td {
+            font-size: 16px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>Tabel Sortabil</h2>
+
+    <table id="tabel1">
+        <thead>
+            <tr>
+                <th>Fructe</th>
+                <th>Pret</th>
+                <th>Cantitate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Mere</td><td>3</td><td>8</td></tr>
+            <tr><td>Pere</td><td>4</td><td>6</td></tr>
+            <tr><td>Banane</td><td>2</td><td>5</td></tr>
+        </tbody>
+    </table>
+
+    <table id="tabel2">
+    <tbody>
+        <tr>
+            <th>Carne</th>
+            <td>Pui</td>
+            <td>Vita</td>
+            <td>Porc</td>
+        </tr>
+        <tr>
+            <th>Pret</th>
+            <td>10</td>
+            <td>20</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <th>Cantitate</th>
+            <td>15</td>
+            <td>8</td>
+            <td>12</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+    <script>
+        function sortTable($table, colIndex, isNumeric) {
+            var $rows = $table.find('tbody tr').get();
+
+            $rows.sort(function (a, b) {
+                var valA = $(a).children('td').eq(colIndex).text();
+                var valB = $(b).children('td').eq(colIndex).text();
+
+                if (isNumeric) {
+                    return parseFloat(valA) - parseFloat(valB);
+                } else {
+                    return valA.localeCompare(valB);
+                }
+            });
+
+            $.each($rows, function (index, row) {
+                $table.children('tbody').append(row);
+            });
+        }
+
+        function sortVerticalTable($table, rowIndex) {
+            var $rows = $table.find('tbody tr');
+            var $row = $rows.eq(rowIndex);
+            var $cells = $row.children('td');
+            var asc = $row.data('asc');
+            asc = asc === undefined ? true : !asc;
+            $row.data('asc', asc);
+
+            var cellData = $cells.map(function(i, td) {
+                return { 
+                    value: $(td).text(), 
+                    $cell: $(td).detach()
+                };
+            }).get();
+
+            // numar
+            var isNumeric = cellData.every(function(item) {
+                return !isNaN(parseFloat(item.value));
+            });
+
+            cellData.sort(function(a, b) {
+                if (isNumeric) {
+                    return asc ? (parseFloat(a.value) - parseFloat(b.value)) : (parseFloat(b.value) - parseFloat(a.value));
+                } else {
+                    return asc ? a.value.localeCompare(b.value) : b.value.localeCompare(a.value);
+                }
+            });
+
+            $row.find('td').remove();
+            $.each(cellData, function(i, item) {
+                $row.append(item.$cell);
+            });
+        }
+
+        function makeTableSortable(tableId) {
+            var $table = $('#' + tableId);
+            $table.find('th').each(function (index) {
+                $(this).on('click', function () {
+                    var isNumeric = index !== 0;
+                    if (tableId === 'tabel1') {
+                        sortTable($table, index, isNumeric);
+                    } else
+
+                    if (tableId === 'tabel2') {
+                        sortVerticalTable($table, index);
+                    }
+                });
+            });
+        }
+
+        $(document).ready(function () {
+            makeTableSortable('tabel1');
+            makeTableSortable('tabel2');
+        });
+    </script>
+</body>
+</html>

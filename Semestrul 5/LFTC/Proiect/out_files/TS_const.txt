@@ -1,0 +1,8 @@
+1	"Aria: "	STRING
+2	"Perimetrul: "	STRING
+3	"Raza invalida!!"	STRING
+4	"Raza: "	STRING
+5	"\n"	STRING
+6	0	INT
+7	2	INT
+8	3.14	REAL

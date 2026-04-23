@@ -1,0 +1,19 @@
+N=1000;
+  T = 0;
+  P = 0;
+  for i=1:N
+    t1 = exprnd(4);
+    t2 = unifrnd(1,3);
+    timp = 0;
+    if t1 > 4
+      timp = 4 + t2;
+    else
+      timp = t1;
+      P++;
+    endif
+    T += timp;
+  endfor
+
+  fprintf("Probabilitatea teoretica pentru ca email-ul sa fie procesat in cel mult 3 secunde: %d\n", expcdf(3, 4));
+  fprintf("Val medie a timpului (in secunde) de procesare a emailului: %d\n", T/N);
+  fprintf("Probabilitatea ca email-ul sa fie procesat in cel mult 4 secunde: %d\n", P/N);

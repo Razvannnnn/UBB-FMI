@@ -1,0 +1,20 @@
+plugins{
+    id 'java'
+}
+
+group 'JavaChatSockets'
+version '1.0'
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project (':ChatModel')
+    implementation project (':ChatServices')
+    implementation project (':ChatPersistence')
+    implementation project (':ChatNetworking')
+    testImplementation group: 'junit', name: 'junit', version: '4.11'
+}

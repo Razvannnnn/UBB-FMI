@@ -1,0 +1,40 @@
+elimina([], _, []) :- !.
+elimina([H|T], E, [H|R]) :- H \= E,
+                            !,
+                            elimina(T, E, R).
+elimina([_|T], E, R) :- elimina(T, E, R).
+
+
+
+% creareMultime(L: list, R: list)
+% model flux: (i, o)
+creareMultime([], []) :- !.
+creareMultime([H|T], [H|R]) :- elimina(T, H, R1),
+                               creareMultime(R1, R).
+
+
+% 5. A
+stergeaparitie([],_,[]).
+stergeaparitie([H|T],X,[H|R]):-
+    X \= H,
+    stergeaparitie(T,X,R).
+stergeaparitie([H|T],X,R):-
+    X = H,
+    stergeaparitie(T,X,R).
+
+% 5.B
+cnt([],_,0).
+cnt([H|T],X,R):-
+    X = H,
+    cnt(T, X, R1),
+    R is R1 + 1.
+cnt([H|T],X,R):-
+    X \= H,
+    cnt(T,X,R).
+
+creare([],[]).
+creare([H|T],R):-
+    cnt([H|T],H,A),
+    L = [H,A],
+    stergeaparitie(T,H,R1),
+    creare(R1,R).

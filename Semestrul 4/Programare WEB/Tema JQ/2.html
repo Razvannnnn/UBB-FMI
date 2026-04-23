@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular jQuery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .error {
+            border: 2px solid red;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>Formular</h2>
+
+    <form id="userForm">
+        <label for="nume">Nume:</label><br>
+        <input type="text" id="nume" name="nume"><br><br>
+
+        <label for="data_nasterii">Data Nasterii:</label><br>
+        <input type="date" id="data_nasterii" name="data_nasterii"><br><br>
+
+        <label for="varsta">Varsta:</label><br>
+        <input type="number" id="varsta" name="varsta" min="1"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <button type="button" id="submitBtn">Trimite</button>
+    </form>
+
+    <div id="message" class="message"></div>
+
+    <script>
+        $(document).ready(function () {
+            $('#submitBtn').click(function () {
+                let $nume = $('#nume');
+                let $data = $('#data_nasterii');
+                let $varsta = $('#varsta');
+                let $email = $('#email');
+                let $message = $('#message');
+
+                $('input').removeClass('error');
+                $message.html('');
+
+                let erori = [];
+
+                if ($.trim($nume.val()) === "") {
+                    erori.push("Numele nu este completat.");
+                    $nume.addClass("error");
+                }
+
+                if ($.trim($data.val()) === "") {
+                    erori.push("Data nasterii nu este completata.");
+                    $data.addClass("error");
+                }
+
+                let varstaVal = parseInt($varsta.val(), 10);
+                if (isNaN(varstaVal) || varstaVal < 1) {
+                    erori.push("Varsta nu este completata corect.");
+                    $varsta.addClass("error");
+                }
+
+                let emailVal = $email.val().trim();
+                let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                if (emailVal === "") {
+                    erori.push("Email-ul nu este completat.");
+                    $email.addClass("error");
+                } else if (!emailRegex.test(emailVal)) {
+                    erori.push("Email-ul nu este valid.");
+                    $email.addClass("error");
+                }
+
+                if (erori.length > 0) {
+                    $message.html("Erori:<br>" + erori.join("<br>"));
+                } else {
+                    $message.html("Datele sunt completate corect!");
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{09A3D6B9-04BC-43DB-87AB-4EB710485607}|rezolvare_alocare_dinamica_cpp.vcxproj|D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{09A3D6B9-04BC-43DB-87AB-4EB710485607}|rezolvare_alocare_dinamica_cpp.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09A3D6B9-04BC-43DB-87AB-4EB710485607}|rezolvare_alocare_dinamica_cpp.vcxproj|D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\paralel_coloane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{09A3D6B9-04BC-43DB-87AB-4EB710485607}|rezolvare_alocare_dinamica_cpp.vcxproj|solutionrelative:paralel_coloane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09A3D6B9-04BC-43DB-87AB-4EB710485607}|rezolvare_alocare_dinamica_cpp.vcxproj|D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\paralel_linii.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{09A3D6B9-04BC-43DB-87AB-4EB710485607}|rezolvare_alocare_dinamica_cpp.vcxproj|solutionrelative:paralel_linii.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09A3D6B9-04BC-43DB-87AB-4EB710485607}|rezolvare_alocare_dinamica_cpp.vcxproj|D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\secvential.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{09A3D6B9-04BC-43DB-87AB-4EB710485607}|rezolvare_alocare_dinamica_cpp.vcxproj|solutionrelative:secvential.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "secvential.cpp",
+              "DocumentMoniker": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\secvential.cpp",
+              "RelativeDocumentMoniker": "secvential.cpp",
+              "ToolTip": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\secvential.cpp",
+              "RelativeToolTip": "secvential.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T07:10:15.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "paralel_linii.cpp",
+              "DocumentMoniker": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\paralel_linii.cpp",
+              "RelativeDocumentMoniker": "paralel_linii.cpp",
+              "ToolTip": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\paralel_linii.cpp",
+              "RelativeToolTip": "paralel_linii.cpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvzUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T07:10:06.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "paralel_coloane.cpp",
+              "DocumentMoniker": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\paralel_coloane.cpp",
+              "RelativeDocumentMoniker": "paralel_coloane.cpp",
+              "ToolTip": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\paralel_coloane.cpp",
+              "RelativeToolTip": "paralel_coloane.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T07:09:53.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_dinamica_cpp\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAK4AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-21T07:09:44.033Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

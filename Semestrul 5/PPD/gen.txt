@@ -1,0 +1,36 @@
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
+
+//  Generati un fisier words.txt cu 10.000 de cuvinte aleatorii
+void generateFile() {
+    std::ofstream fout("words.txt");
+    srand(time(0));
+    int N = 10000;
+    
+    // Caractere posibile pentru cuvinte
+    const char charset[] = "abcdefghijklmnopqrstuvwxyz";
+
+    for(int i = 0; i < N; ++i) {
+        //  lungimi intre 3 si 15 caractere
+        int length = 3 + rand() % 13; 
+        std::string word = "";
+        for(int j = 0; j < length; ++j) {
+            word += charset[rand() % (sizeof(charset) - 1)];
+        }
+        fout << word << "\n";
+    }
+    fout.close();
+    std::cout << "Fisierul words.txt a fost generat cu 10.000 de cuvinte.\n";
+}
+
+int main() {
+    generateFile();
+    return 0;
+}
+
+
+// g++ generator.cpp -o generator
+./generator

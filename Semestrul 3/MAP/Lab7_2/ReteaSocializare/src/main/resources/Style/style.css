@@ -1,0 +1,193 @@
+.left-pane {
+    -fx-background-color: linear-gradient(to bottom, #373B44, #4286f4);
+    -fx-alignment: center;
+    -fx-padding: 20px;
+}
+
+.right-pane {
+    -fx-background-color: #F7F9FC;
+    -fx-padding: 30px;
+    -fx-spacing: 15px;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.app-name {
+    -fx-fill: white;
+    -fx-font-family: "Roboto", sans-serif; 
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75), 5, 0.5, 0, 2);
+}
+
+.tagline {
+    -fx-fill: white;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-size: 14px;
+    -fx-opacity: 0.9;
+}
+
+.welcome-text {
+    -fx-fill: #4A4A4A;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-weight: bold;
+}
+
+.register-button-text {
+    -fx-text-fill: #2980B9;
+    -fx-font-size: 16px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-opacity: 0.8;
+    -fx-padding: 5px 10px;
+}
+
+.register-button-text:hover {
+    -fx-text-fill: #1A3D6A;
+    -fx-opacity: 1;
+    -fx-underline: true;
+}
+
+
+.login-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-padding: 10 20;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 0);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.register-button {
+    -fx-text-fill: white;
+    -fx-background-color: #2980B9; /* More serious blue */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 0);
+
+}
+
+.register-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.6, 0, 2);
+    -fx-background-color: #216c9c;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+.login-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.6, 0, 2);
+    -fx-background-color: #388a3b;
+    -fx-text-fill: #FFFFFF;
+}
+
+
+
+.menu-button {
+    -fx-text-fill: white;
+    -fx-background-color: #2980B9;
+    -fx-font-size: 14px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 0);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.menu-button:hover {
+    -fx-background-color: derive(#2980B9, -20%);
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.6, 0, 2);
+}
+
+.log-out-button {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: transparent;
+    -fx-font-size: 14px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-weight: bold;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-fill: white;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.log-out-button:hover {
+    -fx-text-fill: #e60808;
+    -fx-underline: true;
+}
+
+.page-title {
+    -fx-fill: white;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.page-label {
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-size: 14px;
+    -fx-fill: #4A4A4A;
+}
+
+.nav-button {
+    -fx-background-color: #2980B9;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-padding: 3px 8px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 0);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    -fx-background-color: derive(#2980B9, -20%);
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.6, 0, 2);
+}
+
+.list-view {
+    -fx-background-color: #F7F9FC;
+    -fx-border-color: #CCCCCC;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.send-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-padding: 4 8;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0.5, 0, 0);
+    -fx-transition: all 0.3s ease-in-out;
+}
+.send-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.6, 0, 2);
+    -fx-background-color: #388a3b;
+    -fx-text-fill: #FFFFFF;
+}
+
+.close-button {
+    -fx-text-fill: #ffffff;
+    -fx-background-color: transparent;
+    -fx-font-size: 12px;
+    -fx-font-family: "Roboto", sans-serif;
+    -fx-font-weight: bold;
+    -fx-padding: 4px 8px;
+    -fx-cursor: hand;
+    -fx-fill: white;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.close-button:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.6, 0, 2);
+    -fx-text-fill: #FFFFFF;
+}

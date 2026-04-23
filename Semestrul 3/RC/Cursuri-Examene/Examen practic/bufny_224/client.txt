@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+
+#include <time.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+int main()
+{
+        struct sockaddr_in client_addr;
+
+        //fac socket
+        int c=socket(AF_INET,SOCK_STREAM,0);
+        if(c<0)
+        {
+                perror("EROARE LA CREAREA SOCKETULUI CLIENT!\n");
+        }
+
+        //fac connect
+        client_addr.sin_family=AF_INET;
+        client_addr.sin_port=htons(3083);
+        client_addr.sin_addr.s_addr=inet_addr("127.0.0.1");
+
+        if(connect(c,(struct sockaddr*)&client_addr,sizeof(client_addr))<0)
+        {
+                perror("EROARE LA CONNECT!\n");
+                return 1;
+        }
+
+        //treaba clientului
+
+        //citesc nr si generez port
+        int nr;
+        printf("DATI NUMARUL: ");
+        scanf("%d",&nr);
+	  srand(time(0));
+        uint16_t port= 1000+rand()%1000;
+        printf("PORTUL GENERAT: %hu     NUMARUL CITIT: %d\n",port,nr);
+
+        port=htons(port);
+        nr=htonl(nr);
+        send(c,&nr,sizeof(int),0);
+        send(c,&port,sizeof(uint16_t),0);
+
+        //sa apuce serverul sa faca bind pe port-ul ce l-am trimis
+        sleep(2);
+
+        //MA CONECTEZ IAR LA SERVER, PE PORTUL NOU
+        struct sockaddr_in nou_client_addr;
+
+        //fac socket
+        int nou_c=socket(AF_INET,SOCK_STREAM,0);
+        if(nou_c<0)
+        {
+                perror("EROARE LA CREAREA SOCKETULUI CLIENT!\n");
+        }
+
+        //fac connect
+        nou_client_addr.sin_family=AF_INET;
+        nou_client_addr.sin_port=htons(ntohs(port));
+        nou_client_addr.sin_addr.s_addr=inet_addr("127.0.0.1");
+
+        if(connect(nou_c,(struct sockaddr*)&nou_client_addr,sizeof(nou_client_addr))<0)
+        {
+                perror("EROARE LA CONNECT!\n");
+                return 1;
+        }
+
+
+        //primesc min si ip DE LA ASTA NOUA CONEXIUNE
+        int lung,min;
+        recv(nou_c,&min,sizeof(int),MSG_WAITALL);
+        recv(nou_c,&lung,sizeof(int),MSG_WAITALL);
+        min=ntohl(min);
+        lung=ntohl(lung);
+        char ip[lung];
+        recv(nou_c,ip,lung*sizeof(char),MSG_WAITALL);
+        printf("IP: %s          MIN: %d\n",ip,min);
+
+        close(c);
+        close(nou_c);
+        return 0;
+}

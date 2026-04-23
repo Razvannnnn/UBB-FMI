@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iss.parkingapp.MainController">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Meniu Principal">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tabelRezervarileMele" layoutX="14.0" layoutY="54.0" prefHeight="302.0" prefWidth="368.0">
+                          <columns>
+                            <TableColumn fx:id="columnLocParcare" prefWidth="45.33331298828125" text="Loc" />
+                            <TableColumn fx:id="columnMasina" prefWidth="90.0" text="Masina" />
+                              <TableColumn fx:id="columnRezervare" prefWidth="116.0" text="Inceput Rezervare" />
+                              <TableColumn fx:id="columnSfarsitRezervare" prefWidth="115.0" text="Sfarsit Rezervare" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="105.0" layoutY="14.0" prefHeight="33.0" prefWidth="186.0" text="Rezervarile Mele Active">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="comboBoxMasina" layoutX="413.0" layoutY="101.0" prefWidth="150.0" promptText="Alege Masina" />
+                        <ComboBox fx:id="comboBoxLocParcare" layoutX="413.0" layoutY="67.0" prefWidth="150.0" promptText="Alege Loc Parcare" />
+                        <DatePicker fx:id="datePicker" layoutX="413.0" layoutY="233.0" prefHeight="25.0" prefWidth="150.0" promptText="Data Rezervarii" />
+                        <ComboBox fx:id="comboBoxDurata" layoutX="413.0" layoutY="135.0" prefWidth="150.0" promptText="Durata Rezervare" />
+                        <CheckBox fx:id="checkBoxAcum" layoutX="413.0" layoutY="180.0" mnemonicParsing="false" onAction="#handleCheckBoxAcum" text="Rezerva Acum" />
+                        <CheckBox fx:id="checkBoxRezervare" layoutX="413.0" layoutY="206.0" mnemonicParsing="false" onAction="#handleCheckBoxRezervare" text="Programeaza Rezervare" />
+                        <Button fx:id="buttonRezervare" layoutX="427.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleRezervare" text="Rezerva Loc Parcare" />
+                        <Label layoutX="430.0" layoutY="21.0" text="Creeaza rezervare">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="comboBoxOra" layoutX="413.0" layoutY="265.0" prefWidth="150.0" promptText="Ora Rezervarii" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Profilul Meu">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label fx:id="labelProfil" layoutX="159.0" layoutY="14.0" prefHeight="25.0" prefWidth="285.0" text="Label" textAlignment="CENTER" textOverrun="CLIP">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableViewMasini" layoutX="17.0" layoutY="69.0" prefHeight="279.0" prefWidth="317.0">
+                          <columns>
+                            <TableColumn fx:id="columnNrInmatr" prefWidth="113.33331298828125" text="Nr Inmatriculare" />
+                            <TableColumn fx:id="columnMarca" prefWidth="97.66668701171875" text="Marca" />
+                              <TableColumn fx:id="columnModel" prefWidth="104.33329772949219" text="Model" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="125.0" layoutY="39.0" text="Masinile Mele">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="buttonAdaugaMasina" layoutX="402.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleAdaugaMasina" text="Adauga noua masina" />
+                        <Button fx:id="buttonIstoric" layoutX="418.0" layoutY="322.0" mnemonicParsing="false" onAction="#handleIstoric" text="Istoric rezervari" />
+                        <Button layoutX="421.0" layoutY="288.0" mnemonicParsing="false" onAction="#handleEditProfil" text="Editeaza profil" />
+                        <TextField fx:id="textFieldNr" layoutX="391.0" layoutY="69.0" promptText="Numar Inmatriculare" />
+                        <TextField fx:id="textFieldMarca" layoutX="392.0" layoutY="103.0" promptText="Marca" />
+                        <TextField fx:id="textFieldModel" layoutX="392.0" layoutY="139.0" promptText="Model" />
+                        <Button fx:id="buttonSterge" layoutX="420.0" layoutY="240.0" mnemonicParsing="false" onAction="#handleStergeMasina" text="Sterge Masina" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

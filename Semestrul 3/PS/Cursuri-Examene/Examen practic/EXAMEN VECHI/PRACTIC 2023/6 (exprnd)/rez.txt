@@ -1,0 +1,20 @@
+#a------------------------------------------------------------------------------
+%1/1 1 linie 1000 coloane
+simulariX=exprnd(1,1,1000);
+
+probabilitate_05_15=empirical_cdf(1.5,simulariX)-empirical_cdf(0.5,simulariX);
+printf('PROB ESTIMATA X APARTINE 0.5 - 1.5: %d\n',probabilitate_05_15);
+
+#b------------------------------------------------------------------------------
+
+probabilitate_05_15_teoretic=expcdf(1.5,1)-expcdf(0.5,1);
+printf('PROB TEORETICA X APARTINE 0.5 - 1.5: %d\n',probabilitate_05_15_teoretic);
+
+#c------------------------------------------------------------------------------
+%histograma (daca nu zice relativa) e doar hist(simulariX,nrBare)
+hist(simulariX,20);
+
+%functia de densitate
+valoriileLuiX=linspace(1,100);
+valoriileLuiY=exppdf(valoriileLuiX,1); %1 ca ala ni se da
+plot(valoriileLuiX,valoriileLuiY);

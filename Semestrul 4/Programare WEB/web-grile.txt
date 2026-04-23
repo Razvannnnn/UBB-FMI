@@ -1,0 +1,398 @@
+• Un apel AJAX se poate face catre o resursa statica oferita de end-point-ul de pe server?
+	-Da, intotdeauna
+
+• Un formular care contine un input de tip file trebuie:
+	-submis prin metoda POST
+	-sa aiba specificat atributul enctype setat la multipart/form-data
+
+• Ce indică un cod de raspuns de forma 3xx trimis prin intermediul protocolului HTTP de un server web?
+	-mutarea documentului cerut la o alta adresă
+	-redirectează clientul spre alt URL
+
+• Un fisier PHP poate fi executat:
+	-In linia de comanda folosind interpretorul php.exe pe Windows sau php pe Linux
+	-De catre un modul din cadrul serverului web
+
+• Ce face urmatoarea secventa de cod:
+$(:not(p)').addClass('patrat).addClass('colorat')
+	-selecteaza toate elementele cu exceptia paragrafelor si le adauga clasele patrat si colorat
+
+• Pentru a redirectione automat browser-ul spre un nou URL serverul poate:
+	-raspunde clientului cu un cod de raspuns de forma 3xx impreuna cu un header Location
+	-redirectioneaza clientul folosind o secventa de cod in JavaScript de forma window location="http://url-nou"
+
+• Pentru inserarea de diacritice intr-un document HTML se pot folosi:
+	-Editoare capabile sa salveze fisierul UTF-8 si specificarea acestui set de caractere in sectiunea head a documentului HTML
+	-Entitati HTML
+
+• Ce se intelege prin scop global in JavaScript?
+	-obiectul window
+
+• Care este forma corecta de folosire a tag-ului img in cadrul unui document XHTML:
+	-<img src="poza.jpg"/>
+
+• Injectiile JavaScript se datoreaza:
+	-Validarii insuficiente chiar la nivelului codului JavaScript
+	-Validarii insuficiente server-side la nivelul scriptului ce prelucreaza datele din formular
+
+• Cum se declara corect un array in JavaScript?
+	-var studenți = ["Mihai", "Cristina", "Paula", "Dan"]
+
+• Care dintre urmatoarele afirmatii despre metoda HTTP POST sunt adevarate:
+	-este recomandat a fi folosita pentru a submite un formular care contine un input de tip password
+	-trebuie neaparat folosita pentru a submite un formular care contine un input de tip file
+
+• Pozitionarea relative este folosita pentru:
+	-a pozitiona/muta un element in diferite directii relativ la pozitia sa normala
+	-un container parinte care are elemente fiu pozitionate absolut
+
+• In ce conditi metoda send pe un obiect AJAX se apeleaza intotdeauna cu parametrul sirul vid?
+	-Daca requestul AJAX se face prin GET
+
+• Care dintre urmatoarele metode jQuery folosesc AJAX:
+	-$ajax, $get, load
+
+• In PHP return este folosit pentru:
+	-a termina scriptul curent care se executa si a reda controlul executiei unui eventual script care l-a inclus pe scriptul curent cu include sau require
+	-a termina execuția unei funcții
+
+• #RRAABB este un cod de culoare valid?
+	-Nu, deoarece valorile nu sunt specificate in baza 16
+
+• Ce face functia session_start() in PHP?
+	-Daca este vorba de o sesiune noua, genereaza un cookie aleator de desiune pe care il trimite folosind antetul HTTP clientului
+	-Daca este vorba de o sesiune veche, determina despre ce sesiune este vorba pe baza valorii cookie-ului de sesiune prin intermediul antetului HTTP Cookie si populeaza tabloul $_SESSION in mod corespunzator
+
+• Unde se poate insera cod JavaScript în cadrul unui document HTML?
+	-atat în secțiunea <head> cat si <body>
+
+• Care dintre urmatoarele sunt adevarate despre un server web:
+	-implicit un server web asteapta cereri prin protocolul HTTP pe portul 80 si cereri prin protocolul HTTPS pe portul 443
+
+• In jQuery $(this) se foloseste pentru:
+	-a construi un wrapper jQuery în jurul obiectului pe care se apelează un eveniment în interiorul funcției de tratare a evenimentului
+
+• Elementul <th> trebuie folosit in cadrul unui tabel pentru:
+	-definirea unei celule având semnificația de celulă ce face parte din header-ul tabelului
+
+• Care dintre informatiile de mai jos despre atributele readonly si disabled sunt adevarate?
+	-valoarea unui input readonly se trimite serverului la submit, pe cand cea a unui input disabled nu se trimite serverului
+
+• Aranjati in ordine, de la cea mai simpla si putin customizabila, la cea mai configurabila si parametrizabila urmatoarele functii care permitrealizarea unui apel AJAX din jQuery
+	-load, $.get=$.post, $.ajax
+
+• Care dintre urmatoarele metode HTTP nu presupun trimiterea de continut dupa antete in cadrul unui cereri HTTP:
+	-GET
+	-HEAD
+
+• raspuns:
+	-head
+
+• Care dintre urmatoarele tag-uri HTML sunt deprecated in HTML5:
+	-font
+	-center
+
+• Cum se inserează corect un fisier extern JavaScript denumit test.js într-un document HTML?
+	-<script src="test.js"></script>
+
+• Care dintre urmatoarele categorii de aplicatii se pot folosi de DOCTYPE pentru a "intelege" mai bine documentul HTML:
+	-Editoare si medii IDE (Integrated Development Environment)
+	-Browsere
+
+• Fie doua variabile $a si $b in PHP ce contin siruri de caractere. Aceste doua siruri in PHP se pot concatena folosind:
+	-$s = "$a$b";
+	-$s = $a . $b;
+
+• Pentru a verifica succesul unui apel AJAX trebuie ca:
+	-readyState sa fie 4 si request.status 200
+
+• Care dintre urmatoarele elemente au toate display ul implicit block?
+	-div, p, ul, ol, h1
+
+• Care dintre urmatoarele declaratii este corecta pentru definirea tabloului $fructe in PHP?
+	-$fructe = array("struguri", "mere", "pere");
+
+• Care dintre urmatoarele antete sunt obligatorii pentru o cerere HTTP in cazul folosirii protocolului HTTP/1.1:
+	-Host
+
+• Pentru a defini o listă ordonata a căror itemi sunt precedati de litere din alfabetul grec în CSS se foloseşte:
+	-list-style: lower-Greek
+	-list-style-type: lower-Greek
+
+• Care dintre urmatoarele afirmatii referitoare la filtrele de vizibilitate sunt adevarate?
+	-Selectorul :visible se foloseste pentru a selecta toate elementele care ocupa spatiu in pagina
+	-Selectorul :hidden se foloseste pentru a selecta toate elementele ascunse in pagina
+
+• In JavaScript typeof 1/0 este NaN pentru ca:
+	-type of 1 este Number si Number nu se poate imparti la 0, rezultatul fiind NaN
+
+• Unde se poate folosi functia header in PHP?
+	-in primul scriptlet din fisierul PHP si doar cu conditia ca scriptul PHP sa nu fi trimis anterior spre browser orice forma de continut (cu exceptia unor eventuale antete)
+
+• Ce face urmatoarea secventa de cod:
+$('li:first').addClass('patrat').addClass('deplasat').addClass('colorat');
+	-selectează primul li și îi adaugă clasele patrat, deplasat, colorat
+
+• Care dintre urmatoarele elemente au toate display ul implicit inline?
+	-img, span, b, i, a
+
+• Care dintre urmatoarele afirmatii sunt adevarate:
+	-o definitie de stil aplicata clasei "bate" ca prioritate definitia de stil aplicata pe "tag" 
+
+• Dandu-se doua containere, unul parinte si unul fiu, care dintre urmatoarele pozitionarii are/au sens:
+	-pozitionarea unui fiu "absolute" in cadrul unui parinte cu pozitionare "relative"
+	-pozitionarea unui fiu "flex" intr-un parinte "relative"
+
+• Care dintre urmatoarele informatii despre tagul <title> sunt adevarate?
+	-este folosit în mare măsură de către motoarele de căutare
+	-este afișat în bara de titlu sau de bookmarks (favorite)
+
+• Care dintre urmatoarele informatii despre un URL accesat prin POST sunt adevarate:
+	-Reaccesarea URL-ului respectiv prin reload (refresh) la pagina presupune o confirmare din partea utilizatorului
+
+• De pe client se doreste salvarea unor date despre o persoana (numele si varsta acesteia) folosind un apel AJAX realizat prin metoda HTTP GET. Care dintre urmatoarele apeluri realizeaza acest lucru:
+	-$.get("save.php", { nume: 'Ion', varsta: 10 })
+	-$.get("save.php?nume=lon&varsta=10")
+
+• Un URL de pe back-end poate fi invocat atat prin GET cat si prin POST:
+	-Da
+
+• Cum se declara un array vid in PHP:
+	-$emptyArray = []
+	-$emptyArray = array()
+
+• Care sunt asemanarile si diferentele dintre atributele id si name?
+	-doua elemente HTML pot avea acelasi nume, dar nu pot avea acelasi id 
+	-orice tag accepta atibutul id, nu toate tagurile accepta atributul name 
+	-atributul id se foloseste pentru referirea unui element din CSS/JavaScript
+
+• Care dintre următoarele reprezintă măsuri pentru evitarea injecţiilor SQL:
+	-Verificări riguroase la nivelul backend-ului legate de validitatea datelor introduse precum si folosirea de biblioteci specializate pentru persitarea datelor (ORM-uri)
+	-Folosirea la nivelul backend-ului de mecansime de tipul "prepared statement"
+
+• Ce face urmatoarea secventa de cod
+var content=$('li').html();
+$('li').append('<em>'+ content + '</em>');
+	-???conținutul din toate <li>-urile va fi scris cu italic
+	-introduce conținutul primului <li> după fiecare list item
+
+• Considerand urmatoarele elemente html:
+<div class="info">John Doe</div>
+<div class="info number" id="age">25</div>
+Ce selector CSS ar selecta doar cel de-al doilea div (cel cu continutul "25")?
+	-.info.number
+	-.info #age
+
+• Cum se ascund toate div-urile din pagina folosind jQuery?
+	-$("div").css("visibility", "hidden")
+	-$("div").hide()
+
+• Care dintre urmatoarele afirmatii sunt adevarate:
+	-MySQL Old Extension (mysql_*) nu suporta "prepared statement"-uri, dar permite evitarea injectiilor SQL
+
+• Pe ce nivel al stivei TCP/IP se situeaza protocolul HTTP?
+	-Aplicatie
+
+• Un apel AJAX este in starea 2 daca
+	-s-a fauct send dar inca nu a sosit raspunsul de la server
+
+• Pentru evitarea injectiilor SQL in PHP 7 se recomanda:
+	-Folosirea de "prepared statement"-uri
+
+• Unde se poate defini un stil CSS pentru o anumita clasa?
+	-in interiorul tag-ului <style>, localizat in antentul paginii html
+	-intr-un fisier extern specificat cu ajutorul tag-ului <link>
+
+• Care dintre urmatoarele functii PHP este folosita pentru a preveni vulnerabilitatile de tip Cross-Site Scripting (XSS)?
+	-htmlentities
+
+• Cum se poate "fura" un cookie de sesiune al unui alt utilizator?
+	-Prin intermediul unui cod JavaScript injectat de catre atacator
+	-Prin interceptarea datelor la nivelul reţelei de transport in lipsa folosirii unei conexiuni sigure
+
+• Care dintre urmatoarele vulnerabilitati ar putea fi exploatata pentru a fura sesiunea unui utilizator autentificat?
+	-Cross-Site scripting (XSS)
+
+• Raspunsul sosit printr-un apel AJAX poate fi:
+	-un fisier text
+	-un fisier JSON
+	-un fisier XML
+	-un fisier JavaScript
+
+• cum se introduc comentarii intr un scriptlet php:
+	-// 
+	-<!-- --> 
+	-#
+
+• Functia specificata ca si valoare pentru proprietatea onreadystatechange se apeleaza: 
+	-Atunci cand obiectul AJAX isi schimba starea 
+
+• Conectarea la o baza de date intr-o aplicatie web Java se recomanda a fi facuta: 
+	-La initializarea aplicatiei web / a contextului (via a connection pool)
+
+• Care dintre urmatoarele expresii jQuery se pot folosi interschimbabil?
+	-$(function( 0) cu $(document).ready(function() {}) 
+
+• Care dintre următoarele reprezintă măsuri pentru evitarea vulnerabilitatilor de tip XSS: 
+	-Inlocuirea anumitor caractere din datele primite de la client cu entitatile HTML corespunzatoare 
+
+• O baza de date embedded in cadrul unei aplicatii web Java se recomanda a fi memorata:
+	-In folderul WEB-INF al aplicatiei web intrucat acesta nu este accesibil de catre un client web
+	-Oriunde alt undeva in cadrul sistemului de fisiere dar nu in cadrul directorului aplicatiei web intrucat de acolo baza de date ar putea fi accesata de catre clientii web
+
+• In cate instante se instantiaza un servlet? 
+	- Intr-o singura instanta
+
+• O sesiune intr-o aplicatie web Java se termina cu:
+	-session.invalidate()
+
+• Care dintre urmatoarele reprezinta specificitati ale unor metode din API-ul jQuery? 
+	-ca intorc referinta la obiectul pe care au fost apelate 
+	-ca pot fi folosite atat ca functii Setter cat si ca functii Getter 
+
+• Un client face o cerere iar serverul ii raspunde cu "404 Not found". Care dintre urmatoarele afirmatii sunt adevarate: 
+	-Chiar daca nu a gasit fisierul cerut de client, serverul i poate da totusi acestuia un anumit continut HTML 
+
+• Care dintre urmatoarele sunt prefixe acceptate pe unele browsere pentru proprietatile CSS experimentale?
+	-webkit-
+	-o-
+	-moz-
+
+• Care dintre urmatoarele sunt scriptlet-uri valide in PHP?
+	-<?php ?>
+
+• Care dintre următoarele cuvinte/caractere nu sunt rezervate în JavaScript și se pot folosi ca și nume de variabile?
+	-$, a, b,
+
+• Pentru a centra un element cu display-ul block in cadrul unui alt container se foloseste:
+	-margin: 0 auto
+
+• Care dintre urmatoarele reprezinta proprietati membre ale unui obiect de tipul XMLHttpRequest:
+	-readyState, response, responseText, status
+
+• O variabila x ce contine valoarea numerica 7 poate fi declarata in JavaScript astfel:
+	-var x = 7
+	-let x = 7
+
+• Care dintre urmatoarele informatii despre plugin-urile jQuery sunt adevarate: 
+	-Permit extinderea functionalitatii API-ului standard jQuery cu noi metode si functionalitati
+
+• In ce ordine au sens apelarile metodelor daca resursa nu exista in momentul actual: 
+	-post, put, get, delete
+
+• Care dintre tagurile de mai jos au display: block by default: 
+	-<div>, <p>, <h1>, <ul>, <ol>, <li>, <form>, <table>, <header>, <main>, <tr>, <caption>
+
+• Care dintre tagurile de mai jos au display: inline by default: 
+	-<strong>, <span>, <img>, <a>, <b>, <i>, <u>, <em>, <time>, <data>, <del>
+
+• Care HTTP code status anunta o eroare:
+	-4xx - client
+	-5xx - server
+
+• Care dintre metodele HHTP sunt idempotente:
+	-GET, HEAD, PUT, DELETE
+
+• Care sunt headere valide:
+	-Host
+	-User-Agent
+	-Content-Length
+	-From
+	-Cookie/Set-cookie
+
+• Care dintre urmatoarele sunt atribute ale unui cookie:
+	-Name, Value, Expires, Max-Age
+
+• Ce poate semnifica un status code de tip 4xx:
+	-Bad request 
+	-Unauthorized
+
+• Care este diferenta dintre let si var:
+	-Variabilele definite cu let pot avea scop de tip bloc, iar cele cu var nu
+	-Variabilele definite cu var pot fi redeclarate în același bloc, iar cele cu let nu
+
+• Parametrii de configurare ai unei aplicatii web Java sunt preluati din fisierul de configurare ai aplicatiei web in cadrul metodei:
+	-contextInitialized()
+
+• Cookie-uriile pot fi accesate prin javascript?
+	-Depinde 
+
+• Care sunt diferentele intre require/require_once si include/include_once: 
+	-In general, se recomanda folosirea require_once 
+	-Include_once verifica inainte de includerea fisierului, daca fisierul este sau nu deja inclus 
+
+• Selectati variabilele superglobale din PHP:
+	-$_SESSION
+	-$GLOBALS
+	-$_POST
+	-$_GETU 
+
+• Cum putem folosi JQuery in aplicatia noastra: 
+	-Folosind tagul <script> avand ca atribut src="jquery.min.js" 
+	-Folosind tagul <script> avand ca atribut src="jquery.js" 
+	-Incarcam o versiune salvata pe un CDN
+
+• Selectati afirmatii corecte despre urmatoarea secventa de cod:
+$(document).ready(function(){ // scriem cod aici });
+	-Aceasta metoda este folosita pentru a previne rularea codului javascript inaintea incarcarii documentului
+	-Este echivalenta cu $(function(){//scriem cod aici});
+ 	-Aceasta metoda este specifica JQuery
+
+• Variabilele Javascript se pot declara in urmatoarele moduri:
+	-let, var, const
+	-Putem sa nu le declaram in niciun mod (se declara automat)
+
+• Selectati acele instructiuni care afiseaza in consola “true”: 
+	-console.log(1 == true);
+	-console.log(1 !== true);
+	-console.log(null == undefined);
+
+• Care dintre metodele HTTP sunt safe:
+	-GET, HEAD, TRACE
+
+• Ce poate semnifica un status cod de tip 5xx:
+	-Internal server error
+	-Service unavailable
+	-Loop detected
+
+• Selectati afirmatiile/afirmatia adevarata despre z-index: 
+	-Un z-index mai mare va acoperi un element cu z-index mai mic 
+	-Daca doua element au acelasi z-index, ultimul specificat in codul HTML il va acoperi pe celelalt 
+
+• Care este ordinea din interior catre exterior a box modelului:
+	-Content, padding, border, margin
+
+• Specificacitate:
+	-inline>id>clase>element selector
+
+• In ordine de la cel mai reutilizabil stil la cel mai putin reutilizabil:
+	-Stil extern, stil intern, stil inline
+
+• Selectati tehnologiile WEB server-side:
+	-Java, CGI
+
+• Putem specifica culorile HTML prin valori de tip:
+	-RGB/RGBA
+	-HEX
+	-Literal, cuvinte din limba engleza
+
+• Selectati afirmatiile care sunt adevarate despre HTML:
+	-HTML este un limbaj standard pentru crearea paginilor web
+	-HTML este o abreviere de la Hyper Text Markup Language
+
+• Ce se defineste in <head>:
+	-<title>
+	-<script>
+	-<link>
+	-<style>
+	-<meta>
+
+• Cum arata un raspuns de redirectare trimis de catre server:
+	-status code: 3xx
+	-URL este trimis in header-ul Location
+
+• Care dintre urmatoarele reprezinta metode valide http:
+	-connect, put, options
+
+• Care este motivul de utilizare al sprite-urilor?
+	-reducerea numarului de request-uri

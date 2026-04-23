@@ -1,0 +1,10 @@
+int main() {
+    int a = 10;
+    float b = 3.14;
+    a = a + 5;
+    if (a > b) {
+        b = b + 1.0;
+    } else {
+        b = b - 2.5$;
+    }
+}

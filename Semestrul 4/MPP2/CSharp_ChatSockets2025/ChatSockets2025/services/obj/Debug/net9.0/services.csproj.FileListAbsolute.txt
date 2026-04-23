@@ -1,0 +1,15 @@
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\bin\Debug\net9.0\services.deps.json
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\bin\Debug\net9.0\services.dll
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\bin\Debug\net9.0\services.pdb
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\bin\Debug\net9.0\model.dll
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\bin\Debug\net9.0\model.pdb
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\services.csproj.AssemblyReference.cache
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\services.AssemblyInfoInputs.cache
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\services.AssemblyInfo.cs
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\services.csproj.CoreCompileInputs.cache
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\services.csproj.Up2Date
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\services.dll
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\refint\services.dll
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\services.pdb
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\services\obj\Debug\net9.0\ref\services.dll

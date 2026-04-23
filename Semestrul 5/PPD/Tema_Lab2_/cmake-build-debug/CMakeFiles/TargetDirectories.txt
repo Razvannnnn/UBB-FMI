@@ -1,0 +1,3 @@
+C:/Users/razva/Desktop/PPD/Tema_Lab2_/cmake-build-debug/CMakeFiles/Tema_Lab2_.dir
+C:/Users/razva/Desktop/PPD/Tema_Lab2_/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/razva/Desktop/PPD/Tema_Lab2_/cmake-build-debug/CMakeFiles/rebuild_cache.dir

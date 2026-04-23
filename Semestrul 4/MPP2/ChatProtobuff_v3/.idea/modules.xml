@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatProtobuffv3.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatProtobuffv3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatClient/ChatProtobuffv3.ChatClient.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatClient/ChatProtobuffv3.ChatClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatClient/ChatProtobuffv3.ChatClient.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatClient/ChatProtobuffv3.ChatClient.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatClient/ChatProtobuffv3.ChatClient.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatClient/ChatProtobuffv3.ChatClient.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatModel/ChatProtobuffv3.ChatModel.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatModel/ChatProtobuffv3.ChatModel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatModel/ChatProtobuffv3.ChatModel.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatModel/ChatProtobuffv3.ChatModel.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatModel/ChatProtobuffv3.ChatModel.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatModel/ChatProtobuffv3.ChatModel.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatNetworkingProtobuff/ChatProtobuffv3.ChatNetworkingProtobuff.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatNetworkingProtobuff/ChatProtobuffv3.ChatNetworkingProtobuff.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatNetworkingProtobuff/ChatProtobuffv3.ChatNetworkingProtobuff.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatNetworkingProtobuff/ChatProtobuffv3.ChatNetworkingProtobuff.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatNetworkingProtobuff/ChatProtobuffv3.ChatNetworkingProtobuff.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatNetworkingProtobuff/ChatProtobuffv3.ChatNetworkingProtobuff.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatPersistence/ChatProtobuffv3.ChatPersistence.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatPersistence/ChatProtobuffv3.ChatPersistence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatPersistence/ChatProtobuffv3.ChatPersistence.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatPersistence/ChatProtobuffv3.ChatPersistence.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatPersistence/ChatProtobuffv3.ChatPersistence.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatPersistence/ChatProtobuffv3.ChatPersistence.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServer/ChatProtobuffv3.ChatServer.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServer/ChatProtobuffv3.ChatServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServer/ChatProtobuffv3.ChatServer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServer/ChatProtobuffv3.ChatServer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServer/ChatProtobuffv3.ChatServer.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServer/ChatProtobuffv3.ChatServer.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServices/ChatProtobuffv3.ChatServices.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServices/ChatProtobuffv3.ChatServices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServices/ChatProtobuffv3.ChatServices.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServices/ChatProtobuffv3.ChatServices.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatServices/ChatProtobuffv3.ChatServices.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatServices/ChatProtobuffv3.ChatServices.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatProtobuffv3.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatProtobuffv3.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ChatProtobuffv3.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ChatProtobuffv3.test.iml" />
+    </modules>
+  </component>
+</project>

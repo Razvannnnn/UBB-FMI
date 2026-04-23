@@ -1,0 +1,31 @@
+OBSERVER:
+
+service: extends ObservableImplementat
+
+controller: in setService service.addObserver(this)
+		public void update() {initModel();}
+		in functia care face schimbarea (ex. handleBuy): service.notifyObservers();
+
+
+SELECTIE MULTIPLA:
+in initialize :    desertTable.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+in functia pt buton :    Iterable<MenuItem> desert=desertTable.getSelectionModel().getSelectedItems();
+
+TIMESTAMP TO LOCALDATETIME
+LocalDateTime data = resultSet.getTimestamp("data").toLocalDateTime();
+
+LOCAL DATE TIME TO TIMESTAMP
+Timestamp timestamp=Timestamp.valueOf(order.getData());
+ps.setTimestamp(3,timestamp);
+
+STRING TO ENUM
+Status status=Status.valueOf(resultSet.getString("status"));
+
+ENUM TO STRING
+ps.setString(4, order.getStatus().toString());
+
+
+CE AM UNDE:
+RESTAURANT: enum, tableViewCutom, selectare multipla, tabele dinamic
+VACANTE: parametrii din linia de comanda si deschis ferestre pt fiecare
+ZBORURI: datePicker, observer bun, setare coloana cu ce nu-i in entitate, paginare

@@ -1,0 +1,65 @@
+pkg load statistics
+
+function out=bile2(N = 1000)
+
+  urna = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 3, 3];
+
+  #FARA returnare
+
+  #zeros(nrRanduri, nrColoane)
+  A = 0;
+  B = 0;
+  C = 0;
+  for i=1:1:N
+    f = zeros(1, 3);
+    bileExtrase = randsample(urna, 3, false);
+
+    if bileExtrase(1) == 2 && bileExtrase(2) == 1 && bileExtrase(3) == 3
+      A++;
+    endif
+
+    for i=1:1:3
+      f(bileExtrase(i))++;
+    endfor
+
+    #fprintf("f(1) = %d, f(2) = %d, f(3) = %d\n", f(1), f(2), f(3));
+    if f(3) == 0
+      B++;
+    endif
+    if f(3) == 1
+      C++;
+    endif
+  endfor
+  fprintf("A (fara returnare): %d\n", A/N);
+  fprintf("B (fara returnare): %d\n", B/N);
+  fprintf("C (fara returnare): %f\n", C/N);
+
+
+  #CU returnare
+  A = 0;
+  B = 0;
+  C = 0;
+  for i=1:1:N
+    f = zeros(1, 3);
+    bileExtrase = randsample(urna, 3, true);
+
+    if bileExtrase(1) == 2 && bileExtrase(2) == 1 && bileExtrase(3) == 3
+      A++;
+    endif
+
+    for i=1:1:3
+      f(bileExtrase(i))++;
+    endfor
+
+    if f(3) == 0
+      B++;
+    endif
+    if f(3) == 1
+      C++;
+    endif
+  endfor
+  fprintf("A (cu returnare): %d\n", A/N);
+  fprintf("B (cu returnare): %d\n", B/N);
+  fprintf("C (cu returnare): %d\n", C/N);
+
+endfunction

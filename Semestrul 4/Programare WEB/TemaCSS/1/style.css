@@ -1,0 +1,25 @@
+.divexterior {
+    width: 400px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+
+.divinterior-stanga {
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.divinterior-dreapta {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divinterior-dreapta img {
+    width: 200px;
+}

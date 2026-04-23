@@ -1,0 +1,36 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+}
+
+group = 'SpringTemaLab'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.1'
+    implementation 'org.apache.logging.log4j:log4j-api:2.23.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.23.1'
+    implementation 'org.springframework:spring-context:6.1.14'
+    runtimeOnly 'org.xerial:sqlite-jdbc:3.41.2.2'
+
+    implementation 'org.openjfx:javafx-controls:22.0.1'
+    implementation 'org.openjfx:javafx-fxml:22.0.1'
+}
+
+javafx {
+    version = "22.0.1"
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+application {
+    mainClass = 'MainFXSpring'
+    applicationDefaultJvmArgs = [
+            "--module-path", "C:/javafx-sdk-22.0.1/lib",
+            "--add-modules", "javafx.controls,javafx.fxml"
+    ]
+}

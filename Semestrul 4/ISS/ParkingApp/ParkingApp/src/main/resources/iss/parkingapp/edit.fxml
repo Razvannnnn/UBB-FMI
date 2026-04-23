@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="401.0" prefWidth="362.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iss.parkingapp.EditController">
+   <children>
+      <Label layoutX="96.0" layoutY="34.0" text="Editeaza Profilul Tau">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldNume" layoutX="106.0" layoutY="86.0" promptText="Nume Nou" />
+      <TextField fx:id="textFieldPrenume" layoutX="106.0" layoutY="122.0" promptText="Prenume Nou" />
+      <TextField fx:id="textFieldEmail" layoutX="106.0" layoutY="158.0" promptText="Email Nou" />
+      <Button fx:id="buttonConfirm" layoutX="115.0" layoutY="312.0" mnemonicParsing="false" onAction="#handleButtonConfirm" text="Confirma Modificarile" />
+      <Label layoutX="167.0" layoutY="77.0" />
+      <Button layoutX="157.0" layoutY="361.0" mnemonicParsing="false" onAction="#handleClose" text="Close" />
+      <PasswordField fx:id="parolaActuala" layoutX="106.0" layoutY="268.0" promptText="Parola Actuala" />
+      <PasswordField fx:id="parolaNoua" layoutX="106.0" layoutY="194.0" promptText="Parola Noua" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,42 @@
+% a) Definiti un predicat care determina suma a doua numere scrise in
+% reprezentare de lista.
+% b) Se da o lista eterogena, formata din numere intregi si liste de
+% cifre. Sa
+%se calculeze suma tuturor numerelor reprezentate de subliste. De ex:
+% [1, [2, 3], 4, 5, [6, 7, 9], 10, 11, [1, 2, 0], 6] =>
+% [8, 2, 2].
+
+% list_to_nr(l1l2..ln, R) = { R*10+l1, list_to_nr(l2..ln), daca n>0
+%                           { R , daca n=0
+
+% Reverse a list (used if reversal is required in another context)
+reverse1(L, R) :-
+    reverse_list(L, [], R).
+
+reverse_list([], A, A).
+reverse_list([H|T], A, R) :-
+    reverse_list(T, [H|A], R).
+
+% Convert a list of digits to a number
+list_to_nr([], 0). % Base case: empty list is 0.
+list_to_nr([H|T], R) :-
+    list_to_nr(T, R2),       % Recursive step: process the tail.
+    R is R2 * 10 + H.        % Add the current digit.
+
+% Optional predicate if the input is nested (list of one list of digits)
+list_to_nr1([], 0).
+list_to_nr1(A, R) :-
+    reverse1(A, A1),
+    list_to_nr(A1, R).
+
+
+b([], 0).
+b([H|T], R):-
+    is_list(H),
+    list_to_nr1(H, H1),
+    b(T, R2),
+    R is R2+H1.
+b([H|T],R):-
+    \+ is_list(H),
+    b(T, R).
+

@@ -1,0 +1,18 @@
+2025-03-23 11:18:09,076 [1] DEBUG ChatClientGTK.StartGTKClient - Reading properties from app.config ...
+2025-03-23 11:18:09,080 [1] INFO ChatClientGTK.StartGTKClient - Using  server on IP 127.0.0.1 and port 55556
+2025-03-23 11:18:27,488 [1] DEBUG ChatClientGTK.LoginWindow - S-a apasat login
+2025-03-23 11:18:27,489 [1] DEBUG ChatClientGTK.LoginWindow - Username test - Password - test
+2025-03-23 11:18:27,518 [1] DEBUG chat.n2025-03-23 11:18:48,088 [1] DEBUG ChatClientGTK.LoginWindow - S-a apasat login
+2025-03-23 11:18:48,089 [1] DEBUG ChatClientGTK.LoginWindow - Username ana - Password - ana
+2025-03-23 11:18:48,119 [1] DEBUG chat.networking.jsonprotocol.ChatServerJsonProxy - Sending request {"Type":0,"User":{"Id":"ana","Passwd":"ana"},"Message":null}
+2025-03-23 11:18:48,127 [12] DEBUG chat.networking.jsonprotocol.ChatServerJsonProxy - response received [type=OK, error=, text=]
+2025-03-23 11:18:48,128 [1] DEBUG ChatClientGTK.GTKClientCtrl - Login succeeded ....
+2025-03-23 11:18:48,128 [1] DEBUG ChatClientGTK.GTKClientCtrl - Current user Id: ana, Name: 
+2025-03-23 11:18:48,129 [1] DEBUG ChatClientGTK.LoginWindow - Login succeded
+2025-03-23 11:18:48,134 [1] DEBUG chat.networking.jsonprotocol.ChatServerJsonProxy - Sending request {"Type":2,"User":{"Id":"ana","Passwd":"ana"},"Message":null}
+2025-03-23 11:18:49,127 [12] DEBUG chat.networking.jsonprotocol.ChatServerJsonProxy - response received [type=GET_LOGGED_FRIENDS, error=, text=]
+hat.networking.jsonprotocol.ChatServerJsonProxy - handleUpdate called with [type=FRIEND_LOGGED_IN, error=, text=chat.networking.dto.UserDTO]
+2025-03-23 11:18:48,121 [12] DEBUG chat.networking.jsonprotocol.ChatServerJsonProxy - Friend logged in Id: ana, Name: 
+2025-03-23 11:18:48,122 [12] DEBUG ChatClientGTK.GTKClientCtrl - Friend logged in Id: ana, Name: 
+2025-03-23 11:18:48,122 [12] DEBUG ChatClientGTK.ChatWindow - [ChatWindow] friendLoggedIn ana
+2025-03-23 11:18:48,122 [12] DEBUG ChatClientGTK.GTKClientCtrl - Update Event called

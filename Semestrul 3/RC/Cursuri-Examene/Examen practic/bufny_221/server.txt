@@ -1,0 +1,111 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+int main()
+{
+        int c,s;
+        struct sockaddr_in client_addr,server_addr;
+
+        //fac socket
+        s=socket(AF_INET,SOCK_STREAM,0);
+        if(s<0)
+        {
+                perror("EROARE LA SOCKET SERVER!");
+                return 1;
+        }
+
+        //fac bind
+        server_addr.sin_family=AF_INET;
+        server_addr.sin_port=htons(3083);
+        server_addr.sin_addr.s_addr=INADDR_ANY;
+
+        if(bind(s,(struct sockaddr*)&server_addr,sizeof(server_addr))<0)
+        {
+                perror("EROARE LA BIND!");
+                return 1;
+        }
+
+        //fac listen, aici devine serverul server
+        listen(s,5);
+
+        while(1)
+        {
+                //accept
+                int size=sizeof(client_addr);
+                c=accept(s,(struct sockaddr*)&client_addr,&size);
+
+                printf("S-A CONECTAT UN CLIENT!\n");
+
+                //server concurent
+                if(fork()==0)
+                {
+                        int min;
+
+                        int len;
+                        recv(c,&len,sizeof(int),MSG_WAITALL);
+                        len=ntohl(len);
+
+                        int sir[len];
+                        recv(c,sir,len*sizeof(int),MSG_WAITALL);
+                        uint16_t port;
+                        recv(c,&port,sizeof(uint16_t),MSG_WAITALL);
+
+                        port=ntohs(port);
+                        printf("PORTUL PRIMIT: %hu\n",port);
+
+                        min=ntohl(sir[0]);
+                        printf("SIRUL PRIMIT DE LA CLIENT E:");
+                        for(int i=0;i<len;i++)
+                        {
+                                sir[i]=ntohl(sir[i]);
+                                printf("%d ",sir[i]);
+                                if(sir[i]<min) min=sir[i];
+                        }
+                        printf("\n");
+                        min=htonl(min);
+
+                        //AFLU ADRESA IP A CLIENTULUI
+                        char ip[20];
+                        strcpy(ip,inet_ntoa(client_addr.sin_addr));
+                        ip[strlen(ip)]='\0';
+                        printf("IP CLIENT: %s\n",ip);
+
+                        //DE AICI FAC CLIENTUL DIN SERVER
+                        struct sockaddr_in nou_client_addr;
+
+                        //fac socket
+                        int nou_c=socket(AF_INET,SOCK_STREAM,0);
+                        if(nou_c<0)
+                        {
+                                perror("EROARE LA CREAREA SOCKETULUI CLIENT!\n");
+                        }
+
+                        //fac connect
+                        nou_client_addr.sin_family=AF_INET;
+                        nou_client_addr.sin_port=htons(port);
+                        nou_client_addr.sin_addr.s_addr=inet_addr(ip);
+
+                        if(connect(nou_c,(struct sockaddr*)&nou_client_addr,sizeof(nou_client_addr))<0)
+                        {
+                                perror("EROARE LA CONNECT!\n");
+                                return 1;
+                        }
+
+                        //TRIMIT DIN CLIENTUL ASTA NOU
+                       send(nou_c,&min,sizeof(int),0);
+                        close(nou_c);
+                        close(c);
+
+                        exit(0);
+                }
+
+        }
+        close(s);
+        return 0;
+}

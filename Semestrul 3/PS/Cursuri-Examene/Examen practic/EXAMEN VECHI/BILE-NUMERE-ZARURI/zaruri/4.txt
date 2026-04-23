@@ -1,0 +1,68 @@
+#a------------------------------------------------------------------------------
+%prob sa dai pe zarul2 acelasi nr ca si pe zarul 1 este 1/6
+
+simulari=geornd(1/6,1,1000);
+probA=1-empirical_cdf(3,simulari) %mean 50% sanse sa imi
+#trb mai mult de 3 aruncari pana la dubla
+
+%1/6 ca aia e prob calculata de noi
+#ori fac empirical_pdf(5,simulari)+..+empirical_pdf(10,simulari); sauuuuuu
+%11 pt ca vreau sa il cuprinda pe 10 si altgel e <
+probB=empirical_cdf(11,simulari)-empirical_cdf(5,simulari)
+
+simulari3=simulari(simulari>3);
+probC=empirical_cdf(11,simulari3)-empirical_cdf(5,simulari3)
+
+
+
+
+
+
+% Se arunca 2 zaruri pana cand se obtine o dubla. Fie X numarul de aruncari fara succes.
+% Estimati de 1000 de ori experimentul
+% a) Estimati: A:"X > 3", B:"X e {5,6,..,10}", C:"X e {5,6,..,10} stiind ca X>3"
+% b) Probabilitatea teoretica pt B
+
+%cazuri posibile:36{1,2,3,4,5,6}x{1,2,3,4,5,6}
+%cazuri favorabile:6{{1,1},{2,2},..,{6,6}}
+%P = 1/6
+
+
+N=1000;
+A=0;
+B=0;
+C=0;
+
+for i = 1:N
+  %matrice de 1x1 (pot pune si urmatorii 2 parametrii daca vreau alta matrice)
+  %generata conform distributiei geometrice de probabilitate p
+  x = geornd(1/6);
+  if(x>3)
+    A+=1;
+    if(x>=5)
+    C+=1;
+    endif
+  endif  
+  
+  if(x>=5)
+    B+=1;
+  endif
+  
+endfor
+
+display"a)"
+display"A:"
+A/N
+display"B:"
+B/N
+display"C:"
+C/A
+
+
+
+
+
+
+
+
+

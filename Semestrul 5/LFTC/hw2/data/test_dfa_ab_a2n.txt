@@ -1,0 +1,16 @@
+# DFA pentru limbajul { a b a^(2n) | n ∈ N }
+# Exemple acceptate: ab, abaa, abaaaa, abaaaaaa, ...
+# Alfabet: a, b
+# Stari: S, A1, A2, A3
+# Stare de start: S
+# Stari finale: A2
+
+STATES: S, A1, A2, A3
+ALPHABET: a,b
+START: S
+FINAL: A2
+TRANSITIONS:
+S:a->A1
+A1:b->A2
+A2:a->A3
+A3:a->A2

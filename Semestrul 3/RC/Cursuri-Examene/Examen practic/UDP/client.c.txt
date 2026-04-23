@@ -1,0 +1,43 @@
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <stdio.h>
+#include <netinet/in.h>
+#include <netinet/ip.h>
+#include <string.h>
+#include <arpa/inet.h>
+
+#include <stdlib.h>
+#include <unistd.h>
+
+
+int main() {
+  int c;
+  struct sockaddr_in server;
+  
+  
+  c = socket(AF_INET, SOCK_DGRAM, 0);
+  if (c < 0) {
+    printf("Eroare la crearea socketului client\n");
+    return 1;
+  }
+  
+  memset(&server, 0, sizeof(server));
+  server.sin_port = htons(5600);
+  server.sin_family = AF_INET;
+  server.sin_addr.s_addr = inet_addr("172.0.0.1");
+  
+  //treaba clientului
+
+  //inainte de recv
+        l = sizeof(server);
+        memset(&server, 0, sizeof(server));
+  
+  close(c);
+}
+
+sendto(c,&len,sizeof(int), 0, (struct sockaddr *) &server, sizeof(server));
+//pt siruri
+recvfrom(c, rez, ntohl(len)*sizeof(char),0,(struct sockaddr *) &server,&l);
+
+
+ recvfrom(c, &prim, sizeof(prim), MSG_WAITALL, (struct sockaddr *) &server,&l);

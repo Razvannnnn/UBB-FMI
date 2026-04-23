@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc Puzzle</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #ddd;
+            text-align: center;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        td.empty {
+            background-color: #f4f4f4;
+        }
+
+        .controls {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Joc Puzzle</h1>
+    <table id="puzzle"></table>
+
+    <div class="controls">
+        <button onclick="shufflePuzzle()">Amesteca</button>
+    </div>
+
+    <script>
+        const n = 4;
+        let puzzle = [];
+        let emptyCell = { row: n - 1, col: n - 1 };
+
+        function createPuzzle() {
+            const table = document.getElementById('puzzle');
+            table.innerHTML = '';
+
+            puzzle = [];
+            let count = 1;
+
+            for (let i = 0; i < n; i++) {
+                const row = [];
+                const tr = document.createElement('tr');
+                for (let j = 0; j < n; j++) {
+                    const td = document.createElement('td');
+                    td.textContent = (count <= n * n - 1) ? count : '';
+                    td.dataset.row = i;
+                    td.dataset.col = j;
+                    td.addEventListener('click', () => movePiece(i, j));
+                    tr.appendChild(td);
+                    row.push(td);
+                    count++;
+                }
+                puzzle.push(row);
+                table.appendChild(tr);
+            }
+            updatePuzzle();
+        }
+
+        function updatePuzzle() {
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n; j++) {
+                    const cell = puzzle[i][j];
+                    if (cell.textContent === '') {
+                        cell.classList.add('empty');
+                    } else {
+                        cell.classList.remove('empty');
+                    }
+                }
+            }
+        }
+
+        function movePiece(row, col) {
+            const emptyRow = emptyCell.row;
+            const emptyCol = emptyCell.col;
+
+            if ((Math.abs(row - emptyRow) === 1 && col === emptyCol) || 
+                (Math.abs(col - emptyCol) === 1 && row === emptyRow)) {
+                puzzle[emptyRow][emptyCol].textContent = puzzle[row][col].textContent;
+                puzzle[row][col].textContent = '';
+                emptyCell = { row, col };
+                updatePuzzle();
+            }
+        }
+
+        function getInvCount(flatArr) {
+            let inv_count = 0;
+            for (let i = 0; i < flatArr.length - 1; i++) {
+                for (let j = i + 1; j < flatArr.length; j++) {
+                    if (flatArr[j] && flatArr[i] && flatArr[i] > flatArr[j]) {
+                        inv_count++;
+                    }
+                }
+            }
+            return inv_count;
+        }
+
+        function findXPosition(puzzleMatrix) {
+            for (let i = n - 1; i >= 0; i--) {
+                for (let j = n - 1; j >= 0; j--) {
+                    if (puzzleMatrix[i][j] === 0) {
+                        return n - i;
+                    }
+                }
+            }
+        }
+
+        function isSolvable(puzzleMatrix) {
+            let flatArr = puzzleMatrix.flat();
+            let invCount = getInvCount(flatArr);
+
+            if (n % 2 !== 0) {
+                return invCount % 2 === 0;
+            } else {
+                let pos = findXPosition(puzzleMatrix);
+                if (pos % 2 === 0) {
+                    return invCount % 2 !== 0;
+                } else {
+                    return invCount % 2 === 0;
+                }
+            }
+        }
+
+        function shufflePuzzle() {
+            let arr;
+            let matrix;
+
+            do {
+                arr = Array.from({ length: n * n }, (_, i) => i);
+                arr.sort(() => Math.random() - 0.5);
+
+                matrix = [];
+                for (let i = 0; i < n; i++) {
+                    matrix.push(arr.slice(i * n, (i + 1) * n));
+                }
+            } while (!isSolvable(matrix));
+
+            emptyCell = { row: 0, col: 0 };
+
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n; j++) {
+                    const value = matrix[i][j];
+                    puzzle[i][j].textContent = value === 0 ? '' : value;
+                    if (value === 0) {
+                        emptyCell = { row: i, col: j };
+                    }
+                }
+            }
+
+            updatePuzzle();
+        }
+
+        function getPossibleMoves(row, col) {
+            const moves = [];
+            if (row > 0) moves.push({ row: row - 1, col });
+            if (row < n - 1) moves.push({ row: row + 1, col });
+            if (col > 0) moves.push({ row, col: col - 1 });
+            if (col < n - 1) moves.push({ row, col: col + 1 });
+            return moves;
+        }
+
+        function moveByKey(event) {
+            const moves = getPossibleMoves(emptyCell.row, emptyCell.col);
+            let move;
+            switch(event.key) {
+                case 'ArrowUp':
+                    move = moves.find(m => m.row === emptyCell.row - 1);
+                    break;
+                case 'ArrowDown':
+                    move = moves.find(m => m.row === emptyCell.row + 1);
+                    break;
+                case 'ArrowLeft':
+                    move = moves.find(m => m.col === emptyCell.col - 1);
+                    break;
+                case 'ArrowRight':
+                    move = moves.find(m => m.col === emptyCell.col + 1);
+                    break;
+            }
+            if (move) {
+                event.preventDefault();
+                movePiece(move.row, move.col);
+            }
+        }
+
+        window.addEventListener('keydown', moveByKey);
+        createPuzzle();
+    </script>
+</body>
+</html>

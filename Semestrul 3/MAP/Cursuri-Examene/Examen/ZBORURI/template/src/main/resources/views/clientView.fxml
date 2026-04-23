@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rezerva.controller.ClientController">
+   <children>
+      <Button fx:id="cautaButton" layoutX="272.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="16.0" prefWidth="57.0" text="CAUTA!" />
+      <Text layoutX="33.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TO:" />
+      <ComboBox fx:id="fromCombo" layoutX="75.0" layoutY="26.0" prefWidth="150.0" />
+      <ComboBox fx:id="toCombo" layoutX="75.0" layoutY="59.0" prefWidth="150.0" />
+      <DatePicker fx:id="datePicker" layoutX="300.0" layoutY="47.0" />
+      <Text layoutX="300.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DATA PLECARII:" />
+      <Text layoutX="27.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FROM:" />
+      <TableView fx:id="tableView" layoutY="108.0" prefHeight="200.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="departureColoana" prefWidth="130.0" text="DEPARTURE" />
+          <TableColumn fx:id="landingColoana" prefWidth="162.0" text="LANDING" />
+            <TableColumn fx:id="seatsColoana" prefWidth="166.0" text="SEATS" />
+            <TableColumn fx:id="availableColoana" prefWidth="141.0" text="AVAILABLE" />
+        </columns>
+      </TableView>
+      <Button fx:id="buyButton" layoutX="247.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleBuy" text="CUMPARA BILET!" />
+      <Button fx:id="nextButton" layoutX="537.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleNext" prefHeight="25.0" prefWidth="63.0" text="NEXT -&gt;" />
+      <Button fx:id="previousButton" onAction="#handlePrevious" layoutX="1.0" layoutY="315.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="&lt;- PREVIOUS" />
+   </children>
+</AnchorPane>

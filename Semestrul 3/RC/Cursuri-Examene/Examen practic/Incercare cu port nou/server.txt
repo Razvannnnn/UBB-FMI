@@ -1,0 +1,166 @@
+                                                                                                                                                                                                   server1.c                                                                                                                                                                                                                            #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <string.h>
+
+uint16_t nr_clienti=0, maxim=-1;
+struct sockaddr_in client, server, server_new;
+int s;
+
+void deservire_client(int c, uint16_t port){
+        int l;
+        nr_clienti = nr_clienti + 1;
+
+        uint16_t len, arr[100];
+        recv(c, &len, sizeof(len), MSG_WAITALL);
+        len = ntohs(len);
+
+        for(int i=0; i<len; i++){
+                recv(c, &arr[i], sizeof(arr[i]), MSG_WAITALL);
+                arr[i] = ntohs(arr[i]);
+        }
+
+//      recv(c, arr, len, MSG_WAITALL);
+
+        uint16_t suma=0;
+        for(int i=0; i<len; i++)
+        {
+                if(maxim<arr[i]){
+                        maxim=arr[i];
+                }
+                while(arr[i])
+                {
+                        if((arr[i]%10)%2==1){
+                                suma=suma+arr[i]%10;
+                        }
+                        arr[i] = arr[i]/10;
+                }
+
+        }
+
+
+
+
+        uint16_t portN=(port+suma)%10000;
+
+        portN=htons(portN);
+        send(c,&portN, sizeof(portN), 0);
+        portN = ntohs(portN);
+
+//      close(s);
+
+        int s_new;
+        s_new = socket(AF_INET, SOCK_STREAM, 0);
+        if(s_new<0)
+        {
+                perror("Eroare la socket\n");
+        }
+
+
+        memset(&server_new, 0, sizeof(server_new));
+        server_new.sin_port = htons(portN);
+        server_new.sin_family = AF_INET;
+        server_new.sin_addr.s_addr = INADDR_ANY;
+
+
+        if(bind(s_new,(struct sockaddr *) &server_new, sizeof(server_new))<0)
+        {
+                perror("Eroare la bind\n");
+        }
+
+        listen(s_new,5);
+
+        l=sizeof(client);
+        memset(&client, 0, sizeof(client));
+
+        c=accept(s_new, (struct sockaddr *) &client, &l);
+        printf("S-a conectat la un client\n");
+
+
+
+
+//      suma=htons(suma);
+        nr_clienti = htons(nr_clienti);
+        send(c, &nr_clienti, sizeof(nr_clienti), 0);
+        nr_clienti = ntohs(nr_clienti);
+
+        maxim = htons(maxim);
+        send(c, &maxim, sizeof(maxim), 0);
+        maxim = ntohs(maxim);
+
+        suma = htons(suma);
+        send(c, &suma, sizeof(suma), 0);
+
+//      memset(&server, 0, sizeof(server));
+//        server.sin_port = htons(port);
+//        server.sin_family = AF_INET;
+//        server.sin_addr.s_addr = INADDR_ANY;
+
+//      s = socket(AF_INET, SOCK_STREAM, 0);
+//      if(bind(s,(struct sockaddr *) &server, sizeof(server))<0)
+//      {
+//                perror("Eroare la bind\n");
+//        }
+
+//      listen(s,5);
+
+        close(s_new);
+}
+
+int main(){
+
+        int c, l;
+        //struct sockaddr_in client, server;
+
+        s = socket(AF_INET, SOCK_STREAM, 0);
+        if(s<0)
+        {
+                printf("Eroare la socket\n");
+                return 1;
+        }
+
+        //int port = atoi(argv[1]);
+
+        memset(&server, 0, sizeof(server));
+        server.sin_port = htons(5600);
+        server.sin_family = AF_INET;
+        server.sin_addr.s_addr = INADDR_ANY;
+
+        if(bind(s,(struct sockaddr *) &server, sizeof(server))<0)
+        {
+                printf("Eroare la bind\n");
+                return 1;
+        }
+
+        listen(s,5);
+
+        l=sizeof(client);
+        memset(&client, 0, sizeof(client));
+
+        while(1)
+        {
+
+                c=accept(s, (struct sockaddr *) &client, &l);
+                printf("S-a conectat la un client\n");
+
+
+                if(fork()==0)
+                {
+                        deservire_client(c, server.sin_port);
+                        return 0;
+                }
+
+//              close(c);
+        }
+
+        close(s);
+        return 0;
+
+}
+
+
+

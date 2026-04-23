@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            background-color: grey;
+            align-items: center;
+            font-size: 50px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cell.revealed {
+            background-color: lightskyblue;
+            color: #fff;
+        }
+        .cell.hidden {
+            background-color: grey;
+        }
+        #message {
+            text-align: center;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="game" class="grid"></div>
+    <div id="message"></div>
+
+    <script>
+        const numPairs = 8;
+        const numbers = Array.from({ length: numPairs }, (_, i) => i + 1)
+            .flatMap(num => [num, num])
+            .sort(() => Math.random() - 0.5);
+
+        const grid = document.getElementById("game");
+        const cells = [];
+
+        numbers.forEach((num, index) => {
+            const cell = document.createElement("div");
+            cell.classList.add("cell", "hidden");
+            cell.dataset.index = index;
+            cell.dataset.num = num;
+            cell.addEventListener("click", () => handleCellClick(cell));
+            grid.appendChild(cell);
+            cells.push(cell);
+        });
+
+        let revealedCells = [];
+        let matchedPairs = 0;
+
+        function handleCellClick(cell) {
+        // celula deja descoperita sau 2
+        if (cell.classList.contains("revealed") || revealedCells.length === 2) {
+            return;
+        }
+
+        cell.textContent = cell.dataset.num;
+        cell.classList.add("revealed");
+        cell.classList.remove("hidden");
+        revealedCells.push(cell);
+
+        if (revealedCells.length === 2) {
+            // verificare
+            const [cell1, cell2] = revealedCells;
+            if (cell1.dataset.num === cell2.dataset.num) {
+                matchedPairs++;
+                revealedCells = [];
+                if (matchedPairs === numPairs) {
+                    document.getElementById("message").textContent = "Felicitari! Ai castigat!";
+                }
+            } else {
+                // ascundere 
+                setTimeout(() => {
+                    cell1.classList.remove("revealed");
+                    cell2.classList.remove("revealed");
+                    cell1.classList.add("hidden");
+                    cell2.classList.add("hidden");
+                    cell1.textContent = "";
+                    cell2.textContent = "";
+                    revealedCells = [];
+                }, 1000);
+            }
+        }
+    }
+    </script>
+
+</body>
+</html>

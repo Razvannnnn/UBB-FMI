@@ -1,0 +1,10 @@
+Stari: q0,q1,q2,qf
+Alfabet: a,b
+Stare_Initiala: q0
+Stari_Finale: qf
+Tranzitii:
+
+q0,a->q1
+q1,b->qf
+qf,a->q2
+q2,a->qf

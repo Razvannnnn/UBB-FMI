@@ -1,0 +1,15 @@
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\bin\Debug\net9.0\persistence.deps.json
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\bin\Debug\net9.0\persistence.dll
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\bin\Debug\net9.0\persistence.pdb
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\bin\Debug\net9.0\model.dll
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\bin\Debug\net9.0\model.pdb
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\persistence.csproj.AssemblyReference.cache
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\persistence.AssemblyInfoInputs.cache
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\persistence.AssemblyInfo.cs
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\persistence.csproj.CoreCompileInputs.cache
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\persiste.5D1D8312.Up2Date
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\persistence.dll
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\refint\persistence.dll
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\persistence.pdb
+C:\Users\razva\Desktop\MPP2\CSharp_ChatSockets2025\ChatSockets2025\persistence\obj\Debug\net9.0\ref\persistence.dll

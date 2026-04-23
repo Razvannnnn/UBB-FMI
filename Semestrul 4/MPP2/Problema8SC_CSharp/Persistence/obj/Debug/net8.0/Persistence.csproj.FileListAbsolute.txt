@@ -1,0 +1,17 @@
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\bin\Debug\net8.0\Persistence.deps.json
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\bin\Debug\net8.0\Persistence.runtimeconfig.json
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\bin\Debug\net8.0\Persistence.dll
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\bin\Debug\net8.0\Persistence.pdb
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\bin\Debug\net8.0\Model.dll
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\bin\Debug\net8.0\Model.pdb
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persistence.csproj.AssemblyReference.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfoInputs.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persistence.AssemblyInfo.cs
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persistence.csproj.CoreCompileInputs.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persiste.61C28332.Up2Date
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persistence.dll
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\refint\Persistence.dll
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persistence.pdb
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\Persistence.genruntimeconfig.cache
+C:\Users\razva\Desktop\MPP2\Problema8SC_CSharp\Persistence\obj\Debug\net8.0\ref\Persistence.dll

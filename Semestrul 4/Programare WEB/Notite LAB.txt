@@ -1,0 +1,52 @@
+193.231.20.20
+3389
+
+chmod o+x .
+mkdir pubic_html
+
+www.scs.ubbcluj.ro/~msir3565
+
+cmd in folder ul unde se afla a.html
+scp a.html user1234@ip:./public.html
+
+
+
+
+
+LAB 3
+CSS
+
+-extern
+-intern <style>
+	- atr style -> inline style
+-stiluri CSS - browser
+- <link rel="stylesheet" type="text/css" href="file.css">
+
+-display inline: a,
+	 block: p, div, section, table, h1 .. h6, form
+	 none: vs, visibility:"hidden" vs input type="hidden"
+	 flex
+
+Position:
+- Static
+- Relative
+- Absolute
+- Fixed
+- Sticky
+
+Selection:
+- p	 |
+- .clasa | <- simpli
+- #id	 |
+- *	 |
+
+Combinator selector: *spatiu*,   >,        +,        ~
+			|        |         |         |
+ 		      div p   div > p  
+
+Pseudoclase: focus
+Pseudo elemente: ::before, ::after, ::finst_line
+
+input[type="text"]
+
+@media only screen and(max_width, 900px) { ... }

@@ -1,0 +1,3 @@
+C:/Users/Cosmin/Desktop/transformari/cmake-build-debug/CMakeFiles/transformari.dir
+C:/Users/Cosmin/Desktop/transformari/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Cosmin/Desktop/transformari/cmake-build-debug/CMakeFiles/rebuild_cache.dir

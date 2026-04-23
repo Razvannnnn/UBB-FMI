@@ -1,0 +1,16 @@
+﻿57015eeb-6326-4d26-92c1-071b036371f5;Andrei Popescu;Scoala Gimnaziala 'Horea';a0313f86-3368-4613-b9c3-dec5e2b05d64
+a44c8181-5c14-475b-a9fc-531a01578242;Ioana Marin;Scoala Gimnaziala 'Horea';a0313f86-3368-4613-b9c3-dec5e2b05d64
+588c9fe3-d820-418e-a123-89aa4fc0cdc4;Radu Ionescu;Scoala Gimnaziala 'Horea';a0313f86-3368-4613-b9c3-dec5e2b05d64
+81e8b4a3-4209-46c7-9d83-0068b90b7cdf;Maria Dumitrescu;Scoala Gimnaziala 'Horea';a0313f86-3368-4613-b9c3-dec5e2b05d64
+f5f1fbce-a4bb-47ba-b066-e4b02acbd2ee;Cristina Iliescu;Colegiul National Pedagogic 'Gheorghe Lazar';dc784b41-1de8-4a82-8495-12d75d1b8b74
+e4234769-3fd6-4c8c-ae0e-932f817aaac1;Vlad Georgescu;Colegiul National Pedagogic 'Gheorghe Lazar';dc784b41-1de8-4a82-8495-12d75d1b8b74
+145873f8-ffc7-4517-bef7-eb2aaac575bc;Ana Mihailescu;Colegiul National Pedagogic 'Gheorghe Lazar';dc784b41-1de8-4a82-8495-12d75d1b8b74
+cdf457d4-7320-4dfc-bafa-86fff7c28954;Florin Stoica;Colegiul National Pedagogic 'Gheorghe Lazar';dc784b41-1de8-4a82-8495-12d75d1b8b74
+44211d71-8187-47bf-a9a0-7a30bfc7310a;Diana Matei;Liceul Teoretic 'Onisifor Ghibu';af0c77be-79fc-4c14-b35e-1cbbb7c852c2
+1cb17139-e5f5-4131-b63a-2b9ee81c5ff6;Alexandru State;Liceul Teoretic 'Onisifor Ghibu';af0c77be-79fc-4c14-b35e-1cbbb7c852c2
+5f901246-45bc-4392-97ed-67b3c3cc6f59;Roxana Ene;Liceul Teoretic 'Onisifor Ghibu';af0c77be-79fc-4c14-b35e-1cbbb7c852c2
+009c9f2b-875c-49af-a5f1-34ad51aebc67;George Vasilescu;Liceul Teoretic 'Onisifor Ghibu';af0c77be-79fc-4c14-b35e-1cbbb7c852c2
+a7fb203a-538c-450c-a639-291794846b86;Teodora Popa;Scoala Gimnaziala 'Constantin Brancusi';bb3b8722-3fb6-4eef-a9f7-57ac997e18bb
+04bf45f8-29de-4085-a264-d41bc805ba1d;Mihai Ene;Scoala Gimnaziala 'Constantin Brancusi';bb3b8722-3fb6-4eef-a9f7-57ac997e18bb
+72832408-2e70-4330-aca5-6408411d8c93;Elena Radu;Scoala Gimnaziala 'Constantin Brancusi';bb3b8722-3fb6-4eef-a9f7-57ac997e18bb
+0022460e-d5d4-46f3-a999-4a7ad1059aa3;Dan Barbu;Scoala Gimnaziala 'Constantin Brancusi';bb3b8722-3fb6-4eef-a9f7-57ac997e18bb

@@ -1,0 +1,4 @@
+C:\Users\Cosmin\AppData\Local\Programs\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/Cosmin/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S "G:\My Drive\Facultă\Anul II\Semestrul 2\AG - Algoritmica Grafurilor\Examen practic\Partial 2\Test 2\pb5-t2" -B "G:\My Drive\Facultă\Anul II\Semestrul 2\AG - Algoritmica Grafurilor\Examen practic\Partial 2\Test 2\pb5-t2\cmake-build-debug"
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: G:/My Drive/Facultă/Anul II/Semestrul 2/AG - Algoritmica Grafurilor/Examen practic/Partial 2/Test 2/pb5-t2/cmake-build-debug

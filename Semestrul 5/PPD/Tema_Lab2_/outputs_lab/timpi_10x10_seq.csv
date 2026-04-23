@@ -1,0 +1,20 @@
+Secvential 10x10 -> 2710 ns
+Paralel (2 fire) 10x10 -> 469430 ns
+Paralel (4 fire) 10x10 -> 642260 ns
+Paralel (8 fire) 10x10 -> 307310 ns
+Paralel (16 fire) 10x10 -> 276770 ns
+Secvential 1000x1000 -> 5093960 ns
+Paralel (2 fire) 1000x1000 -> 3429890 ns
+Paralel (4 fire) 1000x1000 -> 2440760 ns
+Paralel (8 fire) 1000x1000 -> 2077840 ns
+Paralel (16 fire) 1000x1000 -> 2346230 ns
+Rulare seq 10x10 -> 403200 ns
+Rulare seq 10x10 -> 443300 ns
+Rulare seq 10x10 -> 555200 ns
+Rulare seq 10x10 -> 564500 ns
+Rulare seq 10x10 -> 592100 ns
+Rulare seq 10x10 -> 254000 ns
+Rulare seq 10x10 -> 496200 ns
+Rulare seq 10x10 -> 477800 ns
+Rulare seq 10x10 -> 395600 ns
+Rulare seq 10x10 -> 547500 ns

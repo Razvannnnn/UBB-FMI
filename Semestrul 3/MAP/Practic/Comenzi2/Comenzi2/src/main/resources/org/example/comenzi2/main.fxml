@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.comenzi2.Controllers.MainController">
+   <children>
+      <VBox fx:id="vboxid" alignment="TOP_CENTER" layoutX="28.0" layoutY="26.0" prefHeight="345.0" prefWidth="545.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Placed Orders" />
+            <TableView fx:id="tablePlacedOrders" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="table" prefWidth="75.0" text="Table ID" />
+                <TableColumn fx:id="date" prefWidth="143.33332061767578" text="Date" />
+                  <TableColumn fx:id="menuItems" prefWidth="323.66664123535156" text="Menu Items" />
+              </columns>
+            </TableView>
+         </children></VBox>
+   </children>
+</AnchorPane>

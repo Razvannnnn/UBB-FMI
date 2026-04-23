@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'Problema8_SC'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project (':Problema8Model')
+
+    runtimeOnly group: 'org.xerial', name: 'sqlite-jdbc', version: '3.49.1.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.24.3'
+    implementation 'org.apache.logging.log4j:log4j-api:2.24.3'
+
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+test {
+    useJUnitPlatform()
+}

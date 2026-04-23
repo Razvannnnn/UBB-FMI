@@ -1,0 +1,51 @@
+2025-03-23 10:42:23,457 [1] INFO StartServer - Starting chat server
+2025-03-23 10:42:23,473 [1] INFO StartServer - Reading properties from app.config ...
+2025-03-23 10:42:23,475 [1] INFO StartServer - Configuration Settings for database Data Source=ChatMPP2017.db;
+2025-03-23 10:42:23,475 [1] DEBUG StartServer - Starting server on IP 127.0.0.1 and port 55556
+2025-03-23 10:42:23,475 [1] DEBUG JsonChatServer - JsonChatServer...
+2025-03-23 10:43:06,407 [1] INFO StartServer - Starting chat server
+2025-03-23 10:43:06,421 [1] INFO StartServer - Reading properties from app.config ...
+2025-03-23 10:43:06,423 [1] INFO StartServer - Configuration Settings for database Data Source=ChatMPP2017.db;
+2025-03-23 10:43:06,423 [1] DEBUG StartServer - Starting server on IP 127.0.0.1 and port 55556
+2025-03-23 10:43:06,423 [1] DEBUG JsonChatServer - Creating JsonChatServer...
+2025-03-23 11:17:58,094 [1] INFO StartServer - Starting chat server
+2025-03-23 11:17:58,109 [1] INFO StartServer - Reading properties from app.config ...
+2025-03-23 11:17:58,110 [1] INFO StartServer - Configuration Settings for database Data Source=ChatMPP2017.db;
+2025-03-23 11:17:58,111 [1] DEBUG StartServer - Starting server on IP 127.0.0.1 and port 55556
+2025-03-23 11:17:58,111 [1] DEBUG JsonChatServer - Creating JsonChatServer...
+2025-03-23 11:18:27,519 [12] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Received json request {"Type":0,"User":{"Id":"test","Passwd":"test"},"Message":null}
+2025-03-23 11:18:27,537 [12] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Deserializaed Request Request[type=LOGIN, user=chat.networking.dto.UserDTO, message=]  
+2025-03-23 11:18:27,537 [12] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Login request ...
+2025-03-23 11:18:27,539 [12] DEBUG chat.persistence.UserRepositoryDb - UserDB [findBy] username=test  passowrd=test 
+2025-03-23 11:18:27,554 [12] DEBUG chat.persistence.UserRepositoryDb - Found user with name Test test
+2025-03-23 11:18:27,555 [12] DEBUG chat.persistence.UserRepositoryDb - UserDB [getFriendsOf] user=Id: test, Name: 
+2025-03-23 11:18:27,555 [12] DEBUG chat.persistence.UserRepositoryDb - Exiting UserDB [getFriendsOf] with friend =System.Collections.Generic.List`1[chat.model.User]
+2025-03-23 11:18:27,555 [12] DEBUG chat.server.ChatServerImpl - notify logged friends 4
+2025-03-23 11:18:27,561 [12] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - sending response {"Type":0,"ErrorMessage":null,"User":null,"Friends":null,"Message":null}
+2025-03-23 11:18:28,562 [12] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Received json request {"Type":2,"User":{"Id":"test","Passwd":"test"},"Message":null}
+2025-03-23 11:18:28,563 [12] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Deserializaed Request Request[type=GET_LOGGED_FRIENDS, user=chat.networking.dto.UserDTO, message=]  
+2025-03-23 11:18:28,564 [12] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - GetLoggedFriends Request ...
+2025-03-23 11:18:28,565 [12] DEBUG chat.persistence.UserRepositoryDb - UserDB [getFriendsOf] user=Id: test, Name: 
+2025-03-23 11:18:28,566 [12] DEBUG chat.persistence.UserRepositoryDb - Exiting UserDB [getFriendsOf] with friend =System.Collections.Generic.List`1[chat.model.User]
+2025-03-23 11:18:28,566 [12] DEBUG chat.server.ChatServerImpl - Logged friends for: test
+2025-03-23 11:18:28,566 [12] DEBUG chat.server.ChatServerImpl - Size 0
+2025-03-23 11:18:28,568 [12] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - sending response {"Type":2,"ErrorMessage":null,"User":null,"Friends":[],"Message":null}
+2025-03-23 11:18:48,119 [14] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Received json request {"Type":0,"User":{"Id":"ana","Passwd":"ana"},"Message":null}
+2025-03-23 11:18:48,119 [14] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Deserializaed Request Request[type=LOGIN, user=chat.networking.dto.UserDTO, message=]  
+2025-03-23 11:18:48,119 [14] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Login request ...
+2025-03-23 11:18:48,119 [14] DEBUG chat.persistence.UserRepositoryDb - UserDB [findBy] username=ana  passowrd=ana 
+2025-03-23 11:18:48,119 [14] DEBUG chat.persistence.UserRepositoryDb - Found user with name Popescu Ana
+2025-03-23 11:18:48,119 [14] DEBUG chat.persistence.UserRepositoryDb - UserDB [getFriendsOf] user=Id: ana, Name: 
+2025-03-23 11:18:48,119 [14] DEBUG chat.persistence.UserRepositoryDb - Exiting UserDB [getFriendsOf] with friend =System.Collections.Generic.List`1[chat.model.User]
+2025-03-23 11:18:48,119 [14] DEBUG chat.server.ChatServerImpl - notify logged friends 3
+2025-03-23 11:18:48,120 [14] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - sending response {"Type":0,"ErrorMessage":null,"User":null,"Friends":null,"Message":null}
+2025-03-23 11:18:48,120 [15] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Friend logged in Id: ana, Name: 
+2025-03-23 11:18:48,120 [15] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - sending response {"Type":5,"ErrorMessage":null,"User":{"Id":"ana","Passwd":"ana"},"Friends":null,"Message":null}
+2025-03-23 11:18:49,121 [14] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Received json request {"Type":2,"User":{"Id":"ana","Passwd":"ana"},"Message":null}
+2025-03-23 11:18:49,122 [14] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - Deserializaed Request Request[type=GET_LOGGED_FRIENDS, user=chat.networking.dto.UserDTO, message=]  
+2025-03-23 11:18:49,122 [14] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - GetLoggedFriends Request ...
+2025-03-23 11:18:49,122 [14] DEBUG chat.persistence.UserRepositoryDb - UserDB [getFriendsOf] user=Id: ana, Name: 
+2025-03-23 11:18:49,123 [14] DEBUG chat.persistence.UserRepositoryDb - Exiting UserDB [getFriendsOf] with friend =System.Collections.Generic.List`1[chat.model.User]
+2025-03-23 11:18:49,124 [14] DEBUG chat.server.ChatServerImpl - Logged friends for: ana
+2025-03-23 11:18:49,124 [14] DEBUG chat.server.ChatServerImpl - Size 1
+2025-03-23 11:18:49,124 [14] DEBUG chat.networking.jsonprotocol.ChatClientJsonWorker - sending response {"Type":2,"ErrorMessage":null,"User":null,"Friends":[{"Id":"test","Passwd":""}],"Message":null}

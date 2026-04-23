@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+        th:hover {
+            background-color: #ddd;
+        }
+        td {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Tabel Sortabil</h2>
+
+    <table id="tabel1">
+        <thead>
+            <tr>
+                <th>Fructe</th>
+                <th>Pret</th>
+                <th>Cantitate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mere</td>
+                <td>3</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Pere</td>
+                <td>4</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Banane</td>
+                <td>2</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="tabel2">
+        <thead>
+            <tr>
+                <th>Carne</th>
+                <th>Pret</th>
+                <th>Cantitate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pui</td>
+                <td>10</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Vita</td>
+                <td>20</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Porc</td>
+                <td>15</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        function sortTable(tableId, colIndex, isNumeric) {
+            var table = document.getElementById(tableId);
+            var rows = Array.from(table.rows).slice(1);
+
+            rows.sort(function(rowA, rowB) {
+                var cellA = rowA.cells[colIndex].textContent;
+                var cellB = rowB.cells[colIndex].textContent;
+
+                if (isNumeric) {
+                    return parseFloat(cellA) - parseFloat(cellB);
+                } else {
+                    return cellA.localeCompare(cellB);
+                }
+            });
+
+            rows.forEach(function(row) {
+                table.appendChild(row);
+            });
+        }
+
+        function makeTableSortable(tableId) {
+            var table = document.getElementById(tableId);
+            var headers = table.querySelectorAll('th');
+            
+            headers.forEach(function(header, index) {
+                header.addEventListener('click', function() {
+                    var isNumeric = index !== 0;
+                    sortTable(tableId, index, isNumeric);
+                });
+            });
+        }
+
+        makeTableSortable('tabel1');
+        makeTableSortable('tabel2');
+    </script>
+
+</body>
+</html>

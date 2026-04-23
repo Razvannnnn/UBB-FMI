@@ -1,0 +1,52 @@
+/*
+  divisible(X, Y)  =  { true , X%Y = 0
+                      { divisible(X, Y+1), X%Y != 0 si X > Y+1
+                      { false, altfel
+
+  X - numar natural a caruia ii verificam divizibilitatea
+  Y - numar natural
+  Modele de flux : (i, i)
+*/
+
+divisible(X, Y):- 0 is X mod Y, !.
+divisible(X, Y):- X > Y+1,
+                  divisible(X, Y+1).
+
+/*
+prim(X) = { true, X = 2
+          { false, X < 2
+          { not(divisible(X, 2)), altfel
+
+    X - numarul intreg pentru care verificam daca este prim
+    Modele de flux : (i)
+
+*/
+
+prim(2):- true, !.
+prim(N):- N < 2, !,
+          false.
+
+prim(N):- not(divisible(N, 2)).
+
+/*
+
+dubleaza_prim(l1,l2..ln) = { [], n = 0
+                           { l1 + dubleaza_prim(l2..ln), n != 0 si !prim(l1)
+                           { l1,l1 + dubleaza_prim(l2..ln),  n != 0 si prim(l1)
+
+dubleaza_prim(L, R)
+   L - lista data (lista de numere intregi)
+   R - lista raspuns (lista de numere intregi)
+
+   Modele de flux : (i, o) , (i, i)
+*/
+
+dubleaza_prim([],[]).
+dubleaza_prim([H|T], R):- not(prim(H)), !,
+                         dubleaza_prim(T, R1),
+                         R = [H|R1].
+
+dubleaza_prim([H|T], R):- prim(H), !,
+                          dubleaza_prim(T, R1),
+                          R = [H,H|R1].
+

@@ -1,0 +1,287 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "ChatClientGTK/1.0.0": {
+        "dependencies": {
+          "GtkSharp": "3.24.24.95",
+          "System.Configuration.ConfigurationManager": "9.0.3",
+          "log4net": "3.0.4",
+          "networking": "1.0.0",
+          "services": "1.0.0"
+        },
+        "runtime": {
+          "ChatClientGTK.dll": {}
+        }
+      },
+      "AtkSharp/3.24.24.95": {
+        "dependencies": {
+          "GLibSharp": "3.24.24.95"
+        },
+        "runtime": {
+          "lib/net6.0/AtkSharp.dll": {
+            "assemblyVersion": "3.24.24.95",
+            "fileVersion": "3.24.24.95"
+          }
+        }
+      },
+      "CairoSharp/3.24.24.95": {
+        "runtime": {
+          "lib/net6.0/CairoSharp.dll": {
+            "assemblyVersion": "3.24.24.95",
+            "fileVersion": "3.24.24.95"
+          }
+        }
+      },
+      "GdkSharp/3.24.24.95": {
+        "dependencies": {
+          "CairoSharp": "3.24.24.95",
+          "GLibSharp": "3.24.24.95",
+          "GioSharp": "3.24.24.95",
+          "PangoSharp": "3.24.24.95"
+        },
+        "runtime": {
+          "lib/net6.0/GdkSharp.dll": {
+            "assemblyVersion": "3.24.24.95",
+            "fileVersion": "3.24.24.95"
+          }
+        }
+      },
+      "GioSharp/3.24.24.95": {
+        "dependencies": {
+          "GLibSharp": "3.24.24.95"
+        },
+        "runtime": {
+          "lib/net6.0/GioSharp.dll": {
+            "assemblyVersion": "3.24.24.95",
+            "fileVersion": "3.24.24.95"
+          }
+        }
+      },
+      "GLibSharp/3.24.24.95": {
+        "runtime": {
+          "lib/net6.0/GLibSharp.dll": {
+            "assemblyVersion": "3.24.24.95",
+            "fileVersion": "3.24.24.95"
+          }
+        }
+      },
+      "GtkSharp/3.24.24.95": {
+        "dependencies": {
+          "AtkSharp": "3.24.24.95",
+          "CairoSharp": "3.24.24.95",
+          "GLibSharp": "3.24.24.95",
+          "GdkSharp": "3.24.24.95",
+          "GioSharp": "3.24.24.95",
+          "PangoSharp": "3.24.24.95"
+        },
+        "runtime": {
+          "lib/net6.0/GtkSharp.dll": {
+            "assemblyVersion": "3.24.24.95",
+            "fileVersion": "3.24.24.95"
+          }
+        }
+      },
+      "log4net/3.0.4": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/log4net.dll": {
+            "assemblyVersion": "3.0.4.0",
+            "fileVersion": "3.0.4.0"
+          }
+        }
+      },
+      "PangoSharp/3.24.24.95": {
+        "dependencies": {
+          "CairoSharp": "3.24.24.95",
+          "GLibSharp": "3.24.24.95"
+        },
+        "runtime": {
+          "lib/net6.0/PangoSharp.dll": {
+            "assemblyVersion": "3.24.24.95",
+            "fileVersion": "3.24.24.95"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.3": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "9.0.3",
+          "System.Security.Cryptography.ProtectedData": "9.0.3"
+        },
+        "runtime": {
+          "lib/net9.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.325.11113"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/9.0.3": {
+        "runtime": {
+          "lib/net9.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.325.11113"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.Messages.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.325.11113"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/9.0.3": {
+        "runtime": {
+          "lib/net9.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.325.11113"
+          }
+        }
+      },
+      "model/1.0.0": {
+        "runtime": {
+          "model.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "networking/1.0.0": {
+        "dependencies": {
+          "log4net": "3.0.4",
+          "model": "1.0.0",
+          "services": "1.0.0"
+        },
+        "runtime": {
+          "networking.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "services/1.0.0": {
+        "dependencies": {
+          "model": "1.0.0"
+        },
+        "runtime": {
+          "services.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ChatClientGTK/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AtkSharp/3.24.24.95": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LnSfsc0y11gfzczZj5bnpwcFkXFZuVTSSd92ML/FcHIM7FU+cAfm1UkAonv5BdwTRhzDbNDE39vihao/k75sUA==",
+      "path": "atksharp/3.24.24.95",
+      "hashPath": "atksharp.3.24.24.95.nupkg.sha512"
+    },
+    "CairoSharp/3.24.24.95": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EZ9KT3pwVAol35XbZW0Uwdg2LqhDvPnWdhqIrsedhDx+Omnu56hLzxh8mZGqmQvEwJE8Opbda4w9CqDtXbX6Vw==",
+      "path": "cairosharp/3.24.24.95",
+      "hashPath": "cairosharp.3.24.24.95.nupkg.sha512"
+    },
+    "GdkSharp/3.24.24.95": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rABpIGkxr8lOdyhEmrKXzjih3z3932kjqUmm5qaQhWVSvu9YepEk3J1FApgnKCW/EWEzlerzxnJArsyOlgMsZQ==",
+      "path": "gdksharp/3.24.24.95",
+      "hashPath": "gdksharp.3.24.24.95.nupkg.sha512"
+    },
+    "GioSharp/3.24.24.95": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-avYEDFlYgbogb+Y7ZhIXQpyJfL83bnPpBKY642YEW9PQ+pRK3qf2k0opvd5oHccXfByj6kAQjmRUSIS0pj19Fg==",
+      "path": "giosharp/3.24.24.95",
+      "hashPath": "giosharp.3.24.24.95.nupkg.sha512"
+    },
+    "GLibSharp/3.24.24.95": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1viZRMVjddf2HUCW7WDXT47rHssteHkAOimXQ2/pI8oGrPGNFuuw5MbX8BOIy73hCWVqo7JEMONv3z32OrCoCQ==",
+      "path": "glibsharp/3.24.24.95",
+      "hashPath": "glibsharp.3.24.24.95.nupkg.sha512"
+    },
+    "GtkSharp/3.24.24.95": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-RRUY45hAa5gsMcadvVjcLUzMjVtmuHSYTcIwM6j8LNgKhzFFHk69qM1D5ULfGxaWmVjicqNWiFtOtk8WsvPqaQ==",
+      "path": "gtksharp/3.24.24.95",
+      "hashPath": "gtksharp.3.24.24.95.nupkg.sha512"
+    },
+    "log4net/3.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4jJlhW7fTLIm0Ktq1FGlmgavlkEbfHCbqWEusacKQBq7NQ85vJOu5jjISCeOI4Pyu3kqIiAktv8WLKvyq6evwA==",
+      "path": "log4net/3.0.4",
+      "hashPath": "log4net.3.0.4.nupkg.sha512"
+    },
+    "PangoSharp/3.24.24.95": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-H7JeyEvLsgvsbamGpRgoNtdvzPiGwwsUuoeTobN1C/JRjw1J8Snw0yf2WBr7CKx5GLwbrwpQYOb7N/HD17ME8A==",
+      "path": "pangosharp/3.24.24.95",
+      "hashPath": "pangosharp.3.24.24.95.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0kw80ykL/iFhNtFbPpjxIavmCk7/l6MqQwNSNhEoSNuI9C82ZZ251thzQZ/btHut21Y2G9M+amQY1K5bhaAjKg==",
+      "path": "system.configuration.configurationmanager/9.0.3",
+      "hashPath": "system.configuration.configurationmanager.9.0.3.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-0nDJBZ06DVdTG2vvCZ4XjazLVaFawdT0pnji23ISX8I8fEOlRJyzH2I0kWiAbCtFwry2Zir4qE4l/GStLATfFw==",
+      "path": "system.diagnostics.eventlog/9.0.3",
+      "hashPath": "system.diagnostics.eventlog.9.0.3.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/9.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4PAwR9l3rhAESfymptisnO2KWpHmiTnKxovnREqmiY4BEakXD2ahQU4/NO0vzEarMw8RGzwpmWoiHwvL/waHfQ==",
+      "path": "system.security.cryptography.protecteddata/9.0.3",
+      "hashPath": "system.security.cryptography.protecteddata.9.0.3.nupkg.sha512"
+    },
+    "model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "networking/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

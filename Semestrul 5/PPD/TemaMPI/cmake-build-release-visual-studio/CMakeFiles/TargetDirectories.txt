@@ -1,0 +1,3 @@
+C:/Users/razva/Desktop/PPD/TemaMPI/cmake-build-release-visual-studio/CMakeFiles/TemaMPI.dir
+C:/Users/razva/Desktop/PPD/TemaMPI/cmake-build-release-visual-studio/CMakeFiles/edit_cache.dir
+C:/Users/razva/Desktop/PPD/TemaMPI/cmake-build-release-visual-studio/CMakeFiles/rebuild_cache.dir

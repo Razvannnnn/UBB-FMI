@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.clinicaprivata.Controller.MediciController">
+   <children>
+      <TableView fx:id="tableConsultatieView" prefHeight="290.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="tableColumnIdMedic" prefWidth="146.39996337890625" text="IdMedic" />
+          <TableColumn fx:id="tableColumnCnpPacient" prefWidth="121.60003662109375" text="CNP Pacient" />
+            <TableColumn fx:id="tableColumnNumePacient" prefWidth="92.79998779296875" text="Nume Pacient" />
+            <TableColumn fx:id="tableColumnData" prefWidth="97.5999755859375" text="Data" />
+            <TableColumn fx:id="tableColumnOra" prefWidth="143.199951171875" text="Ora" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

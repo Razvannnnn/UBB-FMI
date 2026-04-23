@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "UkmhdbrJddQ=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\razva\\Desktop\\MPP2\\CSharp_ChatSockets2025\\ChatSockets2025\\ChatClientGTK\\ChatClientGTK.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\razva\\.nuget\\packages\\atksharp\\3.24.24.95\\atksharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\cairosharp\\3.24.24.95\\cairosharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\gdksharp\\3.24.24.95\\gdksharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\giosharp\\3.24.24.95\\giosharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\glibsharp\\3.24.24.95\\glibsharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\gtksharp\\3.24.24.95\\gtksharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\log4net\\3.0.4\\log4net.3.0.4.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\pangosharp\\3.24.24.95\\pangosharp.3.24.24.95.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.3\\system.configuration.configurationmanager.9.0.3.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.3\\system.diagnostics.eventlog.9.0.3.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.3\\system.security.cryptography.protecteddata.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

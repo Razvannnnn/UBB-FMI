@@ -1,0 +1,124 @@
+  GNU nano 6.2                                                                                                                                                                                                                  client1.c                                                                                                                                                                                                                            #include <sys/types.h>
+#include <sys/socket.h>
+#include <stdio.h>
+#include <netinet/in.h>
+#include <netinet/ip.h>
+#include <string.h>
+#include <arpa/inet.h>
+#include <stdlib.h>
+#include <unistd.h>
+
+int main(){
+
+        int c,c_new;
+        struct sockaddr_in server,server_new;
+
+        c = socket(AF_INET, SOCK_STREAM, 0);
+        if(c<0){
+                printf("Eroare la crearea socketului\n");
+                return 1;
+        }
+
+        memset(&server, 0, sizeof(server));
+        server.sin_port = htons(5600);
+        server.sin_family=AF_INET;
+        server.sin_addr.s_addr = inet_addr("127.0.0.1");
+
+        if(connect(c,(struct sockaddr *) &server, sizeof(server))<0)
+        {
+                printf("Eroare la connect\n");
+                return 1;
+        }
+
+        uint16_t arr[100], n;
+        scanf("%hu", &n);
+
+        for(int i=0; i<n; i++)
+                scanf("%hu", &arr[i]);
+
+        n=htons(n);
+        send(c, &n, sizeof(n), 0);
+        n=ntohs(n);
+
+        for(int i=0; i<n; i++){
+                arr[i]=htons(arr[i]);
+                send(c, &arr[i], sizeof(arr[i]), 0);
+        }
+
+
+        uint16_t port_nou;
+        recv(c, &port_nou, sizeof(port_nou), MSG_WAITALL);
+        port_nou = ntohs(port_nou);
+
+//      close(c);
+
+//      int c_new;
+//      c_new = socket(AF_INET, SOCK_STREAM, 0);
+//        if(c_new<0){
+//                printf("Eroare la crearea socketului\n");
+//                return 1;
+//        }
+
+//      memset(&server, 0, sizeof(server));
+        //server.sin_port = htons(port_nou);
+//        server.sin_family=AF_INET;
+//        server.sin_addr.s_addr = inet_addr("127.0.0.1");
+
+
+
+
+//      if(connect(c_new,(struct sockaddr *) &server, sizeof(server))<0)
+//      {
+//                printf("Eroare la connect\n");
+//                return 1;
+//        }
+
+        c_new = socket(AF_INET, SOCK_STREAM, 0);
+        if(c_new<0){
+                printf("Eroare la crearea socketului\n");
+                return 1;
+        }
+
+        memset(&server_new, 0, sizeof(server_new));
+        server_new.sin_port = htons(port_nou);
+        server_new.sin_family=AF_INET;
+        server_new.sin_addr.s_addr = inet_addr("127.0.0.1");
+
+        printf("inainte de conectare la noul server\n");
+        if(connect(c_new,(struct sockaddr *) &server_new, sizeof(server_new))<0)
+        {
+                printf("Eroare la connect\n");
+                return 1;
+        }
+
+        uint16_t nr_clienti, maxim;
+        recv(c_new, &nr_clienti, sizeof(nr_clienti), MSG_WAITALL);
+        nr_clienti=ntohs(nr_clienti);
+        printf("nr_clienti = %hu\n", nr_clienti);
+
+        recv(c_new, &maxim, sizeof(maxim), MSG_WAITALL);
+        maxim=ntohs(maxim);
+        printf("nr_maxim trimis %hu\n", maxim);
+
+
+        uint16_t suma;
+        recv(c_new, &suma, sizeof(suma), MSG_WAITALL);
+        suma=ntohs(suma);
+        printf("suma numerelor %hu", suma);
+
+        close(c);
+        close(c_new);
+        return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+

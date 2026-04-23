@@ -1,0 +1,24 @@
+#a-----------------------------------------------------------------------------
+%vreau 0 10, dar nu stie, deci generez 1 11 si scad 1
+vector=unidrnd(11,1,5)-1;
+nr_sim=1000;
+suma_global=0;
+cazuri_favorabile=0;
+
+for i=1:nr_sim
+  nr_extrase=randsample(vector,2,false); %false pt ca e fara returnare
+  suma_locala=nr_extrase(1)+nr_extrase(2);
+  suma_global+=suma_locala;
+  if suma_locala>2 || suma_locala<-2
+    cazuri_favorabile++;
+  endif
+endfor
+
+
+fprintf("MEDIA SUMEI: %d\n",suma_global/nr_sim);
+fprintf("PROBABILITATEA |X1-X2|>2: %d\n",cazuri_favorabile/nr_sim);
+
+#b-----------------------------------------------------------------------------
+%nu mai pot folosi bino ca acum e fara returnare
+%2 succese, 11 nr din care alegem, 4 corecte,5 extrageri
+hygepdf(2,11,4,5)

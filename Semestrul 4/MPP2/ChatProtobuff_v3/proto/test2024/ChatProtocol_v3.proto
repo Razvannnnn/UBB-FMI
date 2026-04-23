@@ -1,0 +1,42 @@
+syntax="proto3";
+package chat.protocol;
+
+option java_package = "chat.network.protobuffprotocol";
+option java_outer_classname = "ChatProtobufs";
+
+message User{
+     string id=1;
+     string passwd=2;
+}
+
+message Message{
+     string receiverId=1;
+     string senderId=2;
+     string text=3;
+}
+message ChatRequest {
+  enum Type {Unkown=0; Login = 1; Logout = 2; SendMessage = 3; GetLoggedFriends=4 ;}
+
+  // Identifies which request is filled in.
+   Type type = 1;
+
+  // One of the following will be filled in, depending on the type.
+   oneof payload{
+       User user = 2;
+       Message message = 3;
+  }
+}
+
+message ChatResponse{
+   enum Type { Unknown=0; Ok = 1; Error = 2; GetLoggedFriends=3; FriendLoggedIn = 4; FriendLoggedOut=5; NewMessage=6;  }
+
+     // Identifies which request is filled in.
+      Type type = 1;
+
+     // One of the following will be filled in, depending on the type.
+      string error = 2;
+      repeated User friends=3;
+      User user=4 ;
+      Message message = 5;
+
+}

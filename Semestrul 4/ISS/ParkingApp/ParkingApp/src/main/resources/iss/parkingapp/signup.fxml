@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iss.parkingapp.SignUpController">
+   <children>
+      <VBox alignment="CENTER" layoutX="78.0" prefHeight="400.0" prefWidth="242.0" spacing="15.0">
+         <children>
+            <Label text="Register Account">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldNume" prefHeight="25.0" prefWidth="281.0" promptText="Nume" />
+            <TextField fx:id="textFieldPrenume" promptText="Prenume" />
+            <TextField fx:id="textFieldEmail" promptText="Email" />
+            <TextField fx:id="textFieldParola" promptText="Parola" />
+            <Button fx:id="buttonSignup" mnemonicParsing="false" onAction="#handleSignup" text="Sign Up" />
+            <Button mnemonicParsing="false" onAction="#handleClose" text="Close" underline="true" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

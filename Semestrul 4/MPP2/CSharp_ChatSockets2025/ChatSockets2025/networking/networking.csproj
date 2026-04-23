@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\model\model.csproj" />
+      <ProjectReference Include="..\services\services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="log4net" Version="3.0.4" />
+    </ItemGroup>
+    
+</Project>

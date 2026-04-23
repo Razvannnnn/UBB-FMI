@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="617.0" stylesheets="@../../../Style/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.reteasocializare.RegisterController">
+    <children>
+        <HBox spacing="0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <!-- Left Pane -->
+            <VBox alignment="CENTER" styleClass="left-pane" HBox.hgrow="ALWAYS">
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../icon.png" />
+               </image>
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin>
+            </ImageView>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="app-name" text="Social Network">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Text>
+                <Text styleClass="tagline" text="Connect with friends">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+            </VBox>
+
+            <!-- Right Pane -->
+            <VBox alignment="CENTER" prefHeight="430.0" prefWidth="316.0" spacing="20.0" styleClass="right-pane" HBox.hgrow="ALWAYS">
+                <Text styleClass="welcome-text" text="Create Account">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <GridPane alignment="CENTER" hgap="10.0" vgap="10.0">
+                    <columnConstraints>
+                  <ColumnConstraints />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints vgrow="ALWAYS" />
+                        <RowConstraints vgrow="ALWAYS" />
+                        <RowConstraints vgrow="ALWAYS" />
+                        <RowConstraints vgrow="ALWAYS" />
+                    </rowConstraints>
+                    <children>
+                        <TextField fx:id="textFieldUsername" prefHeight="25.0" prefWidth="399.0" />
+                        <TextField fx:id="textFieldNume" GridPane.rowIndex="1" />
+                        <TextField fx:id="textFieldPrenume" GridPane.rowIndex="2" />
+                        <PasswordField fx:id="passwordField" GridPane.rowIndex="3" />
+                    </children>
+                </GridPane>
+                <VBox alignment="CENTER" prefHeight="101.0" prefWidth="199.0" spacing="10.0">
+                    <Button fx:id="buttonRegister" mnemonicParsing="false" onAction="#handleRegister" styleClass="login-button" text="Register">
+                        <VBox.margin>
+                            <Insets bottom="10.0" top="10.0" />
+                        </VBox.margin>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </Button>
+                    <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#handleBack" styleClass="register-button" text="Go Back">
+                        <VBox.margin>
+                            <Insets bottom="10.0" top="10.0" />
+                        </VBox.margin>
+                        <cursor>
+                            <Cursor fx:constant="HAND" />
+                        </cursor>
+                    </Button>
+                </VBox>
+            </VBox>
+        </HBox>
+    </children>
+</AnchorPane>

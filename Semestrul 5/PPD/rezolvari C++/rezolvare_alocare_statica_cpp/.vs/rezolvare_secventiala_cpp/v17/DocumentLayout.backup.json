@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE31CDC-96E3-467D-8AF3-314B987D61AB}|rezolvare_secventiala_cpp.vcxproj|D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BE31CDC-96E3-467D-8AF3-314B987D61AB}|rezolvare_secventiala_cpp.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE31CDC-96E3-467D-8AF3-314B987D61AB}|rezolvare_secventiala_cpp.vcxproj|D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\secvential.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BE31CDC-96E3-467D-8AF3-314B987D61AB}|rezolvare_secventiala_cpp.vcxproj|solutionrelative:secvential.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE31CDC-96E3-467D-8AF3-314B987D61AB}|rezolvare_secventiala_cpp.vcxproj|D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\paralel_linii.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BE31CDC-96E3-467D-8AF3-314B987D61AB}|rezolvare_secventiala_cpp.vcxproj|solutionrelative:paralel_linii.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BE31CDC-96E3-467D-8AF3-314B987D61AB}|rezolvare_secventiala_cpp.vcxproj|D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\paralel_coloane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7BE31CDC-96E3-467D-8AF3-314B987D61AB}|rezolvare_secventiala_cpp.vcxproj|solutionrelative:paralel_coloane.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-20T15:06:24.255Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "paralel_coloane.cpp",
+              "DocumentMoniker": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\paralel_coloane.cpp",
+              "RelativeDocumentMoniker": "paralel_coloane.cpp",
+              "ToolTip": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\paralel_coloane.cpp",
+              "RelativeToolTip": "paralel_coloane.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwD0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-20T19:28:03.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "paralel_linii.cpp",
+              "DocumentMoniker": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\paralel_linii.cpp",
+              "RelativeDocumentMoniker": "paralel_linii.cpp",
+              "ToolTip": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\paralel_linii.cpp",
+              "RelativeToolTip": "paralel_linii.cpp",
+              "ViewState": "AgIAACcAAAAAAAAAAAAkwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-20T18:34:47.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "secvential.cpp",
+              "DocumentMoniker": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\secvential.cpp",
+              "RelativeDocumentMoniker": "secvential.cpp",
+              "ToolTip": "D:\\UBB INFO\\UBB INFO - ANUL III (2025-2026)\\Semestrul 5\\PPD\\Teme-Lab\\Lab1\\rezolvari C\u002B\u002B\\rezolvare_alocare_statica_cpp\\secvential.cpp",
+              "RelativeToolTip": "secvential.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-20T15:04:23.67Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

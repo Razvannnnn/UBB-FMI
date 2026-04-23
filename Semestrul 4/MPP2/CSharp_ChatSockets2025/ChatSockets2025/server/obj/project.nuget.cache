@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "VXvcjRL+9ZU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\razva\\Desktop\\MPP2\\CSharp_ChatSockets2025\\ChatSockets2025\\server\\server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\razva\\.nuget\\packages\\log4net\\3.0.4\\log4net.3.0.4.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\microsoft.data.sqlite\\9.0.3\\microsoft.data.sqlite.9.0.3.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.3\\microsoft.data.sqlite.core.9.0.3.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\sqlite\\3.13.0\\sqlite.3.13.0.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.10\\sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.configuration.configurationmanager\\9.0.3\\system.configuration.configurationmanager.9.0.3.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.3\\system.diagnostics.eventlog.9.0.3.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\razva\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.3\\system.security.cryptography.protecteddata.9.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

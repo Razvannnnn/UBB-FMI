@@ -1,0 +1,190 @@
+https://www.math.utah.edu/docs/info/emacs-lisp-intro_8.html
+
+CAR -> extrage primul element dintr-o lista
+    (car '(rose violet daisy buttercup)) -> rose
+
+CDR -> returneaza restul listei in afara de primul
+    (cdr '(rose violet daisy buttercup)) -> (violet daisy buttercup)
+
+CONS ->  da append la o lista
+    (cons 'pine '(fir oak maple)) -> (pine fir oak maple)
+
+    (cons 'buttercup ()) -> (buttercup)
+
+LENGTH -> returneaza lungimea listei
+   (length '(daisy buttercup)) -> 2
+
+NTHCDR -> face cdr de mai multe ori
+    (cdr (cdr '(pine fir oak maple)))
+        => (oak maple)
+
+(nthcdr 2 '(pine fir oak maple))
+     => (oak maple)
+
+SETQ -> seteaza o variabila catre o lista
+    (setq animals '(giraffe antelope tiger lion)) : animals -> (giraffe antelope tiger lion)
+
+SETCAR -> seteaza primul element la o valoare data
+    (setcar animals 'hippopotamus) : animals -> (hippopotamus antelope tiger lion)
+
+SETCDR -> seteaza restul listei
+  (setq domesticated-animals '(horse cow sheep goat)) : domesticated-animals -> (horse cow sheep goat)
+  (setcdr domesticated-animals '(cat dog)) : domesticated-animals -> (horse cat dog)
+
+In lisp a list looks like this: 
+    '(a b c d)
+    (+ 2 2)
+
+LISP ATOM -> indivisible - numbers , symbols, or single characters
+    '(this list includes "text between quotation marks.") -> "text between quotation marks." -> considered atom
+
+CONCAT - concatenates 2 strings
+    (concat "abc" "def")
+
+SUBSTRING - extrage un substring unde ai precizat (l , r)
+    (substring "The quick brown fox jumped." 16 19) -> fox
+
+   To set the value of the variable carnivores to the list '(lion tiger leopard) using setq, the following expression is used:
+
+DIFFERENCE BETWEEN SETQ | SET
+    (setq carnivores '(lion tiger leopard))
+
+    (set 'carnivores '(lion tiger leopard))
+
+
+INITIALIZER
+    (setq coun  ter 0)                ; Let's call this the initializer.
+    (setq coun  ter (+ counter 1))    ; This is the incrementer.
+    counter                           ; This is the counter.
+
+FUNCTION DEFINITION
+  (defun function-name (arguments...)
+    "optional-documentation..."
+    (interactive argument-passing-info)     ; optional
+    body...)
+
+  Sa multiplic cu 7
+  (
+    defun multiply_by_7 (number)
+    "Multiply by 7 the parameter number"
+    (* 7 number)
+  )
+
+  (multiply-by-seven 3) -> 21
+
+
+LET -> local varaible
+    (let ((variable value)
+      (variable value)
+      ...)
+      body...)
+
+    (let ((zebra 'stripes)
+      (tiger 'fierce))
+      (message "One kind of animal has %s and another is %s."
+           zebra tiger))
+     -> "One kind of animal has stripes and another is fierce."
+
+    Here, the varlist is ((zebra 'stripes) (tiger 'fierce)).
+
+LET with unitialized variables
+  (let ((birch 3)
+      pine 
+      fir
+      (something 'some))
+      (message
+        "Here are %d values, %s, %s, %s"
+        birch pine fir something  
+      )
+  ) -> Here are 3 values, nil , nil, some
+
+IF command -> 
+    (if true-or-false-test
+    action-to-carry-out-if-test-is-true)
+
+    ( 
+      if (> 5 4)
+      (message "The value 5 is greater than 4")
+    )
+
+IF ELSE
+  (
+    if (> 5 4)
+      (message "The value 5 is greater than 4")
+    (message "on elese")
+  )
+
+NIL -> {
+    1. empty list
+    2. false, as in the test condition in the if statement
+  }
+
+SAVE-EXECURSION
+    (
+      save-excursion
+      first-expression-in-body
+      second-expression-in-body
+      third-expression-in-body
+       ...
+      last-expression-in-body
+    )
+
+EQUAL -> just tests if they are the same
+
+
+HOW LISTS ARE IMPLEMENTED
+  (rose violet buttercup)
+    ___ ___      ___ ___      ___ ___ 
+   |___|___|--> |___|___|--> |___|___|--> nil
+     |            |            |      
+     |            |            |
+      --> rose     --> violet   --> buttercup
+
+  (setq bouquet '(rose violet buttercup))
+
+  bouquet
+     |
+     |     ___ ___      ___ ___      ___ ___ 
+      --> |___|___|--> |___|___|--> |___|___|--> nil
+            |            |            |      
+            |            |            |
+             --> rose     --> violet   --> buttercup
+
+  (setq flowers (cdr bouquet))
+
+   produces this:
+
+    bouquet        flowers
+      |              |        
+      |     ___ ___  |     ___ ___      ___ ___ 
+       --> |   |   |  --> |   |   |    |   |   |
+           |___|___|----> |___|___|--> |___|___|--> nil
+             |              |            |      
+             |              |            |
+              --> rose       --> violet   --> buttercup
+
+
+  (setq bouquet (cons 'lilly bouquet))
+  
+   produces:
+
+    bouquet                       flowers        
+      |                             |                 
+      |     ___ ___        ___ ___  |     ___ ___       ___ ___        
+       --> |   |   |      |   |   |  --> |   |   |     |   |   |       
+           |___|___|----> |___|___|----> |___|___|---->|___|___|--> nil
+             |              |              |             |             
+             |              |              |             |             
+              --> lilly      --> rose       --> violet    --> buttercup
+    
+    (eq (cdr (cdr bouquet)) flowers) -> true
+
+MAPCAR 
+  (mapcar '1+ '(2 4 6))
+      ⇒ (3 5 7)
+
+COND 
+    (cond (test-1 consequent-1-1 consequent-1-2 ...) 
+          (test-2) 
+          (test-3 consequent-3-1 ...) 
+          ... )

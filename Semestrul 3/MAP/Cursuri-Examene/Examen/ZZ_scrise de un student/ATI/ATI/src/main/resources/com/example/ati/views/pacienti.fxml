@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ati.Controller.PacientiController">
+   <children>
+      <TableView fx:id="tablePacientView" onMouseClicked="#handleActivateButtons" prefHeight="355.0" prefWidth="666.0">
+        <columns>
+          <TableColumn fx:id="tableColumnCnp" prefWidth="168.00000303983688" text="CNP" />
+          <TableColumn fx:id="tableColumnDiagnostic" minWidth="0.0" prefWidth="292.7999725341797" text="Diagnostic" />
+            <TableColumn fx:id="tableColumnGravitate" prefWidth="204.0" text="Gravitate" />
+        </columns>
+      </TableView>
+      <Button fx:id="placeTic" onAction="#handleAtribuirePatTic" layoutX="22.0" layoutY="379.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="155.0" text="Atribuie pat TIC" />
+      <Button fx:id="placeTim" onAction="#handleAtribuirePatTim" layoutX="248.0" layoutY="379.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="155.0" text="Atribuie pat TIM" />
+      <Button fx:id="placeTip" onAction="#handleAtribuirePatTip" layoutX="443.0" layoutY="379.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="155.0" text="Atribuie pat TIP" />
+   </children>
+</AnchorPane>

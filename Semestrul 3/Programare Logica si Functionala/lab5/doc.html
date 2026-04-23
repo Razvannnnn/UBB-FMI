@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentație Lisp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #555;
+        }
+        code {
+            background-color: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+        }
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-left: 4px solid #ccc;
+            overflow-x: auto;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentație Lisp</h1>
+
+    <h2>CAR</h2>
+    <p>Extrage primul element dintr-o listă.</p>
+    <pre>(car '(rose violet daisy buttercup)) ;; => rose</pre>
+
+    <h2>CDR</h2>
+    <p>Returnează restul listei, în afara de primul element.</p>
+    <pre>(cdr '(rose violet daisy buttercup)) ;; => (violet daisy buttercup)</pre>
+
+    <h2>CONS</h2>
+    <p>Adaugă un element la începutul unei liste.</p>
+    <pre>
+(cons 'pine '(fir oak maple)) ;; => (pine fir oak maple)
+(cons 'buttercup ())          ;; => (buttercup)
+    </pre>
+
+    <h2>LENGTH</h2>
+    <p>Returnează lungimea unei liste.</p>
+    <pre>(length '(daisy buttercup)) ;; => 2</pre>
+
+    <h2>NTHCDR</h2>
+    <p>Face <code>cdr</code> de mai multe ori.</p>
+    <pre>
+(cdr (cdr '(pine fir oak maple))) ;; => (oak maple)
+(nthcdr 2 '(pine fir oak maple)) ;; => (oak maple)
+    </pre>
+
+    <h2>SETQ</h2>
+    <p>Setează o variabilă către o listă.</p>
+    <pre>
+(setq animals '(giraffe antelope tiger lion)) 
+;; => animals: (giraffe antelope tiger lion)
+    </pre>
+
+    <h2>SETCAR</h2>
+    <p>Setează primul element la o valoare dată.</p>
+    <pre>
+(setcar animals 'hippopotamus) 
+;; => animals: (hippopotamus antelope tiger lion)
+    </pre>
+
+    <h2>SETCDR</h2>
+    <p>Setează restul listei.</p>
+    <pre>
+(setq domesticated-animals '(horse cow sheep goat))
+(setcdr domesticated-animals '(cat dog)) 
+;; => domesticated-animals: (horse cat dog)
+    </pre>
+
+    <h2>ATOM</h2>
+    <p>Un element indivizibil - numere, simboluri sau caractere unice.</p>
+    <pre>
+'(this list includes "text between quotation marks.")
+;; Atom: "text between quotation marks."
+    </pre>
+
+    <h2>CONCAT</h2>
+    <p>Concatenează două stringuri.</p>
+    <pre>(concat "abc" "def") ;; => "abcdef"</pre>
+
+    <h2>SUBSTRING</h2>
+    <p>Extrage un substring specificat de pozițiile stânga și dreapta.</p>
+    <pre>(substring "The quick brown fox jumped." 16 19) ;; => "fox"</pre>
+
+    <h2>LET</h2>
+    <p>Definește variabile locale.</p>
+    <pre>
+(let ((zebra 'stripes)
+      (tiger 'fierce))
+  (message "One kind of animal has %s and another is %s." zebra tiger))
+;; => "One kind of animal has stripes and another is fierce."
+    </pre>
+
+    <h2>IF</h2>
+    <p>Execută o acțiune dacă testul este adevărat.</p>
+    <pre>
+(if (> 5 4)
+    (message "The value 5 is greater than 4"))
+    </pre>
+
+    <h2>IF-ELSE</h2>
+    <p>Execută o acțiune diferită dacă testul este fals.</p>
+    <pre>
+(if (> 5 4)
+    (message "The value 5 is greater than 4")
+  (message "On else"))
+    </pre>
+
+    <h2>NIL</h2>
+    <p>Are următoarele sensuri:</p>
+    <ul>
+        <li>Listă goală</li>
+        <li>Fals (în condiții de tip <code>if</code>)</li>
+    </ul>
+</body>
+</html>
+

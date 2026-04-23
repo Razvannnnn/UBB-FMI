@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="560.0" styleClass="left-pane" stylesheets="@../../../Style/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.reteasocializare.FriendRequestController">
+    <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="560.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="560.0">
+               <children>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page-title" text="Friend Requests">
+                        <font>
+                            <Font size="20.0" />
+                        </font>
+                     <HBox.margin>
+                        <Insets left="35.0" />
+                     </HBox.margin>
+                    </Text>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="page-title" text="Pending Friend Requests">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="65.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="279.0" prefWidth="560.0">
+               <children>
+                  <TableView fx:id="tableView2" prefHeight="249.0" prefWidth="248.0">
+                    <columns>
+                      <TableColumn fx:id="columnPrenume2" prefWidth="124.0" text="Prenume" />
+                      <TableColumn fx:id="columnNume2" minWidth="0.0" prefWidth="122.66665649414062" text="Nume" />
+                    </columns>
+                  </TableView>
+                    <TableView fx:id="tableView" prefHeight="249.0" prefWidth="248.0" stylesheets="@../../../Style/style.css">
+                        <columns>
+                            <TableColumn fx:id="columnPrenume" prefWidth="122.66668128967285" text="Prenume" />
+                            <TableColumn fx:id="columnNume" prefWidth="124.00001525878906" text="Nume" />
+                        </columns>
+                    </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="560.0" stylesheets="@../../../Style/style.css">
+               <children>
+                      <Button fx:id="buttonAccept" mnemonicParsing="false" onAction="#handleAcceptRequest" styleClass="menu-button" text="Accept">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="buttonDecline" mnemonicParsing="false" onAction="#handleDeclineRequest" styleClass="menu-button" text="Decline">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                      <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#handleGoBack" styleClass="close-button" text="Go Back">
+                     <HBox.margin>
+                        <Insets left="150.0" right="30.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>

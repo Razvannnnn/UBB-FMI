@@ -1,0 +1,21 @@
+plugins{
+    id 'java'
+}
+
+group 'JavaChatSockets'
+version '1.0'
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project (':ChatModel')
+    // https://mvnrepository.com/artifact/org.springframework/spring-context
+    implementation 'org.springframework:spring-context:6.1.1'
+
+    runtimeOnly group: 'org.xerial', name: 'sqlite-jdbc', version: '3.16.1'
+    testImplementation group: 'junit', name: 'junit', version: '4.11'
+}

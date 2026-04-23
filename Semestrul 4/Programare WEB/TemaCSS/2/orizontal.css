@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+header {
+    background-color: red;
+}
+
+footer {
+    background-color: pink;
+    margin-top: auto;
+}
+
+main {
+    background-color: green;
+    height: 70vh;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+li {
+    width: 18%;
+    border-left: 2px solid;
+    float: left;
+}
+
+#menu {
+    justify-content: space-between;
+    background-color: yellow;
+}

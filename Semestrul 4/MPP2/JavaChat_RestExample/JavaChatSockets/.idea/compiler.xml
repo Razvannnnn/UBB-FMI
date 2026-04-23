@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="ChatClient_main" target="1.8" />
+      <module name="ChatClient_test" target="1.8" />
+      <module name="ChatModel_main" target="1.8" />
+      <module name="ChatModel_test" target="1.8" />
+      <module name="ChatNetworking_main" target="1.8" />
+      <module name="ChatNetworking_test" target="1.8" />
+      <module name="ChatPersistence_main" target="1.8" />
+      <module name="ChatPersistence_test" target="1.8" />
+      <module name="ChatServer_main" target="1.8" />
+      <module name="ChatServer_test" target="1.8" />
+      <module name="ChatServices_main" target="1.8" />
+      <module name="ChatServices_test" target="1.8" />
+      <module name="JavaChatSockets" target="17" />
+      <module name="JavaChatSockets.ChatClient" target="17" />
+      <module name="JavaChatSockets.ChatClient.main" target="17" />
+      <module name="JavaChatSockets.ChatClient.test" target="17" />
+      <module name="JavaChatSockets.ChatModel" target="17" />
+      <module name="JavaChatSockets.ChatModel.main" target="17" />
+      <module name="JavaChatSockets.ChatModel.test" target="17" />
+      <module name="JavaChatSockets.ChatNetworking" target="17" />
+      <module name="JavaChatSockets.ChatNetworking.main" target="17" />
+      <module name="JavaChatSockets.ChatNetworking.test" target="17" />
+      <module name="JavaChatSockets.ChatPersistence" target="17" />
+      <module name="JavaChatSockets.ChatPersistence.main" target="17" />
+      <module name="JavaChatSockets.ChatPersistence.test" target="17" />
+      <module name="JavaChatSockets.ChatServer" target="17" />
+      <module name="JavaChatSockets.ChatServer.main" target="17" />
+      <module name="JavaChatSockets.ChatServer.test" target="17" />
+      <module name="JavaChatSockets.ChatServices" target="17" />
+      <module name="JavaChatSockets.ChatServices.main" target="17" />
+      <module name="JavaChatSockets.ChatServices.test" target="17" />
+      <module name="JavaChatSockets.main" target="17" />
+      <module name="JavaChatSockets.RestServices" target="17" />
+      <module name="JavaChatSockets.RestServices.main" target="17" />
+      <module name="JavaChatSockets.RestServices.test" target="17" />
+      <module name="JavaChatSockets.test" target="17" />
+      <module name="JavaChatSockets_main" target="1.8" />
+      <module name="JavaChatSockets_test" target="1.8" />
+      <module name="RestServices_main" target="1.8" />
+      <module name="RestServices_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

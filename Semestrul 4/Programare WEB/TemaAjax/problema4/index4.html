@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tic-Tac-Toe AJAX</title>
+<style>
+  table { border-collapse: collapse; margin: 20px; }
+  td {
+    width: 60px; height: 60px; border: 1px solid black;
+    font-size: 48px; text-align: center; vertical-align: middle;
+    cursor: pointer;
+  }
+  td.disabled { cursor: default; color: gray; }
+</style>
+<script src="jquery-2.0.3.js"></script>
+</head>
+<body>
+
+<h1>Tic-Tac-Toe</h1>
+
+<div>
+  <button id="plain">JavaScript</button>
+  <button id="jquery">jQuery</button>
+</div>
+
+<table id="board">
+  <tbody>
+    <tr><td data-pos="0"></td><td data-pos="1"></td><td data-pos="2"></td></tr>
+    <tr><td data-pos="3"></td><td data-pos="4"></td><td data-pos="5"></td></tr>
+    <tr><td data-pos="6"></td><td data-pos="7"></td><td data-pos="8"></td></tr>
+  </tbody>
+</table>
+
+<p id="message"></p>
+
+<script>
+let board = Array(9).fill(null);
+const player = 'X';
+const computer = '0';
+let gameOver = false;
+let mode = null;
+
+function render() {
+  for(let i = 0; i < 9; i++) {
+    const cell = document.querySelector('td[data-pos="' + i + '"]');
+    cell.textContent = board[i] || '';
+    if(board[i] || gameOver) cell.classList.add('disabled');
+    else cell.classList.remove('disabled');
+  }
+}
+
+function setMsg(msg) {
+  document.getElementById('message').textContent = msg;
+}
+
+function checkWin(b) {
+  const w = [
+    [0,1,2],[3,4,5],[6,7,8],
+    [0,3,6],[1,4,7],[2,5,8],
+    [0,4,8],[2,4,6]
+  ];
+  for(const [a,b1,c] of w) {
+    if(b[a] && b[a] === b[b1] && b[a] === b[c]) return b[a];
+  }
+  if(!b.includes(null)) return 'draw';
+  return null;
+}
+
+function moveJS(pos) {
+  if(gameOver || board[pos]) return;
+  board[pos] = player;
+  render();
+  let win = checkWin(board);
+  if(win) {
+    gameOver = true;
+    setMsg(win === 'draw' ? 'Remiza' : 'Ai castigat');
+    render();
+    return;
+  }
+  setMsg('Calculatorul muta...');
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', 'move.php');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onload = function() {
+    if(xhr.status === 200) {
+      const res = JSON.parse(xhr.responseText);
+      if(res.error) {
+        setMsg('Eroare server: ' + res.error);
+        return;
+      }
+      board = res.board;
+      render();
+      if(res.winner) {
+        gameOver = true;
+        setMsg(res.winner === 'draw' ? 'Remiza' : 'Calculatorul a castigat');
+      } else {
+        setMsg('Este randul tau');
+      }
+    } else {
+      setMsg('Eroare comunicare server');
+    }
+  };
+  xhr.send(JSON.stringify({board: board}));
+}
+
+function moveJQ(pos) {
+  if(gameOver || board[pos]) return;
+  board[pos] = player;
+  render();
+  let win = checkWin(board);
+  if(win) {
+    gameOver = true;
+    setMsg(win === 'draw' ? 'Remiza' : 'Ai castigat');
+    render();
+    return;
+  }
+  setMsg('Calculatorul muta...');
+  $.ajax({
+    url: 'move.php',
+    method: 'POST',
+    contentType: 'application/json',
+    data: JSON.stringify({ board: board }),
+    success: function(res) {
+      board = res.board;
+      render();
+      if(res.winner) {
+        gameOver = true;
+        setMsg(res.winner === 'draw' ? 'Remiza' : 'Calculatorul a castigat');
+      } else {
+        setMsg('Este randul tau');
+      }
+    },
+    error: function() {
+      setMsg('Eroare comunicare server');
+    }
+  });
+}
+
+function reset() {
+  board = Array(9).fill(null);
+  gameOver = false;
+  setMsg('Este randul tau');
+  render();
+}
+
+document.getElementById('board').addEventListener('click', function(e) {
+  if(e.target.tagName !== 'TD') return;
+  const pos = parseInt(e.target.getAttribute('data-pos'));
+  if(mode === 'plain') moveJS(pos);
+  if(mode === 'jquery') moveJQ(pos);
+});
+
+document.getElementById('plain').onclick = function() {
+  mode = 'plain';
+  reset();
+};
+
+document.getElementById('jquery').onclick = function() {
+  mode = 'jquery';
+  reset();
+};
+
+</script>
+
+</body>
+</html>

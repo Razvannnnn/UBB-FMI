@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ajut.LoginController">
+   <children>
+      <HBox alignment="CENTER" layoutX="10.0" layoutY="11.0" prefHeight="378.0" prefWidth="578.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="378.0" prefWidth="294.0" spacing="10.0">
+               <children>
+                  <Label alignment="CENTER" text="Register" />
+                  <TextField fx:id="numeField" promptText="Nume" />
+                  <TextField fx:id="prenumeField" promptText="Prenume" />
+                  <TextField fx:id="usernameField" promptText="Username" />
+                  <PasswordField fx:id="parolaField" promptText="Parola" />
+                  <ComboBox fx:id="orasComboBox" prefWidth="150.0" promptText="Oras" />
+                  <TextField fx:id="stradaField" promptText="Strada" />
+                  <TextField fx:id="numarstradaField" promptText="Numar Strada" />
+                  <TextField fx:id="telefonField" promptText="Telefon" />
+                  <Button fx:id="registerButton" mnemonicParsing="false" onAction="#handleRegister" text="Register" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="378.0" prefWidth="287.0" spacing="50.0">
+               <children>
+                  <ComboBox fx:id="userComboBox" prefWidth="150.0" promptText="User" />
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#handleLogin" text="Log in" />
+               </children></VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

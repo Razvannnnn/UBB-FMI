@@ -1,0 +1,8 @@
+Considerati variabila aleatoare X~N(100,20), care reprezinta valoarea pulsului inregistrata de un smaartwatch pentru 
+un alergator la un maraton.
+Generati aleator si independent 1000 de valori pentru X, apoi:
+
+a) Estimati probabilitatea evenimentului A:"80<X<140". Punctaj: 0.5.
+b) Folosind comenzi Octave, afisati valoarea probabilitatii teoretice a evenimentului A. Punctaj: 0.5.
+c) Reprezentati in aceeasi figura histograma frecventelor relative cu 13 bare/clase ale valorilor generate si 
+graficul functiei de densitate a lui X. Punctaj: 1.

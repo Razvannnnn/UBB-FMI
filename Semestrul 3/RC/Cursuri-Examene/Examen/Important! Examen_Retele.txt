@@ -1,0 +1,23 @@
+Examen Retele
+
+La examen pot veni multe intrebari ce nu sunt pe
+pdf-ul acela. Uneori in proportie de 50%, alteori
+15% (70%??).
+
+Un exemplu de exercitiu (din mai multe) era:
+Ti se da o retea cu routere si tot felul de subretele
+si sa alegi ordinea ip-urilor vizitate de 
+track ip route (sau cum era instructiunea aia de te ajuta
+sa "diagnostichezi" o retea cand nu merge).
+
+Si cica facuse la ceva curs un exemplu de parcurgere.
+Si stiai daca ai fi mers la curs.
+
+
+
+
+
+
+
+
+

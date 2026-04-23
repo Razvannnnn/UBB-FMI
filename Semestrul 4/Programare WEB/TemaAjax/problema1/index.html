@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mersul trenurilor</title>
+    <script src="jquery-2.0.3.js"></script>
+    <style>
+        #selector { margin-bottom: 20px; }
+        button { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <h1>Mersul trenurilor</h1>
+
+    <div id="selector">
+        <strong>Alege implementarea:</strong><br>
+        <button id="usePlainJS">Foloseste JS</button>
+        <button id="useJQuery">Foloseste jQuery</button>
+    </div>
+
+    <span>
+        <label>
+            Statii plecare:
+            <select id="plecari" multiple size="6">
+            </select>
+        </label>
+    </span>
+
+    <span>
+        <label>
+            Statii sosire:
+            <select id="sosiri" multiple size="6">
+                <option>(none)</option>
+            </select>
+        </label>
+    </span>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const plecari = document.getElementById('plecari');
+            const sosiri = document.getElementById('sosiri');
+            let currentImplementation = null;
+
+            function loadPlecariPlainJS() {
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', 'showPlecari.php', true);
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        plecari.innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            }
+
+            function loadSosiriPlainJS(value) {
+                const xhr = new XMLHttpRequest();
+                xhr.open('GET', 'showSosiri.php?name=' + encodeURIComponent(value), true);
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        sosiri.innerHTML = xhr.responseText;
+                    }
+                };
+                xhr.send();
+            }
+
+            function activatePlainJS() {
+                loadPlecariPlainJS();
+                plecari.addEventListener('change', plainJSChangeHandler);
+            }
+
+            function plainJSChangeHandler() {
+                const selected = plecari.options[plecari.selectedIndex];
+                if (selected) {
+                    loadSosiriPlainJS(selected.value);
+                }
+            }
+
+            function deactivatePlainJS() {
+                plecari.removeEventListener('change', plainJSChangeHandler);
+            }
+
+            // JQ
+            function activateJQuery() {
+                $.ajax({
+                    type: "GET",
+                    url: "showPlecari.php",
+                    success: function (data) {
+                        $("#plecari").html(data);
+                    }
+                });
+
+                $('#plecari').on('change.jqueryHandler', function () {
+                    var value = $(this).val();
+                    if (value && value.length > 0) {
+                        $.ajax({
+                            type: "GET",
+                            url: "showSosiri.php",
+                            data: { name: value[0] },
+                            success: function (data) {
+                                $("#sosiri").html(data);
+                            }
+                        });
+                    }
+                });
+            }
+
+            function deactivateJQuery() {
+                $('#plecari').off('change.jqueryHandler');
+            }
+
+            document.getElementById('usePlainJS').addEventListener('click', function () {
+                if (currentImplementation === 'jquery') deactivateJQuery();
+                currentImplementation = 'plainjs';
+                activatePlainJS();
+            });
+
+            document.getElementById('useJQuery').addEventListener('click', function () {
+                if (currentImplementation === 'plainjs') deactivatePlainJS();
+                currentImplementation = 'jquery';
+                activateJQuery();
+            });
+        });
+    </script>
+
+</body>
+</html>

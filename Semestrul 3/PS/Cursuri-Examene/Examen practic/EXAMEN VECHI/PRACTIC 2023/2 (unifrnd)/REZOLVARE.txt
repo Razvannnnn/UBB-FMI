@@ -1,0 +1,45 @@
+#a----------------------------------------------------------------
+
+%de la 1:3, 1 vine de la o linie si 2000 de coloane (aka simulari)
+%unifrnd are nr reale, unidrnd numere naturale/intregi?
+simulariX1=unifrnd(1,3,1,2000);
+simulariX2=unifrnd(1,3,1,2000);
+
+cntC=0;
+cntD=0;
+
+for i=1:2000
+  if simulariX1(i)<2 && simulariX2(i)>2
+    cntC++;
+  endif
+
+  if simulariX1(i)>2 && simulariX2(i)<2
+    cntD++;
+  endif
+
+endfor
+
+printf("PROBABILITATE C: %d\n",cntC/2000);
+printf("PROBABILITATE D: %d\n",cntD/2000);
+
+#b----------------------------------------------------------------
+
+%la distr uniforma probabilitatea sa fie un anumit nr e 1/n
+#prob ca nr din intervalul 1 3 sa fie mai mic decat 2
+#prob ca x1 <2 si x2>2 (aka 1- <2), de asta le inmultesc
+mai_mic_2=unifcdf(2,1,3);
+disp(mai_mic_2*(1-mai_mic_2))
+
+
+#c-----------------------------------------------------------------
+y_global=0;
+for i=1:2000
+  %obs ca min(x1,x2)*max(x1,x2)=x1*x2
+  y=simulariX1(i)*simulariX2(i);
+  y_global+=y;
+endfor
+
+printf("VAL MEDIE Y: %d\n",y_global/2000);
+
+%trebuie sa vedem cat e x mediu si facem ^2 pt prob teoretica
+printf("VALOAREA TEORETICA E(Y): %d\n",((1+3)/2)^2 );

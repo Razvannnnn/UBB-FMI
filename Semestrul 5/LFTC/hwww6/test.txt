@@ -1,0 +1,12 @@
+int main() {
+    int a;
+    int b;
+    int res;
+
+    cin >> a;
+    cin >> b;
+
+    res = a + b - (b * a) + 7;
+    
+    cout << res;
+}

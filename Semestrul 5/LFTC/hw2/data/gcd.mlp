@@ -1,0 +1,12 @@
+int main() {
+    int x;
+    int y;
+    std::cin >> x >> y;
+    while (y != 0) {
+        int r;
+        r = x % y;
+        x = y;
+        y = r;
+    }
+    std::cout << x;
+}

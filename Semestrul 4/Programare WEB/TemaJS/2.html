@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .error {
+            border: 2px solid red;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formular</h2>
+
+    <form id="userForm">
+        <label for="nume">Nume:</label><br>
+        <input type="text" id="nume" name="nume"><br><br>
+
+        <label for="data_nasterii">Data Nasterii:</label><br>
+        <input type="date" id="data_nasterii" name="data_nasterii"><br><br>
+
+        <label for="varsta">Varsta:</label><br>
+        <input type="number" id="varsta" name="varsta" min="1"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <button type="button" onclick="validareFormular()">Submit</button>
+    </form>
+
+    <div id="message" class="message"></div>
+
+    <script>
+        function validareFormular() {
+            var nume = document.getElementById("nume");
+            var dataNasterii = document.getElementById("data_nasterii");
+            var varsta = document.getElementById("varsta");
+            var email = document.getElementById("email");
+            var messageDiv = document.getElementById("message");
+
+            nume.classList.remove("error");
+            dataNasterii.classList.remove("error");
+            varsta.classList.remove("error");
+            email.classList.remove("error");
+
+            var mesajeEroare = [];
+
+            if (nume.value.trim() === "") {
+                mesajeEroare.push("Numele nu este completat.");
+                nume.classList.add("error");
+            }
+
+            if (dataNasterii.value.trim() === "") {
+                mesajeEroare.push("Data nasterii nu este completats.");
+                dataNasterii.classList.add("error");
+            }
+
+            var varstaValida = parseInt(varsta.value);
+            if (isNaN(varstaValida) || varstaValida < 1) {
+                mesajeEroare.push("Varsta nu este completata corect.");
+                varsta.classList.add("error");
+            }
+
+            var emailValid = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(email.value);
+            if (email.value.trim() === "") {
+                mesajeEroare.push("Email-ul nu este completat.");
+                email.classList.add("error");
+            } else if (!emailValid) {
+                mesajeEroare.push("Email-ul nu este valid.");
+                email.classList.add("error");
+            }
+
+            if (mesajeEroare.length > 0) {
+                messageDiv.innerHTML = "Erori: <br>" + mesajeEroare.join("<br>");
+            } else {
+                messageDiv.innerHTML = "Datele sunt completate corect!";
+            }
+        }
+    </script>
+
+</body>
+</html>

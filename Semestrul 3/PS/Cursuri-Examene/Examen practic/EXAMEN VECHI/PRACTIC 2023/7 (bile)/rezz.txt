@@ -1,0 +1,43 @@
+#BILE
+nr_sim=5000;
+urna=['n','n','n','n','n','n','n','n','a','a','a','a'];
+
+cntA=0; cntB=0;
+
+bile_albe=zeros(1,nr_sim);
+
+for i=1:nr_sim
+  bile_extrase=randsample(urna,4,false);
+
+  albe=bile_extrase(bile_extrase=='a');
+  if length(albe)==2
+    cntA++;
+  endif
+
+  negre=bile_extrase(bile_extrase=='n');
+  if length(negre)==4
+    cntB++;
+  endif
+
+  bile_albe(i)=length(albe);
+
+endfor
+
+printf('PROBABILITATE EXACT 2 ALBE (estimata): %d\n',cntA/nr_sim);
+printf('PROBABILITATE TOATE NEGRE (estimata): %d\n',cntB/nr_sim);
+
+#TEORETICA - FARA RETURNARE -> HYGEPDF
+probAteoretic=hygepdf(2,12,4,4);
+printf('PROBABILITATE EXACT 2 ALBE (teoretic): %d\n',probAteoretic);
+
+probBteoretic=hygepdf(4,12,8,4);
+printf('PROBABILITATE TOATE NEGRE (teoretic): %d\n',probBteoretic);
+
+
+
+#incerc si cu bile albe
+figure(2)
+[x,xHelp]=hist(bile_albe,20);
+hist(bile_albe,xHelp,5000/(max(bile_albe)-min(bile_albe)));
+
+printf('MEDIA BILELOR ALBE: %d',mean(bile_albe));

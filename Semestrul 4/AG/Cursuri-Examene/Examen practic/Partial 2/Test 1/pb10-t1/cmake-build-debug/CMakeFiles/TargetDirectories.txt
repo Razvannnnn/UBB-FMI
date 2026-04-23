@@ -1,0 +1,3 @@
+G:/My Drive/Facultă/Anul II/Semestrul 2/AG - Algoritmica Grafurilor/Examen practic/Partial 2/Test 1/pb10-t1/cmake-build-debug/CMakeFiles/pb10_t1.dir
+G:/My Drive/Facultă/Anul II/Semestrul 2/AG - Algoritmica Grafurilor/Examen practic/Partial 2/Test 1/pb10-t1/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/My Drive/Facultă/Anul II/Semestrul 2/AG - Algoritmica Grafurilor/Examen practic/Partial 2/Test 1/pb10-t1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

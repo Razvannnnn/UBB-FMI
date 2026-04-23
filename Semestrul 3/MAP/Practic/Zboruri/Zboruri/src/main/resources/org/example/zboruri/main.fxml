@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zboruri.MainController">
+   <children>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="11.0" prefHeight="377.0" prefWidth="706.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="usernameLabel" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="107.0" prefWidth="580.0" spacing="25.0">
+               <children>
+                  <ComboBox fx:id="fromComboBox" onAction="#update" prefWidth="150.0" promptText="From" />
+                  <ComboBox fx:id="toComboBox" onAction="#update" prefWidth="150.0" promptText="To" />
+                  <DatePicker fx:id="datePicker" onAction="#update" promptText="Date" />
+               </children>
+            </HBox>
+            <TableView fx:id="tabelZboruri" prefHeight="364.0" prefWidth="580.0">
+              <columns>
+                <TableColumn fx:id="fromColumn" prefWidth="98.33334636688232" text="From" />
+                <TableColumn fx:id="toColumn" prefWidth="104.66667938232422" text="To" />
+                  <TableColumn fx:id="departureTimeColumn" prefWidth="147.3333282470703" text="Departure Time" />
+                  <TableColumn fx:id="landingTimeColumn" prefWidth="155.33334350585938" text="Landing Time" />
+                  <TableColumn fx:id="seatsColumn" prefWidth="78.0" text="Seats" />
+                  <TableColumn fx:id="locuriDisponibileColumn" prefWidth="119.33331298828125" text="Locuri disponibile" />
+              </columns>
+            </TableView>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="150.0">
+               <children>
+                  <Button fx:id="buttonPrevious" mnemonicParsing="false" onAction="#handlePrevious" text="&lt;" />
+                  <Button fx:id="buttonBuy" mnemonicParsing="false" onAction="#handleBuyTicket" text="Buy Ticket" />
+                  <Label fx:id="pageNumberLabel" text="Label" />
+                  <Button fx:id="buttonNext" mnemonicParsing="false" onAction="#handleNext" text="&gt;" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

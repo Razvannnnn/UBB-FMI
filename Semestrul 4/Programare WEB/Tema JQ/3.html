@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game jQuery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 10px;
+        }
+        .cell {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+            font-size: 50px;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cell.revealed {
+            background-color: lightskyblue;
+        }
+        .cell.hidden {
+            background-color: grey;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div id="game" class="grid"></div>
+    <div id="message"></div>
+
+    <script>
+        $(document).ready(function () {
+            const numPairs = 8;
+            const numbers = Array.from({ length: numPairs }, (_, i) => i + 1)
+                .flatMap(n => [n, n])
+                .sort(() => Math.random() - 0.5);
+
+            let revealedCells = [];
+            let matchedPairs = 0;
+
+            const $game = $('#game');
+
+            numbers.forEach((num, index) => {
+                const $cell = $('<div class="cell hidden"></div>')
+                    .data('index', index)
+                    .data('num', num)
+                    .on('click', function () {
+                        handleCellClick($(tis));
+                    });
+                $game.append($cell);
+            });
+
+            function handleCellClick($cell) {
+                if ($cell.hasClass('revealed') || revealedCells.length === 2) return;
+
+                $cell.text($cell.data('num'));
+                $cell.removeClass('hidden').addClass('revealed');
+                revealedCells.push($cell);
+
+                if (revealedCells.length === 2) {
+                    const [$cell1, $cell2] = revealedCells;
+
+                    if ($cell1.data('num') === $cell2.data('num')) {
+                        matchedPairs++;
+                        revealedCells = [];
+
+                        if (matchedPairs === numPairs) {
+                            $('#message').text('Felicitari! Ai castigat!');
+                        }
+                    } else {
+                        setTimeout(() => {
+                            $cell1.removeClass('revealed').addClass('hidden').text('');
+                            $cell2.removeClass('revealed').addClass('hidden').text('');
+                            revealedCells = [];
+                        }, 1000);
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

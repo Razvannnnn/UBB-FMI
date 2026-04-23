@@ -1,0 +1,14 @@
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\bin\Debug\net9.0\LAB10.exe
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\bin\Debug\net9.0\LAB10.deps.json
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\bin\Debug\net9.0\LAB10.runtimeconfig.json
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\bin\Debug\net9.0\LAB10.dll
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\bin\Debug\net9.0\LAB10.pdb
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\LAB10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\LAB10.AssemblyInfoInputs.cache
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\LAB10.AssemblyInfo.cs
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\LAB10.csproj.CoreCompileInputs.cache
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\LAB10.dll
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\refint\LAB10.dll
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\LAB10.pdb
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\LAB10.genruntimeconfig.cache
+C:\Users\razva\Desktop\MAP\Lab10\LAB10\LAB10\obj\Debug\net9.0\ref\LAB10.dll

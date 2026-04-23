@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="17">
+      <module name="ChatClient_main" target="1.8" />
+      <module name="ChatClient_test" target="1.8" />
+      <module name="ChatModel_main" target="1.8" />
+      <module name="ChatModel_test" target="1.8" />
+      <module name="ChatNetworkingProtobuff_main" target="1.8" />
+      <module name="ChatNetworkingProtobuff_test" target="1.8" />
+      <module name="ChatPersistence_main" target="1.8" />
+      <module name="ChatPersistence_test" target="1.8" />
+      <module name="ChatProtobuffv3_main" target="1.8" />
+      <module name="ChatProtobuffv3_test" target="1.8" />
+      <module name="ChatServer_main" target="1.8" />
+      <module name="ChatServer_test" target="1.8" />
+      <module name="ChatServices_main" target="1.8" />
+      <module name="ChatServices_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

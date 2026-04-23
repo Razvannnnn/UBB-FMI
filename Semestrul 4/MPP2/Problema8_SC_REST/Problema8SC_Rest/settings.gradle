@@ -1,0 +1,10 @@
+rootProject.name = 'Problema8SC'
+include 'Problema8Client'
+include 'Problema8ClientFX'
+include 'Problema8Model'
+include 'Problema8Networking'
+include 'Problema8Persistence'
+include 'Problema8Server'
+include 'Problema8Services'
+include 'Problema8ServicesRest'
+

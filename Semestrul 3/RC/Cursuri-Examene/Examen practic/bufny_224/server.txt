@@ -1,0 +1,149 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <limits.h>
+
+#include <string.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+#include <sys/wait.h>
+int main()
+{
+        int c,s;
+        struct sockaddr_in client_addr,server_addr;
+
+        //fac pipe sa poata comunica copiii intre ei
+        int f[2];
+        int res=pipe(f);
+        if (res==-1)
+        {
+                perror("pipe()");
+                exit(EXIT_FAILURE);
+        }
+
+        //fac socket
+        s=socket(AF_INET,SOCK_STREAM,0);
+        if(s<0)
+        {
+                perror("EROARE LA SOCKET SERVER!\n");
+                return 1;
+        }
+
+        //fac bind
+        server_addr.sin_family=AF_INET;
+        server_addr.sin_port=htons(3083);
+        server_addr.sin_addr.s_addr=INADDR_ANY;
+
+        if(bind(s,(struct sockaddr*)&server_addr,sizeof(server_addr))<0)
+        {
+                perror("EROARE LA BIND!\n");
+                return 1;
+        }
+
+        //fac listen, aici devine serverul server
+        listen(s,5);
+
+        int min=0;
+        char ip[20];
+
+        //SCRIU 0 IN PIPE DACA S LA PRIMA RULARE
+        write(f[1],&min,sizeof(int));
+
+        while(1)
+        {
+                //accept
+                int size=sizeof(client_addr);
+                c=accept(s,(struct sockaddr*)&client_addr,&size);
+
+                printf("S-A CONECTAT UN CLIENT!\n");
+
+                //server concurent
+                if(fork()==0)
+                {
+                        //primesc nr si port
+                        int nr;
+                        uint16_t port;
+                        recv(c,&nr,sizeof(int),MSG_WAITALL);
+                        recv(c,&port,sizeof(uint16_t),MSG_WAITALL);
+                        nr=ntohl(nr);
+                        port=ntohs(port);
+                        printf("PORTUL PRIMIT: %hu     NUMARUL PRIMIT: %d\n",port,nr);
+
+                        //FAC ALT SERVER IN SERVER, CU NOUL PORT
+                        int nou_c,nou_s;
+                        struct sockaddr_in nou_client_addr,nou_server_addr;
+
+                       //fac socket
+                        nou_s=socket(AF_INET,SOCK_STREAM,0);
+                        if(nou_s<0)
+                        {
+                                perror("EROARE LA SOCKET SERVER!\n");
+                                return 1;
+                        }
+
+                        //fac bind
+                        nou_server_addr.sin_family=AF_INET;
+                        nou_server_addr.sin_port=htons(port);
+                        nou_server_addr.sin_addr.s_addr=INADDR_ANY;
+
+                        if(bind(nou_s,(struct sockaddr*)&nou_server_addr,sizeof(nou_server_addr))<0)
+                        {
+                                perror("EROARE LA BIND!\n");
+                                return 1;
+                        }
+
+                        //fac listen, aici devine serverul server
+                        listen(nou_s,5);
+
+                        int nou_size=sizeof(nou_client_addr);
+                        nou_c=accept(nou_s,(struct sockaddr*)&nou_client_addr,&nou_size);
+                        printf("S-A CONECTAT CLIENTUL SI PE NOUL PORT!\n");
+
+                        //aici sincronizez ce mi trb cu pipe
+                        read(f[0],&min,sizeof(int));
+                        if(min==0) //suntem la primul client
+                        {
+                                min=nr;
+                                strcpy(ip,inet_ntoa(client_addr.sin_addr));
+                        }
+                        else{
+                                int lungime;
+                                read(f[0],&lungime,sizeof(int));
+                                read(f[0],ip,lungime*sizeof(char));
+                                ip[lungime]='\0';
+
+                                if(nr<min){
+                                        min=nr;
+                                        strcpy(ip,inet_ntoa(client_addr.sin_addr));
+                                }
+                        }
+
+                        write(f[1],&min,sizeof(int));
+                        int lungime=strlen(ip);
+                        write(f[1],&lungime,sizeof(int));
+                        write(f[1],ip,lungime*sizeof(char));
+
+
+                        //TRIMIT DE PE NOUL SERVER INFORMATIILE PE CARE LE VREA
+                        min=htonl(min);
+                        lungime++; //ca sa prinda si '\0'
+                        lungime=htonl(lungime);
+                        send(nou_c,&min,sizeof(int),0);
+                        send(nou_c, &lungime, sizeof(int), 0);
+                        send(nou_c,ip,ntohl(lungime)*sizeof(char),0);
+                        printf("Adresa IP este: %s\n",ip);
+
+                        close(nou_s);
+                        exit(0);
+                }
+                close(c);
+
+        }
+        close(s);
+        close(f[0]);
+        close(f[1]);
+        return 0;
+}

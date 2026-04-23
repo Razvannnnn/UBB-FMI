@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<title>Filtrare Notebook-uri IT</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<style>
+  label { display: block; margin: 10px 0 5px; }
+  #results { margin-top: 20px; }
+  .produs { margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+</style>
+</head>
+<body>
+
+<h1>Filtrare Notebook-uri IT</h1>
+
+<div>
+  <button id="useJS">JavaScript</button>
+  <button id="useJQ">jQuery</button>
+</div>
+
+<label>Producator:
+  <select id="producator"><option value="">--Toate--</option></select>
+</label>
+
+<label>Procesor:
+  <select id="procesor"><option value="">--Toate--</option></select>
+</label>
+
+<label>Memorie:
+  <select id="memorie"><option value="">--Toate--</option></select>
+</label>
+
+<label>Capacitate HDD:
+  <select id="hdd"><option value="">--Toate--</option></select>
+</label>
+
+<label>Placa video:
+  <select id="placa_video"><option value="">--Toate--</option></select>
+</label>
+
+<div id="results">
+  <h2>Rezultate:</h2>
+  <div id="lista_produse"></div>
+</div>
+
+<script>
+let mode = 'jq';
+
+function loadOptionsJS(field) {
+  fetch('getOptions.php?field=' + field)
+    .then(res => res.json())
+    .then(data => {
+      const select = document.getElementById(field);
+      data.forEach(val => {
+        const opt = document.createElement('option');
+        opt.value = opt.textContent = val;
+        select.appendChild(opt);
+      });
+    });
+}
+
+function filterProduseJS() {
+  const filters = {
+    producator: document.getElementById('producator').value,
+    procesor: document.getElementById('procesor').value,
+    memorie: document.getElementById('memorie').value,
+    hdd: document.getElementById('hdd').value,
+    placa_video: document.getElementById('placa_video').value
+  };
+
+  const params = new URLSearchParams(filters).toString();
+
+  fetch('filterProduse.php?' + params)
+    .then(res => res.json())
+    .then(data => {
+      let html = '';
+      if (data.length === 0) {
+        html = '<p>Nu s-au gasit produse.</p>';
+      } else {
+        data.forEach(p => {
+          html += `<div class="produs">
+            <strong>${p.nume}</strong><br>
+            Producator: ${p.producator} | Procesor: ${p.procesor} | Memorie: ${p.memorie} | HDD: ${p.hdd} | Placa video: ${p.placa_video}
+          </div>`;
+        });
+      }
+      document.getElementById('lista_produse').innerHTML = html;
+    }).catch(() => {
+      document.getElementById('lista_produse').innerHTML = '<p>Eroare la incarcare.</p>';
+    });
+}
+
+function loadOptionsJQ(field) {
+  $.getJSON('getOptions.php', { field: field }, function(data) {
+    data.forEach(val => {
+      $('#' + field).append('<option value="' + val + '">' + val + '</option>');
+    });
+  });
+}
+
+function filterProduseJQ() {
+  const filters = {
+    producator: $('#producator').val(),
+    procesor: $('#procesor').val(),
+    memorie: $('#memorie').val(),
+    hdd: $('#hdd').val(),
+    placa_video: $('#placa_video').val()
+  };
+
+  $.ajax({
+    url: 'filterProduse.php',
+    method: 'GET',
+    data: filters,
+    success: function(data) {
+      let html = '';
+      if(data.length === 0) {
+        html = '<p>Nu s-au gasit produse.</p>';
+      } else {
+        data.forEach(p => {
+          html += `<div class="produs">
+            <strong>${p.nume}</strong><br>
+            Producator: ${p.producator} | Procesor: ${p.procesor} | Memorie: ${p.memorie} | HDD: ${p.hdd} | Placa video: ${p.placa_video}
+          </div>`;
+        });
+      }
+      $('#lista_produse').html(html);
+    },
+    error: function() {
+      $('#lista_produse').html('<p>Eroare la incarcarea produselor.</p>');
+    }
+  });
+}
+
+function initialize(modeToUse) {
+  ['producator', 'procesor', 'memorie', 'hdd', 'placa_video'].forEach(id => {
+    document.getElementById(id).innerHTML = '<option value="">--Toate--</option>';
+  });
+
+  if (modeToUse === 'jq') {
+    ['producator', 'procesor', 'memorie', 'hdd', 'placa_video'].forEach(loadOptionsJQ);
+    $('select').off().change(filterProduseJQ);
+    filterProduseJQ();
+  } else {
+    ['producator', 'procesor', 'memorie', 'hdd', 'placa_video'].forEach(loadOptionsJS);
+    document.querySelectorAll('select').forEach(sel => {
+      sel.onchange = filterProduseJS;
+    });
+    filterProduseJS();
+  }
+}
+
+$('#useJQ').click(() => {
+  mode = 'jq';
+  initialize('jq');
+});
+$('#useJS').click(() => {
+  mode = 'js';
+  initialize('js');
+});
+
+$(document).ready(() => {
+  initialize(mode);
+});
+</script>
+
+</body>
+</html>

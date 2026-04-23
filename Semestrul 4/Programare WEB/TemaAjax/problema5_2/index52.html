@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Tree View AJAX</title>
+  <style>
+    #treeContainer {
+      display: flex;
+    }
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+    li.directory {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    li.directory::before {
+      content: "▶ ";
+    }
+    li.directory.expanded::before {
+      content: "▼ ";
+    }
+    #tree, #content {
+      padding: 1rem;
+    }
+    #content {
+      border-left: 1px solid #aaa;
+      white-space: pre-wrap;
+      flex: 1;
+    }
+  </style>
+  <script src="jquery-2.0.3.js"></script>
+</head>
+<body>
+
+<h2>Fisiere</h2>
+
+<div>
+  <button id="plain">JavaScript</button>
+  <button id="jquery">jQuery</button>
+</div>
+
+<div id="treeContainer">
+  <div id="tree"></div>
+  <div id="content"><em>Selecteaza un fisier</em></div>
+</div>
+
+<script>
+let mode = null;
+
+function loadDirJS(path, parentLi) {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "list.php?path=" + encodeURIComponent(path));
+  xhr.onload = function () {
+    const data = JSON.parse(xhr.responseText);
+    const ul = document.createElement("ul");
+    data.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item.name;
+      li.dataset.path = item.path;
+
+      if (item.type === "directory") {
+        li.classList.add("directory");
+        li.onclick = function (e) {
+          e.stopPropagation();
+          if (li.classList.contains("expanded")) {
+            li.classList.remove("expanded");
+            const u = li.querySelector("ul");
+            if (u) li.removeChild(u);
+          } else {
+            loadDirJS(item.path, li);
+            li.classList.add("expanded");
+          }
+        };
+      } else {
+        li.classList.add("file");
+        li.style.cursor = "pointer";
+        li.onclick = function (e) {
+          e.stopPropagation();
+          loadFileJS(item.path);
+        };
+      }
+      ul.appendChild(li);
+    });
+    parentLi.appendChild(ul);
+  };
+  xhr.send();
+}
+
+function loadFileJS(path) {
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", "readFile.php?path=" + encodeURIComponent(path));
+  xhr.onload = function () {
+    document.getElementById("content").textContent = xhr.responseText;
+  };
+  xhr.send();
+}
+
+function loadDirJQ(path, parentLi) {
+  $.get("list.php", { path: path }, function (data) {
+    const ul = $("<ul>");
+    data.forEach(item => {
+      const li = $("<li>").text(item.name).attr("data-path", item.path);
+
+      if (item.type === "directory") {
+        li.addClass("directory");
+        li.click(function (e) {
+          e.stopPropagation();
+          if (li.hasClass("expanded")) {
+            li.removeClass("expanded");
+            li.find("ul").remove();
+          } else {
+            loadDirJQ(item.path, li[0]);
+            li.addClass("expanded");
+          }
+        });
+      } else {
+        li.addClass("file").css("cursor", "pointer");
+        li.click(function (e) {
+          e.stopPropagation();
+          loadFileJQ(item.path);
+        });
+      }
+      ul.append(li);
+    });
+    $(parentLi).append(ul);
+  });
+}
+
+function loadFileJQ(path) {
+  $.get("readFile.php", { path: path }, function (data) {
+    $("#content").text(data);
+  });
+}
+
+function initTree() {
+  const tree = document.getElementById("tree");
+  tree.innerHTML = "";
+  const rootLi = document.createElement("li");
+  rootLi.textContent = "root";
+  rootLi.classList.add("directory");
+  rootLi.onclick = function (e) {
+    e.stopPropagation();
+    if (rootLi.classList.contains("expanded")) {
+      rootLi.classList.remove("expanded");
+      const u = rootLi.querySelector("ul");
+      if (u) rootLi.removeChild(u);
+    } else {
+      if (mode === "plain") loadDirJS("", rootLi);
+      if (mode === "jquery") loadDirJQ("", rootLi);
+      rootLi.classList.add("expanded");
+    }
+  };
+  const ul = document.createElement("ul");
+  ul.appendChild(rootLi);
+  tree.appendChild(ul);
+}
+
+document.getElementById("plain").onclick = function () {
+  mode = "plain";
+  initTree();
+};
+
+document.getElementById("jquery").onclick = function () {
+  mode = "jquery";
+  initTree();
+};
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+Dimensiune,Tip,Fire,Medie(ns)
+10x10,sequential,1,9150
+10x10,parallel-lines,2,532140
+10x10,parallel-lines,4,487940
+10x10,parallel-lines,8,378010
+10x10,parallel-lines,16,606220
+1000x1000,sequential,1,48189100
+1000x1000,parallel-lines,2,31052200
+1000x1000,parallel-lines,4,19783300
+1000x1000,parallel-lines,8,14454290
+1000x1000,parallel-lines,16,12004730
+10000x10000,sequential,1,6112055240
+10000x10000,parallel-lines,2,3178082400
+10000x10000,parallel-lines,4,2910607490
+10000x10000,parallel-lines,8,2009401120
+10000x10000,parallel-lines,16,1678243650

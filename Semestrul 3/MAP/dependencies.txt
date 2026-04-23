@@ -1,0 +1,4 @@
+implementation 'org.openjfx:javafx-controls:22'
+  implementation 'org.openjfx:javafx-fxml:22'
+
+  implementation 'org.postgresql:postgresql:42.6.0'

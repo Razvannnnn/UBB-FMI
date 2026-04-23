@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste</title>
+    <style>
+        select {
+            width: 200px;
+            height: 150px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Liste</h2>
+    <div class="container">
+        <select id="list1" ondblclick="moveItem('list1', 'list2')" style="height: 70px;">
+            <option value="1">Mere</option>
+            <option value="2">Pere</option>
+            <option value="3">Capsuni</option>
+            <option value="4">Banane</option>
+        </select>
+
+        <select id="list2" ondblclick="moveItem('list2', 'list1')" style="height: 70px;">
+            <option value="A">Piept de pui</option>
+            <option value="B">Ceafa de porc</option>
+            <option value="C">Cotlet de porc</option>
+            <option value="D">Muschi de vita</option>
+        </select>
+    </div>
+
+    <script>
+        function moveItem(fromListId, toListId) {
+            var fromList = document.getElementById(fromListId);
+            var toList = document.getElementById(toListId);
+
+            var selectedOption = fromList.options[fromList.selectedIndex];
+
+            if (selectedOption) {
+                toList.appendChild(selectedOption);
+            }
+        }
+    </script>
+</body>
+</html>

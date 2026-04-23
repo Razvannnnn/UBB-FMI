@@ -1,0 +1,7 @@
+Se dau variablilele aleatoare independente X~N(-1,4),Y~N(1,4).
+Sa se genereze cate 1000 de valori pentru X si Y.
+Sa se arate, prin reprezentarea in aceeasi fereastra a histogramei cu 15 clase a frecv. relative
+pentru X+Y si a graficului functiei de densitate, ca X+Y~N(0,8).
+Sa se estimeze:
+a)valoarea medie si varianta lui X+Y.
+b)probabilitatea P(|X+Y|<1). Sa se compare aceasta prob. estimata cu prob. teoretica corespunzatoare.

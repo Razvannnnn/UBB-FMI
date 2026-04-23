@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iss.parkingapp.IstoricController">
+   <children>
+      <Label layoutX="229.0" layoutY="21.0" prefHeight="30.0" prefWidth="142.0" text="Istoric Rezervari">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableAllRezervari" layoutX="29.0" layoutY="58.0" prefHeight="295.0" prefWidth="542.0">
+        <columns>
+          <TableColumn fx:id="columnLocParcare" prefWidth="71.66667175292969" text="Loc Parcare" />
+          <TableColumn fx:id="columnMasina" prefWidth="97.66665649414062" text="Masina" />
+            <TableColumn fx:id="columnRezervare" prefWidth="141.0" text="Data Inceput" />
+            <TableColumn fx:id="columnSfarsitRezervare" prefWidth="145.99996948242188" text="Data Sfarsit" />
+            <TableColumn fx:id="columnStatus" minWidth="3.33331298828125" prefWidth="86.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonCloseWindow" layoutX="254.0" layoutY="360.0" mnemonicParsing="false" onAction="#handleButtonCloseWindow" text="Close Window" />
+   </children>
+</AnchorPane>

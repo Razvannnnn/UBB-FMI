@@ -1,0 +1,87 @@
+%4 bile
+
+function out=bile1(bile,nr_sim=1000)
+
+bile={'g','g','g','g','n','n','n','n','n','w','w','a','a','a'};
+
+%a) cu returnare
+
+A=0;
+B=0;
+C=0;
+
+for i=1:1:nr_sim
+  %zeros(nr_randuri,nr_coloane)
+  f=zeros(1,4);
+  bile_extrase=randsample(bile,4,true);
+  for j=1:1:4
+    if strcmp(bile_extrase(j),'g')==1
+      f(1)++;
+    elseif strcmp(bile_extrase(j),'n')==1
+      f(2)++;
+    elseif strcmp(bile_extrase(j),'w')==1
+      f(3)++;
+    elseif strcmp(bile_extrase(j),'a')==1
+      f(4)++;
+    endif
+  endfor
+
+  if f(3) <= 1
+    A++;
+  endif
+
+  if f(1) == 0
+    B++;
+  endif
+
+  if f(2) >=2
+    C++;
+  endif
+endfor
+
+  fprintf("A (cu returnare): %d\n", A/nr_sim);
+  fprintf("B (cu returnare): %d\n", B/nr_sim);
+  fprintf("C (cu returnare): %d\n", C/nr_sim);
+
+
+
+%b) fara returnare
+
+A=0;
+B=0;
+C=0;
+
+for i=1:1:nr_sim
+  %zeros(nr_randuri,nr_coloane)
+  f=zeros(1,4);
+  bile_extrase=randsample(bile,4,false);
+  for j=1:1:4
+    if strcmp(bile_extrase(j),'g')==1
+      f(1)++;
+    elseif strcmp(bile_extrase(j),'n')==1
+      f(2)++;
+    elseif strcmp(bile_extrase(j),'w')==1
+      f(3)++;
+    elseif strcmp(bile_extrase(j),'a')==1
+      f(4)++;
+    endif
+  endfor
+
+  if f(3) <= 1
+    A++;
+  endif
+
+  if f(1) == 0
+    B++;
+  endif
+
+  if f(2) >=2
+    C++;
+  endif
+endfor
+
+  fprintf("A (fara returnare): %d\n", A/nr_sim);
+  fprintf("B (fara returnare): %d\n", B/nr_sim);
+  fprintf("C (fara returnare): %d\n", C/nr_sim);
+
+endfunction

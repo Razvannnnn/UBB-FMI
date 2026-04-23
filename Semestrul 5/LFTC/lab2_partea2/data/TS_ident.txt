@@ -1,0 +1,7 @@
+1	Cerc
+2	aria
+3	cerc
+4	perim
+5	pi
+6	raza
+7	std

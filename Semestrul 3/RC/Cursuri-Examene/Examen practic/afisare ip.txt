@@ -1,0 +1,9 @@
+ip = "172.217.14.238";
+  host = gethostbyname(ip);
+  if (host == NULL) {
+    printf("Eroare: nu a fost găsită gazda\n");
+    return -1;
+  }
+
+  ip = inet_ntoa(*(struct in_addr *)host->h_addr);
+  printf("Adresa IP: %s\n", ip);

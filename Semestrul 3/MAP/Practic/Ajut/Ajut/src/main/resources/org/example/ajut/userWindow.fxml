@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ajut.UserWindowController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="371.0" prefWidth="576.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Doresc sa ajut!">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox layoutX="11.0" layoutY="8.0" prefHeight="295.0" prefWidth="551.0">
+                           <children>
+                              <TableView fx:id="tableNevoi" prefHeight="324.0" prefWidth="276.0">
+                                <columns>
+                                  <TableColumn fx:id="columnTitlu" prefWidth="75.0" text="Titlu" />
+                                  <TableColumn fx:id="columnDescriere" prefWidth="75.0" text="Descriere" />
+                                    <TableColumn fx:id="columnDeadline" prefWidth="118.33334350585938" text="Deadline" />
+                                </columns>
+                              </TableView>
+                              <TableView fx:id="tableNevoi2" prefHeight="324.0" prefWidth="279.0">
+                                <columns>
+                                  <TableColumn fx:id="titluColumn2" prefWidth="75.0" text="C1" />
+                                  <TableColumn fx:id="descriereColumn2" prefWidth="75.0" text="C2" />
+                                    <TableColumn fx:id="deadlineColumn2" prefWidth="75.0" text="Column X" />
+                                </columns>
+                              </TableView>
+                           </children></HBox>
+                        <Button fx:id="ajutButon" layoutX="117.0" layoutY="303.0" mnemonicParsing="false" onAction="#handleAjutButton" text="Vreau sa ajut" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Doresc sa fiu ajutat!">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" layoutX="8.0" layoutY="8.0" prefHeight="321.0" prefWidth="557.0" spacing="15.0">
+                           <children>
+                              <TextField fx:id="titluField" promptText="Titlu" />
+                              <TextField fx:id="descriereField" promptText="Descriere" />
+                              <DatePicker fx:id="deadlineDatePicker" promptText="Deadline" />
+                              <Button fx:id="ajutorButton" mnemonicParsing="false" onAction="#handleAjutor" text="Doresc sa fiu ajutat" />
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.zboruri.LoginController">
+   <children>
+      <VBox alignment="CENTER" layoutX="93.0" layoutY="12.0" prefHeight="376.0" prefWidth="416.0" spacing="50.0">
+         <children>
+            <TextField fx:id="usernameField" prefHeight="37.0" prefWidth="468.0" promptText="Username" />
+            <Button fx:id="buttonLogin" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

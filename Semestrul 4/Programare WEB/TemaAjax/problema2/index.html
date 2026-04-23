@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Paginare Contacte</title>
+    <script src="jquery-2.0.3.js"></script>
+    <style>
+        #selector { margin-bottom: 20px; }
+        button { margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+<h1>Agenda telefonica</h1>
+
+<div id="selector">
+    <button id="usePlainJS">JavaScript simplu</button>
+    <button id="useJQuery">jQuery</button>
+</div>
+
+<div id="contacte"></div>
+<br>
+<button id="prevBtn" disabled>Previous</button>
+<button id="nextBtn" disabled>Next</button>
+
+<script>
+    let currentPage = 0;
+    const rowsPerPage = 3;
+    let currentMode = null;
+
+    function renderTable(data) {
+        let html = "<table border='1'><tr><th>Nume</th><th>Prenume</th><th>Telefon</th><th>Email</th></tr>";
+        data.rows.forEach(function(row) {
+            html += "<tr><td>" + row.nume + "</td><td>" + row.prenume + "</td><td>" + row.telefon + "</td><td>" + row.email + "</td></tr>";
+        });
+        html += "</table>";
+        document.getElementById("contacte").innerHTML = html;
+        document.getElementById("prevBtn").disabled = currentPage === 0;
+        document.getElementById("nextBtn").disabled = data.rows.length < rowsPerPage;
+    }
+
+    function loadPageJS(page) {
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "getContacte.php?offset=" + (page * rowsPerPage) + "&limit=" + rowsPerPage, true);
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                const data = JSON.parse(xhr.responseText);
+                renderTable(data);
+            }
+        };
+        xhr.send();
+    }
+
+    function loadPageJQuery(page) {
+        $.ajax({
+            type: "GET",
+            url: "getContacte.php",
+            data: { offset: page * rowsPerPage, limit: rowsPerPage },
+            success: function(response) {
+                const data = JSON.parse(response);
+                renderTable(data);
+            }
+        });
+    }
+
+    function setButtonsHandlers() {
+        document.getElementById("nextBtn").onclick = function() {
+            currentPage++;
+            if (currentMode === "plain") loadPageJS(currentPage);
+            else if (currentMode === "jquery") loadPageJQuery(currentPage);
+        };
+        document.getElementById("prevBtn").onclick = function() {
+            if (currentPage > 0) {
+                currentPage--;
+                if (currentMode === "plain") loadPageJS(currentPage);
+                else if (currentMode === "jquery") loadPageJQuery(currentPage);
+            }
+        };
+    }
+
+    document.getElementById("usePlainJS").onclick = function() {
+        currentMode = "plain";
+        currentPage = 0;
+        loadPageJS(currentPage);
+        setButtonsHandlers();
+    };
+
+    document.getElementById("useJQuery").onclick = function() {
+        currentMode = "jquery";
+        currentPage = 0;
+        loadPageJQuery(currentPage);
+        setButtonsHandlers();
+    };
+</script>
+
+</body>
+</html>

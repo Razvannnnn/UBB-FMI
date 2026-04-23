@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'application'
+}
+
+group = 'problema8.client'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version="21"
+    modules = [ 'javafx.controls', 'javafx.fxml'  ]
+}
+
+dependencies {
+    implementation project(':Problema8Model')
+    implementation project(':Problema8Services')
+    implementation project(':Problema8Networking')
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'org.apache.logging.log4j:log4j-core:2.24.3'
+    implementation 'org.apache.logging.log4j:log4j-api:2.24.3'
+}
+
+application{
+    //mainClass='problema8.client.StartRpcClientFX'
+    mainClass='problema8.client.StartJsonClientFX'
+}
+
+test {
+    useJUnitPlatform()
+}

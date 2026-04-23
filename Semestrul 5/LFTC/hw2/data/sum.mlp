@@ -1,0 +1,13 @@
+int main() {
+    int n;
+    int x;
+    int sum;
+    int i;
+    sum = 0;
+    std::cin >> n;
+    for (i = 0; i < n; i += 1) {
+        std::cin >> x;
+        sum = sum + x;
+    }
+    std::cout << sum;
+}

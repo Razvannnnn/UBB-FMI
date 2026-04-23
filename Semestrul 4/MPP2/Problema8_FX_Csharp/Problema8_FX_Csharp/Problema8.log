@@ -1,0 +1,40 @@
+2025-03-21 02:19:19,339 [1] INFO RepoAgeGroup - Finding all age groups
+2025-03-21 02:19:19,351 [1] INFO RepoAgeGroup - Found 3 age groups
+2025-03-21 02:19:19,353 [1] INFO RepoUser - Finding all users
+2025-03-21 02:19:19,353 [1] INFO RepoUser - Found 2 users
+2025-03-21 02:19:19,354 [1] INFO RepoChild - Finding all children
+2025-03-21 02:19:19,354 [1] INFO RepoChild - Found 2 children
+2025-03-21 02:19:19,355 [1] INFO RepoEnrollment - Finding all enrollments
+2025-03-21 02:19:19,356 [1] INFO RepoEnrollment - Found 2 enrollments
+2025-03-21 02:19:19,357 [1] INFO RepoEvent - Finding all events
+2025-03-21 02:19:19,358 [1] INFO RepoEvent - Found 4 events
+2025-03-21 11:10:14,961 [1] INFO RepoAgeGroup - Finding all age groups
+2025-03-21 11:10:14,976 [1] INFO RepoAgeGroup - Found 3 age groups
+2025-03-21 11:10:14,978 [1] INFO RepoUser - Finding all users
+2025-03-21 11:10:14,978 [1] INFO RepoUser - Found 2 users
+2025-03-21 11:10:14,980 [1] INFO RepoChild - Finding all children
+2025-03-21 11:10:14,980 [1] INFO RepoChild - Found 2 children
+2025-03-21 11:10:14,981 [1] INFO RepoEnrollment - Finding all enrollments
+2025-03-21 11:10:14,982 [1] INFO RepoEnrollment - Found 2 enrollments
+2025-03-21 11:10:14,983 [1] INFO RepoEvent - Finding all events
+2025-03-21 11:10:14,984 [1] INFO RepoEvent - Found 4 events
+2025-03-21 12:27:19,827 [1] INFO RepoAgeGroup - Finding all age groups
+2025-03-21 12:27:19,838 [1] INFO RepoAgeGroup - Found 3 age groups
+2025-03-21 12:27:19,839 [1] INFO RepoUser - Finding all users
+2025-03-21 12:27:19,840 [1] INFO RepoUser - Found 2 users
+2025-03-21 12:27:19,841 [1] INFO RepoChild - Finding all children
+2025-03-21 12:27:19,841 [1] INFO RepoChild - Found 2 children
+2025-03-21 12:27:19,842 [1] INFO RepoEnrollment - Finding all enrollments
+2025-03-21 12:27:19,842 [1] INFO RepoEnrollment - Found 2 enrollments
+2025-03-21 12:27:19,844 [1] INFO RepoEvent - Finding all events
+2025-03-21 12:27:19,844 [1] INFO RepoEvent - Found 4 events
+2025-03-21 13:04:23,769 [1] INFO RepoAgeGroup - Finding all age groups
+2025-03-21 13:04:23,782 [1] INFO RepoAgeGroup - Found 3 age groups
+2025-03-21 13:04:23,783 [1] INFO RepoUser - Finding all users
+2025-03-21 13:04:23,784 [1] INFO RepoUser - Found 2 users
+2025-03-21 13:04:23,785 [1] INFO RepoChild - Finding all children
+2025-03-21 13:04:23,785 [1] INFO RepoChild - Found 2 children
+2025-03-21 13:04:23,787 [1] INFO RepoEnrollment - Finding all enrollments
+2025-03-21 13:04:23,788 [1] INFO RepoEnrollment - Found 2 enrollments
+2025-03-21 13:04:23,790 [1] INFO RepoEvent - Finding all events
+2025-03-21 13:04:23,790 [1] INFO RepoEvent - Found 4 events

@@ -1,0 +1,99 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
+
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+
+int main()
+{
+        struct sockaddr_in client_addr;
+
+        //fac socket
+        int c=socket(AF_INET,SOCK_STREAM,0);
+        if(c<0)
+        {
+                perror("EROARE LA CREAREA SOCKETULUI CLIENT!\n");
+        }
+
+        //fac connect
+        client_addr.sin_family=AF_INET;
+        client_addr.sin_port=htons(3083);
+        client_addr.sin_addr.s_addr=inet_addr("127.0.0.1");
+
+        if(connect(c,(struct sockaddr*)&client_addr,sizeof(client_addr))<0)
+        {
+                perror("EROARE LA CONNECT!\n");
+                return 1;
+        }
+
+        //treaba clientului
+        int len,i,suma=0;
+        printf("DATI LUNGIMEA SIRULUI: ");
+        scanf("%d",&len);
+        int sir[len];
+
+        for(i=0;i<len;i++)
+        {
+                printf("sir[%d]= ",i);
+                scanf("%d",&sir[i]);
+                sir[i]=htonl(sir[i]);
+        }
+
+        len=htonl(len);
+        send(c,&len,sizeof(int),0);
+        send(c,sir,ntohl(len)*sizeof(int),0);
+
+        uint16_t port= 1000+rand()%1000;
+        printf("PORTUL GENERAT: %hu\n",port);
+
+
+        //DE AICI CREEZ SERVERUL DIN CLIENT
+        int nou_c,nou_s;
+        struct sockaddr_in nou_client_addr,nou_server_addr;
+
+        //fac socket
+        nou_s=socket(AF_INET,SOCK_STREAM,0);
+        if(nou_s<0)
+        {
+                perror("EROARE LA SOCKET SERVER!");
+                return 1;
+        }
+
+        //fac bind
+        nou_server_addr.sin_family=AF_INET;
+        nou_server_addr.sin_port=htons(port);
+        nou_server_addr.sin_addr.s_addr=INADDR_ANY;
+
+        if(bind(nou_s,(struct sockaddr*)&nou_server_addr,sizeof(nou_server_addr))<0)
+        {
+                perror("EROARE LA BIND!");
+                return 1;
+        }
+
+        //fac listen, aici devine serverul server
+        listen(nou_s,5);
+
+
+        //INAINTE SA TRIMIT PORT-UL, FAC SERVERUL DIN CLIENT
+        port=htons(port);
+        send(c,&port,sizeof(uint16_t), 0);
+
+        //ACUM CA SERVERUL ARE PORT-UL, FAC ACCEPT
+        int nou_size=sizeof(nou_client_addr);
+        nou_c=accept(nou_s,(struct sockaddr*)&nou_client_addr,&nou_size);
+        printf("S-A CONECTAT SERVERUL INAPOI!\n");
+
+        //primesc min IN SERVERUL ASTA NOU
+        int min;
+        recv(nou_c,&min,sizeof(int),MSG_WAITALL);
+        min=ntohl(min);
+        printf("MINIMUL PRIMIT: %d\n",min);
+
+        close(c);
+        close(nou_s);
+        return 0;
+}

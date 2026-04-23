@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net9.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="log4net" Version="3.0.5-preview.2" />
+      <PackageReference Include="SQLite" Version="3.13.0" />
+      <PackageReference Include="System.Configuration.ConfigurationManager" Version="10.0.0-preview.2.25163.2" />
+      <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Login.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="App.config" />
+      <Content Include="App.config" />
+    </ItemGroup>
+
+</Project>

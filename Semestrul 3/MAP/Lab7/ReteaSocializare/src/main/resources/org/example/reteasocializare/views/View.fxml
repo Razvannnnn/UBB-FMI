@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.reteasocializare.Controller.UtilizatorController">
+   <children>
+      <TableView layoutX="379.0" layoutY="23.0" prefHeight="357.0" prefWidth="206.0">
+        <columns>
+          <TableColumn id="tableFirstName" prefWidth="99.33331298828125" text="Prenume" />
+          <TableColumn id="tableLastName" prefWidth="99.33334350585938" text="Nume" />
+        </columns>
+      </TableView>
+      <Button layoutX="74.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleAddUtilizator" text="Add" />
+      <Button layoutX="168.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleDeleteUtilizator" text="Delete" />
+      <Button layoutX="264.0" layoutY="313.0" mnemonicParsing="false" onAction="#handleUpdateUtilizator" text="Update" />
+   </children>
+</AnchorPane>

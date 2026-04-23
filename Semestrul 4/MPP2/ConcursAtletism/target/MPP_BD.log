@@ -1,0 +1,724 @@
+17 Mar 2025 12:58:31,537 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+17 Mar 2025 12:58:31,540 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+17 Mar 2025 12:58:31,542 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+17 Mar 2025 12:58:31,543 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+17 Mar 2025 12:58:31,544 INFO  ro.mpp2025.repository.database.EnrollmentDBRepository 21 <init> - Initializing EnrollmentDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db}
+17 Mar 2025 12:58:31,546 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+17 Mar 2025 12:58:31,546 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:31,546 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:31,546 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:31,546 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:31,547 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:31,803 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+17 Mar 2025 12:58:31,815 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 48 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+17 Mar 2025 12:58:31,816 TRACE ro.mpp2025.repository.database.EventDBRepository 45 findAll - Enter finding all events
+17 Mar 2025 12:58:31,816 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:31,816 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:31,817 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:31,817 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:31,817 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:31,818 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@273e7444)
+17 Mar 2025 12:58:31,821 TRACE ro.mpp2025.repository.database.EventDBRepository 61 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+17 Mar 2025 12:58:31,821 TRACE ro.mpp2025.repository.database.UserDBRepository 31 findAll - Enter finding all users
+17 Mar 2025 12:58:31,821 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:31,822 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:31,822 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:31,822 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:31,822 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:31,823 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3527942a)
+17 Mar 2025 12:58:31,827 TRACE ro.mpp2025.repository.database.UserDBRepository 49 findAll - Exit with([1|jojo|bizzare, 2|iosif|12345])
+17 Mar 2025 12:58:31,827 TRACE ro.mpp2025.repository.database.ChildDBRepository 31 findAll - Enter finding all children
+17 Mar 2025 12:58:31,828 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:31,828 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:31,828 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:31,828 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:31,829 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:31,830 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4d5650ae)
+17 Mar 2025 12:58:31,832 TRACE ro.mpp2025.repository.database.ChildDBRepository 49 findAll - Exit with([1|ardacu nicolae|5021223274363, 2|copil1|1000000000000])
+17 Mar 2025 12:58:31,832 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 32 findAll - Enter finding all enrollments
+17 Mar 2025 12:58:31,832 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:31,832 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:31,832 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:31,833 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:31,833 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:31,834 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51c668e3)
+17 Mar 2025 12:58:31,836 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 61 findAll - Exit with([0|2|copil1|1000000000000|[SPRINT|50m]])
+17 Mar 2025 12:58:43,743 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+17 Mar 2025 12:58:43,747 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+17 Mar 2025 12:58:43,748 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+17 Mar 2025 12:58:43,749 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+17 Mar 2025 12:58:43,750 INFO  ro.mpp2025.repository.database.EnrollmentDBRepository 21 <init> - Initializing EnrollmentDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db}
+17 Mar 2025 12:58:43,752 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+17 Mar 2025 12:58:43,752 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:43,752 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:43,753 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:43,753 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:43,754 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:43,970 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@957e06)
+17 Mar 2025 12:58:43,982 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 48 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+17 Mar 2025 12:58:43,983 TRACE ro.mpp2025.repository.database.EventDBRepository 45 findAll - Enter finding all events
+17 Mar 2025 12:58:43,983 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:43,984 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:43,984 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:43,984 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:43,984 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:43,985 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7db12bb6)
+17 Mar 2025 12:58:43,988 TRACE ro.mpp2025.repository.database.EventDBRepository 61 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+17 Mar 2025 12:58:43,988 TRACE ro.mpp2025.repository.database.UserDBRepository 31 findAll - Enter finding all users
+17 Mar 2025 12:58:43,989 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:43,989 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:43,989 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:43,990 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:43,990 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:43,991 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@942a29c)
+17 Mar 2025 12:58:43,994 TRACE ro.mpp2025.repository.database.UserDBRepository 49 findAll - Exit with([1|jojo|bizzare, 2|iosif|12345])
+17 Mar 2025 12:58:43,995 TRACE ro.mpp2025.repository.database.ChildDBRepository 31 findAll - Enter finding all children
+17 Mar 2025 12:58:43,995 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:43,995 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:43,996 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:43,996 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:43,996 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:43,997 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@a38c7fe)
+17 Mar 2025 12:58:43,999 TRACE ro.mpp2025.repository.database.ChildDBRepository 49 findAll - Exit with([1|ardacu nicolae|5021223274363, 2|copil1|1000000000000])
+17 Mar 2025 12:58:44,000 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 32 findAll - Enter finding all enrollments
+17 Mar 2025 12:58:44,000 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+17 Mar 2025 12:58:44,000 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+17 Mar 2025 12:58:44,000 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+17 Mar 2025 12:58:44,001 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+17 Mar 2025 12:58:44,001 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+17 Mar 2025 12:58:44,002 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2e6a8155)
+17 Mar 2025 12:58:44,004 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 61 findAll - Exit with([0|2|copil1|1000000000000|[SPRINT|50m]])
+20 Mar 2025 13:23:42,188 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 13:23:42,192 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 13:23:42,194 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 13:23:42,196 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 13:23:42,199 INFO  ro.mpp2025.repository.database.EnrollmentDBRepository 21 <init> - Initializing EnrollmentDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db}
+20 Mar 2025 13:23:42,201 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+20 Mar 2025 13:23:42,201 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:23:42,201 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:23:42,201 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:23:42,201 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:23:42,202 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:23:42,914 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66f57048)
+20 Mar 2025 13:23:42,931 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 48 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 13:23:42,932 TRACE ro.mpp2025.repository.database.EventDBRepository 45 findAll - Enter finding all events
+20 Mar 2025 13:23:42,932 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:23:42,933 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:23:42,933 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:23:42,933 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:23:42,933 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:23:42,935 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@771a660)
+20 Mar 2025 13:23:42,940 TRACE ro.mpp2025.repository.database.EventDBRepository 61 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 13:23:42,941 TRACE ro.mpp2025.repository.database.UserDBRepository 31 findAll - Enter finding all users
+20 Mar 2025 13:23:42,941 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:23:42,941 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:23:42,942 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:23:42,942 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:23:42,942 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:23:42,944 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f80542f)
+20 Mar 2025 13:23:42,949 TRACE ro.mpp2025.repository.database.UserDBRepository 49 findAll - Exit with([1|jojo|bizzare, 2|iosif|12345])
+20 Mar 2025 13:23:42,950 TRACE ro.mpp2025.repository.database.ChildDBRepository 31 findAll - Enter finding all children
+20 Mar 2025 13:23:42,950 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:23:42,950 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:23:42,950 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:23:42,951 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:23:42,951 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:23:42,952 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6221a451)
+20 Mar 2025 13:23:42,954 TRACE ro.mpp2025.repository.database.ChildDBRepository 49 findAll - Exit with([1|ardacu nicolae|5021223274363, 2|copil1|1000000000000])
+20 Mar 2025 13:23:42,955 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 32 findAll - Enter finding all enrollments
+20 Mar 2025 13:23:42,955 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:23:42,955 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:23:42,955 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:23:42,955 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:23:42,955 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:23:42,957 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4a883b15)
+20 Mar 2025 13:23:42,959 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 61 findAll - Exit with([0|2|copil1|1000000000000|[SPRINT|50m]])
+20 Mar 2025 13:26:03,930 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 13:26:03,934 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 13:26:03,934 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 13:26:03,935 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 13:26:03,936 INFO  ro.mpp2025.repository.database.EnrollmentDBRepository 21 <init> - Initializing EnrollmentDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db}
+20 Mar 2025 13:26:03,937 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+20 Mar 2025 13:26:03,938 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:26:03,938 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:26:03,938 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:26:03,938 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:26:03,938 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:26:04,082 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66f57048)
+20 Mar 2025 13:26:04,091 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 48 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 13:26:04,092 TRACE ro.mpp2025.repository.database.EventDBRepository 45 findAll - Enter finding all events
+20 Mar 2025 13:26:04,092 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:26:04,092 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:26:04,093 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:26:04,093 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:26:04,093 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:26:04,094 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@771a660)
+20 Mar 2025 13:26:04,096 TRACE ro.mpp2025.repository.database.EventDBRepository 61 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 13:26:04,096 TRACE ro.mpp2025.repository.database.UserDBRepository 31 findAll - Enter finding all users
+20 Mar 2025 13:26:04,096 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:26:04,096 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:26:04,097 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:26:04,097 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:26:04,097 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:26:04,098 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f80542f)
+20 Mar 2025 13:26:04,103 TRACE ro.mpp2025.repository.database.UserDBRepository 49 findAll - Exit with([1|jojo|bizzare, 2|iosif|12345])
+20 Mar 2025 13:26:04,105 TRACE ro.mpp2025.repository.database.ChildDBRepository 31 findAll - Enter finding all children
+20 Mar 2025 13:26:04,105 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:26:04,105 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:26:04,106 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:26:04,106 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:26:04,106 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:26:04,107 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6221a451)
+20 Mar 2025 13:26:04,108 TRACE ro.mpp2025.repository.database.ChildDBRepository 49 findAll - Exit with([1|ardacu nicolae|5021223274363, 2|copil1|1000000000000])
+20 Mar 2025 13:26:04,108 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 32 findAll - Enter finding all enrollments
+20 Mar 2025 13:26:04,108 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 13:26:04,109 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 13:26:04,109 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 13:26:04,109 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 13:26:04,109 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 13:26:04,111 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4a883b15)
+20 Mar 2025 13:26:04,113 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 61 findAll - Exit with([0|2|copil1|1000000000000|[SPRINT|50m]])
+20 Mar 2025 21:22:34,517 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:22:34,521 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:22:34,522 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:22:34,523 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:22:34,524 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+20 Mar 2025 21:22:34,525 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:22:34,525 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:22:34,526 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:22:34,526 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:22:34,526 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:22:34,682 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2c1b194a)
+20 Mar 2025 21:22:34,693 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 48 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 21:22:34,693 TRACE ro.mpp2025.repository.database.EventDBRepository 45 findAll - Enter finding all events
+20 Mar 2025 21:22:34,694 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:22:34,694 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:22:34,694 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:22:34,694 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:22:34,694 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:22:34,695 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@272113c4)
+20 Mar 2025 21:22:34,699 TRACE ro.mpp2025.repository.database.EventDBRepository 61 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 21:22:34,699 TRACE ro.mpp2025.repository.database.UserDBRepository 31 findAll - Enter finding all users
+20 Mar 2025 21:22:34,699 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:22:34,699 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:22:34,699 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:22:34,699 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:22:34,699 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:22:34,701 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5a45133e)
+20 Mar 2025 21:22:34,705 TRACE ro.mpp2025.repository.database.UserDBRepository 49 findAll - Exit with([1|jojo|bizzare, 2|iosif|12345])
+20 Mar 2025 21:22:34,705 TRACE ro.mpp2025.repository.database.ChildDBRepository 31 findAll - Enter finding all children
+20 Mar 2025 21:22:34,706 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:22:34,706 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:22:34,706 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:22:34,707 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:22:34,707 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:22:34,707 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51c668e3)
+20 Mar 2025 21:22:34,709 TRACE ro.mpp2025.repository.database.ChildDBRepository 49 findAll - Exit with([1|ardacu nicolae|5021223274363, 2|copil1|1000000000000])
+20 Mar 2025 21:35:10,025 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:35:10,029 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+20 Mar 2025 21:35:10,029 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:35:10,030 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:35:10,030 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:35:10,030 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:35:10,030 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:35:10,179 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3e11f9e9)
+20 Mar 2025 21:35:10,183 ERROR ro.mpp2025.repository.database.AgeGroupDBRepository 47 findAll - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: agegroups)
+20 Mar 2025 21:35:10,184 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 50 findAll - Exit with([])
+20 Mar 2025 21:35:30,507 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:35:30,512 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+20 Mar 2025 21:35:30,513 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:35:30,513 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:35:30,513 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:35:30,513 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:35:30,514 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:35:30,650 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3e11f9e9)
+20 Mar 2025 21:35:30,657 ERROR ro.mpp2025.repository.database.AgeGroupDBRepository 47 findAll - java.sql.SQLException: no such column: 'minAge'
+20 Mar 2025 21:35:30,657 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 50 findAll - Exit with([])
+20 Mar 2025 21:36:36,339 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:36:36,344 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+20 Mar 2025 21:36:36,344 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:36:36,344 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:36:36,345 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:36:36,345 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:36:36,345 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:36:36,491 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3e11f9e9)
+20 Mar 2025 21:36:36,500 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 50 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 21:37:00,599 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:37:00,603 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 31 findAll - Enter finding all age groups
+20 Mar 2025 21:37:00,604 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:37:00,604 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:37:00,604 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:37:00,604 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:37:00,605 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:37:00,754 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3e11f9e9)
+20 Mar 2025 21:37:00,762 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 50 findAll - Exit with([JUNIOR|ro.mpp2025.domain.Tuple@1b11171f, MIDDLE|ro.mpp2025.domain.Tuple@1151e434, SENIOR|ro.mpp2025.domain.Tuple@2dc54ad4])
+20 Mar 2025 21:40:37,809 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:40:37,813 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 21:40:37,814 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:40:37,814 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:40:37,815 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:40:37,815 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:40:37,815 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:40:37,958 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@ffaa6af)
+20 Mar 2025 21:40:37,970 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 21:40:37,971 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 26 findOne - Finding AgeGroup by id: 1
+20 Mar 2025 21:40:37,971 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:40:37,971 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@ffaa6af)
+20 Mar 2025 21:40:37,972 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 37 findOne - Exit with(JUNIOR|6-8)
+20 Mar 2025 21:51:27,439 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:51:27,442 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 21:51:27,444 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 21:51:27,444 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:51:27,445 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:51:27,445 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:51:27,445 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:51:27,445 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:51:27,600 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@729d991e)
+20 Mar 2025 21:51:27,613 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 21:51:27,613 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 21:51:27,614 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 21:51:27,615 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 21:51:27,615 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 21:51:27,616 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 21:51:27,616 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 21:51:27,617 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52b1beb6)
+20 Mar 2025 21:51:27,620 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:11:22,273 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:22,276 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:22,277 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:22,278 TRACE ro.mpp2025.repository.database.UserDBRepository 55 save - Enter saving User 
+20 Mar 2025 22:11:22,278 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:22,279 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:22,279 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:22,279 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:22,279 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:22,422 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:22,426 ERROR ro.mpp2025.repository.database.UserDBRepository 71 save - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: users)
+20 Mar 2025 22:11:22,428 TRACE ro.mpp2025.repository.database.UserDBRepository 74 save - Exit
+20 Mar 2025 22:11:22,428 TRACE ro.mpp2025.repository.database.UserDBRepository 55 save - Enter saving User 
+20 Mar 2025 22:11:22,428 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:22,428 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:22,429 ERROR ro.mpp2025.repository.database.UserDBRepository 71 save - org.sqlite.SQLiteException: [SQLITE_ERROR] SQL error or missing database (no such table: users)
+20 Mar 2025 22:11:22,429 TRACE ro.mpp2025.repository.database.UserDBRepository 74 save - Exit
+20 Mar 2025 22:11:22,429 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 22:11:22,430 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:22,430 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:22,430 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:22,430 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:22,430 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:22,431 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51e69659)
+20 Mar 2025 22:11:22,441 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 22:11:22,442 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 22:11:22,442 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:22,442 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:22,442 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:22,443 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:22,443 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:22,444 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@1ed6388a)
+20 Mar 2025 22:11:22,447 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:11:22,447 TRACE ro.mpp2025.repository.database.UserDBRepository 31 findAll - Enter finding all Users
+20 Mar 2025 22:11:22,448 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:22,448 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:22,450 TRACE ro.mpp2025.repository.database.UserDBRepository 49 findAll - Exit with([])
+20 Mar 2025 22:11:41,988 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:41,991 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:41,992 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:41,994 TRACE ro.mpp2025.repository.database.UserDBRepository 55 save - Enter saving User 
+20 Mar 2025 22:11:41,994 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:41,994 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:41,994 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:41,995 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:41,995 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:42,144 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:42,154 TRACE ro.mpp2025.repository.database.UserDBRepository 66 save - Exit
+20 Mar 2025 22:11:42,155 TRACE ro.mpp2025.repository.database.UserDBRepository 55 save - Enter saving User 
+20 Mar 2025 22:11:42,156 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:42,156 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:42,159 TRACE ro.mpp2025.repository.database.UserDBRepository 66 save - Exit
+20 Mar 2025 22:11:42,161 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 22:11:42,162 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:42,162 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:42,162 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:42,163 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:42,163 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:42,165 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@428640fa)
+20 Mar 2025 22:11:42,170 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 22:11:42,171 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 22:11:42,171 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:42,171 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:42,172 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:42,172 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:42,172 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:42,173 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@534a5a98)
+20 Mar 2025 22:11:42,175 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:11:42,176 TRACE ro.mpp2025.repository.database.UserDBRepository 31 findAll - Enter finding all Users
+20 Mar 2025 22:11:42,176 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:42,176 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:42,179 TRACE ro.mpp2025.repository.database.UserDBRepository 49 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 22:11:55,012 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:55,015 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:55,016 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:11:55,018 TRACE ro.mpp2025.repository.database.UserDBRepository 55 save - Enter saving User 
+20 Mar 2025 22:11:55,018 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:55,018 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:55,018 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:55,019 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:55,019 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:55,161 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:55,166 ERROR ro.mpp2025.repository.database.UserDBRepository 71 save - org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_UNIQUE] A UNIQUE constraint failed (UNIQUE constraint failed: user.username)
+20 Mar 2025 22:11:55,168 TRACE ro.mpp2025.repository.database.UserDBRepository 74 save - Exit
+20 Mar 2025 22:11:55,168 TRACE ro.mpp2025.repository.database.UserDBRepository 55 save - Enter saving User 
+20 Mar 2025 22:11:55,168 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:55,168 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:55,169 ERROR ro.mpp2025.repository.database.UserDBRepository 71 save - org.sqlite.SQLiteException: [SQLITE_CONSTRAINT_UNIQUE] A UNIQUE constraint failed (UNIQUE constraint failed: user.username)
+20 Mar 2025 22:11:55,169 TRACE ro.mpp2025.repository.database.UserDBRepository 74 save - Exit
+20 Mar 2025 22:11:55,170 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 22:11:55,171 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:55,171 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:55,171 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:55,171 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:55,171 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:55,172 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2dc54ad4)
+20 Mar 2025 22:11:55,179 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 22:11:55,180 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 22:11:55,180 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:55,180 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:11:55,181 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:11:55,181 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:11:55,181 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:11:55,182 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f80542f)
+20 Mar 2025 22:11:55,185 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:11:55,186 TRACE ro.mpp2025.repository.database.UserDBRepository 31 findAll - Enter finding all Users
+20 Mar 2025 22:11:55,186 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:11:55,186 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@31fa1761)
+20 Mar 2025 22:11:55,190 TRACE ro.mpp2025.repository.database.UserDBRepository 49 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 22:17:59,359 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:17:59,362 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:17:59,363 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:17:59,365 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 22:17:59,365 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:17:59,365 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:17:59,366 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:17:59,366 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:17:59,366 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:17:59,547 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@957e06)
+20 Mar 2025 22:17:59,561 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 22:17:59,562 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 22:17:59,562 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:17:59,563 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:17:59,563 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:17:59,563 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:17:59,563 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:17:59,566 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@7db12bb6)
+20 Mar 2025 22:17:59,571 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:17:59,572 TRACE ro.mpp2025.repository.database.UserDBRepository 50 findAll - Enter finding all Users
+20 Mar 2025 22:17:59,573 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:17:59,573 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:17:59,574 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:17:59,574 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:17:59,575 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:17:59,576 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@942a29c)
+20 Mar 2025 22:17:59,584 TRACE ro.mpp2025.repository.database.UserDBRepository 68 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 22:17:59,584 INFO  ro.mpp2025.repository.database.UserDBRepository 26 findOne - Finding User with id: 1
+20 Mar 2025 22:17:59,585 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:17:59,585 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@942a29c)
+20 Mar 2025 22:17:59,585 TRACE ro.mpp2025.repository.database.UserDBRepository 36 findOne - Exit with(1|jojo|12345)
+20 Mar 2025 22:26:33,426 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:26:33,430 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:26:33,431 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:26:33,432 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:26:33,433 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 22:26:33,433 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:26:33,433 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:26:33,433 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:26:33,434 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:26:33,434 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:26:33,582 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@729d991e)
+20 Mar 2025 22:26:33,595 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 22:26:33,596 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 22:26:33,596 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:26:33,597 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:26:33,597 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:26:33,597 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:26:33,597 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:26:33,598 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@52b1beb6)
+20 Mar 2025 22:26:33,602 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:26:33,603 TRACE ro.mpp2025.repository.database.UserDBRepository 50 findAll - Enter finding all Users
+20 Mar 2025 22:26:33,603 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:26:33,603 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:26:33,603 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:26:33,603 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:26:33,604 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:26:33,605 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@3f6f6701)
+20 Mar 2025 22:26:33,607 TRACE ro.mpp2025.repository.database.UserDBRepository 68 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 22:26:33,608 TRACE ro.mpp2025.repository.database.ChildDBRepository 50 findAll - Enter finding all Children
+20 Mar 2025 22:26:33,608 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:26:33,608 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:26:33,609 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:26:33,609 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:26:33,609 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:26:33,610 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@70e9c95d)
+20 Mar 2025 22:26:33,612 TRACE ro.mpp2025.repository.database.ChildDBRepository 68 findAll - Exit with([1|John Doe|5040607000000, 2|Luka Tim|5110921000000])
+20 Mar 2025 22:27:14,250 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:27:14,253 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:27:14,254 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:27:14,254 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:27:14,256 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 22:27:14,256 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:14,256 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:27:14,256 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:27:14,256 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:27:14,257 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:27:14,404 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2c1b194a)
+20 Mar 2025 22:27:14,413 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 22:27:14,414 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 22:27:14,414 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:14,414 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:27:14,415 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:27:14,415 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:27:14,415 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:27:14,417 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@272113c4)
+20 Mar 2025 22:27:14,419 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:27:14,420 TRACE ro.mpp2025.repository.database.UserDBRepository 50 findAll - Enter finding all Users
+20 Mar 2025 22:27:14,420 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:14,420 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:27:14,421 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:27:14,421 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:27:14,421 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:27:14,422 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5a45133e)
+20 Mar 2025 22:27:14,425 TRACE ro.mpp2025.repository.database.UserDBRepository 68 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 22:27:14,425 TRACE ro.mpp2025.repository.database.ChildDBRepository 50 findAll - Enter finding all Children
+20 Mar 2025 22:27:14,426 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:14,426 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:27:14,426 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:27:14,426 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:27:14,426 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:27:14,427 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51c668e3)
+20 Mar 2025 22:27:14,428 TRACE ro.mpp2025.repository.database.ChildDBRepository 68 findAll - Exit with([1|John Doe|5040607000000, 2|Luka Tim|5110921000000])
+20 Mar 2025 22:27:14,428 INFO  ro.mpp2025.repository.database.ChildDBRepository 26 findOne - Finding Child with id: 1
+20 Mar 2025 22:27:14,429 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:14,429 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51c668e3)
+20 Mar 2025 22:27:14,429 TRACE ro.mpp2025.repository.database.ChildDBRepository 36 findOne - Exit with(1|John Doe|5040607000000)
+20 Mar 2025 22:27:49,389 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:27:49,393 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:27:49,393 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:27:49,394 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:27:49,396 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 22:27:49,396 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:49,396 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:27:49,396 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:27:49,397 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:27:49,397 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:27:49,545 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2c1b194a)
+20 Mar 2025 22:27:49,554 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 22:27:49,555 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 22:27:49,555 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:49,555 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:27:49,555 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:27:49,556 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:27:49,556 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:27:49,557 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@272113c4)
+20 Mar 2025 22:27:49,559 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:27:49,560 TRACE ro.mpp2025.repository.database.UserDBRepository 50 findAll - Enter finding all Users
+20 Mar 2025 22:27:49,560 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:49,560 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:27:49,560 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:27:49,560 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:27:49,560 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:27:49,562 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5a45133e)
+20 Mar 2025 22:27:49,565 TRACE ro.mpp2025.repository.database.UserDBRepository 68 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 22:27:49,566 TRACE ro.mpp2025.repository.database.ChildDBRepository 50 findAll - Enter finding all Children
+20 Mar 2025 22:27:49,566 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:49,566 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:27:49,566 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:27:49,566 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:27:49,567 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:27:49,567 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51c668e3)
+20 Mar 2025 22:27:49,569 TRACE ro.mpp2025.repository.database.ChildDBRepository 68 findAll - Exit with([1|John Doe|5040607000000, 2|Luka Tim|5110921000000])
+20 Mar 2025 22:27:49,569 INFO  ro.mpp2025.repository.database.ChildDBRepository 26 findOne - Finding Child with id: 2
+20 Mar 2025 22:27:49,569 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:27:49,569 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51c668e3)
+20 Mar 2025 22:27:49,569 TRACE ro.mpp2025.repository.database.ChildDBRepository 36 findOne - Exit with(2|Luka Tim|5110921000000)
+20 Mar 2025 22:34:10,954 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:34:10,957 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:34:10,957 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:34:10,958 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 22:34:10,959 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 22:34:10,959 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:34:10,959 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:34:10,960 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:34:10,960 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:34:10,960 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:34:11,107 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@2c1b194a)
+20 Mar 2025 22:34:11,115 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 22:34:11,115 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 22:34:11,116 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:34:11,116 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:34:11,116 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:34:11,116 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:34:11,116 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:34:11,117 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@272113c4)
+20 Mar 2025 22:34:11,119 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 22:34:11,119 TRACE ro.mpp2025.repository.database.UserDBRepository 50 findAll - Enter finding all Users
+20 Mar 2025 22:34:11,119 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:34:11,119 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:34:11,120 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:34:11,120 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:34:11,120 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:34:11,121 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@5a45133e)
+20 Mar 2025 22:34:11,123 TRACE ro.mpp2025.repository.database.UserDBRepository 68 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 22:34:11,124 TRACE ro.mpp2025.repository.database.ChildDBRepository 50 findAll - Enter finding all Children
+20 Mar 2025 22:34:11,124 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 22:34:11,124 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 22:34:11,124 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 22:34:11,124 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 22:34:11,124 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 22:34:11,125 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@51c668e3)
+20 Mar 2025 22:34:11,126 TRACE ro.mpp2025.repository.database.ChildDBRepository 68 findAll - Exit with([1|John Doe|5040607000000, 2|Luka Tim|5110921000000])
+20 Mar 2025 23:25:44,313 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:25:44,316 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:25:44,317 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:25:44,318 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:25:44,319 INFO  ro.mpp2025.repository.database.EnrollmentDBRepository 21 <init> - Initializing EnrollmentDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db}
+20 Mar 2025 23:25:44,320 INFO  ro.mpp2025.repository.database.ChildDBRepository 26 findOne - Finding Child with id: 1
+20 Mar 2025 23:25:44,321 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:25:44,321 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:25:44,321 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:25:44,321 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:25:44,322 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:25:44,473 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4dbb42b7)
+20 Mar 2025 23:25:44,481 TRACE ro.mpp2025.repository.database.ChildDBRepository 36 findOne - Exit with(1|John Doe|5040607000000)
+20 Mar 2025 23:25:44,483 INFO  ro.mpp2025.repository.database.EventDBRepository 26 findOne - Finding one event wiht id: 1
+20 Mar 2025 23:25:44,483 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:25:44,483 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:25:44,484 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:25:44,484 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:25:44,485 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:25:44,486 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6bd61f98)
+20 Mar 2025 23:25:44,491 TRACE ro.mpp2025.repository.database.EventDBRepository 36 findOne - Exit with(SPRINT|50m)
+20 Mar 2025 23:25:44,492 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 114 save - Enter saving Enrollment 
+20 Mar 2025 23:25:44,492 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:25:44,492 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:25:44,492 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:25:44,493 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:25:44,493 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:25:44,494 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@771a660)
+20 Mar 2025 23:25:44,498 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 125 save - Exit
+20 Mar 2025 23:25:44,499 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 23:25:44,500 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:25:44,500 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:25:44,500 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:25:44,500 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:25:44,500 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:25:44,502 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@576d5deb)
+20 Mar 2025 23:25:44,506 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 23:25:44,506 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 23:25:44,506 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:25:44,507 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6bd61f98)
+20 Mar 2025 23:25:44,507 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 23:25:44,507 TRACE ro.mpp2025.repository.database.UserDBRepository 50 findAll - Enter finding all Users
+20 Mar 2025 23:25:44,507 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:25:44,507 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:25:44,507 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:25:44,508 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:25:44,508 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:25:44,508 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4d154ccd)
+20 Mar 2025 23:25:44,510 TRACE ro.mpp2025.repository.database.UserDBRepository 68 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 23:25:44,510 TRACE ro.mpp2025.repository.database.ChildDBRepository 50 findAll - Enter finding all Children
+20 Mar 2025 23:25:44,510 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:25:44,510 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4dbb42b7)
+20 Mar 2025 23:25:44,510 TRACE ro.mpp2025.repository.database.ChildDBRepository 68 findAll - Exit with([1|John Doe|5040607000000, 2|Luka Tim|5110921000000])
+20 Mar 2025 23:25:44,511 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 71 findAll - Enter finding all Enrollments
+20 Mar 2025 23:25:44,511 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:25:44,511 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@771a660)
+20 Mar 2025 23:25:44,511 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 108 findAll - Exit with([1|1|John Doe|5040607000000|SPRINT|50m])
+20 Mar 2025 23:28:47,947 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:28:47,950 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:28:47,951 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:28:47,952 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:28:47,953 INFO  ro.mpp2025.repository.database.EnrollmentDBRepository 21 <init> - Initializing EnrollmentDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db}
+20 Mar 2025 23:28:47,954 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 23:28:47,954 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:28:47,954 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:28:47,955 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:28:47,955 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:28:47,955 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:28:48,096 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66f57048)
+20 Mar 2025 23:28:48,109 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 23:28:48,110 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 23:28:48,110 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:28:48,110 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:28:48,111 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:28:48,111 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:28:48,112 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:28:48,113 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@771a660)
+20 Mar 2025 23:28:48,115 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 23:28:48,116 TRACE ro.mpp2025.repository.database.UserDBRepository 50 findAll - Enter finding all Users
+20 Mar 2025 23:28:48,116 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:28:48,117 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:28:48,117 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:28:48,117 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:28:48,118 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:28:48,118 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f80542f)
+20 Mar 2025 23:28:48,122 TRACE ro.mpp2025.repository.database.UserDBRepository 68 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 23:28:48,122 TRACE ro.mpp2025.repository.database.ChildDBRepository 50 findAll - Enter finding all Children
+20 Mar 2025 23:28:48,124 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:28:48,124 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:28:48,124 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:28:48,124 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:28:48,124 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:28:48,125 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6221a451)
+20 Mar 2025 23:28:48,126 TRACE ro.mpp2025.repository.database.ChildDBRepository 68 findAll - Exit with([1|John Doe|5040607000000, 2|Luka Tim|5110921000000])
+20 Mar 2025 23:28:48,126 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 71 findAll - Enter finding all Enrollments
+20 Mar 2025 23:28:48,127 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:28:48,127 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:28:48,127 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:28:48,127 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:28:48,127 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:28:48,128 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4a883b15)
+20 Mar 2025 23:28:48,129 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 108 findAll - Exit with([1|1|John Doe|5040607000000|SPRINT|50m])
+20 Mar 2025 23:29:44,017 INFO  ro.mpp2025.repository.database.AgeGroupDBRepository 20 <init> - Initializing AgeGroupDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:29:44,020 INFO  ro.mpp2025.repository.database.EventDBRepository 20 <init> - Initializing EventDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:29:44,021 INFO  ro.mpp2025.repository.database.UserDBRepository 20 <init> - Initializing UserDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:29:44,023 INFO  ro.mpp2025.repository.database.ChildDBRepository 20 <init> - Initializing ChildDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db} 
+20 Mar 2025 23:29:44,024 INFO  ro.mpp2025.repository.database.EnrollmentDBRepository 21 <init> - Initializing EnrollmentDBRepository with properties: {jdbc.url=jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db}
+20 Mar 2025 23:29:44,025 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 51 findAll - Enter finding all AgeGroups
+20 Mar 2025 23:29:44,026 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:29:44,026 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:29:44,026 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:29:44,026 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:29:44,028 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:29:44,174 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@66f57048)
+20 Mar 2025 23:29:44,183 TRACE ro.mpp2025.repository.database.AgeGroupDBRepository 70 findAll - Exit with([JUNIOR|6-8, MIDDLE|9-11, SENIOR|12-15])
+20 Mar 2025 23:29:44,183 TRACE ro.mpp2025.repository.database.EventDBRepository 50 findAll - Enter finding all Events
+20 Mar 2025 23:29:44,184 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:29:44,184 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:29:44,184 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:29:44,184 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:29:44,184 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:29:44,185 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@771a660)
+20 Mar 2025 23:29:44,187 TRACE ro.mpp2025.repository.database.EventDBRepository 68 findAll - Exit with([SPRINT|50m, DASH|100m, RUN|1000m, ENDURE|1500m])
+20 Mar 2025 23:29:44,187 TRACE ro.mpp2025.repository.database.UserDBRepository 50 findAll - Enter finding all Users
+20 Mar 2025 23:29:44,187 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:29:44,187 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:29:44,188 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:29:44,188 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:29:44,188 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:29:44,189 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4f80542f)
+20 Mar 2025 23:29:44,191 TRACE ro.mpp2025.repository.database.UserDBRepository 68 findAll - Exit with([1|jojo|12345, 2|chopinf|abcde])
+20 Mar 2025 23:29:44,192 TRACE ro.mpp2025.repository.database.ChildDBRepository 50 findAll - Enter finding all Children
+20 Mar 2025 23:29:44,192 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:29:44,192 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:29:44,192 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:29:44,192 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:29:44,192 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:29:44,193 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@6221a451)
+20 Mar 2025 23:29:44,194 TRACE ro.mpp2025.repository.database.ChildDBRepository 68 findAll - Exit with([1|John Doe|5040607000000, 2|Luka Tim|5110921000000])
+20 Mar 2025 23:29:44,194 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 71 findAll - Enter finding all Enrollments
+20 Mar 2025 23:29:44,194 TRACE ro.mpp2025.utils.JdbcUtils 50 getConnection - Enter
+20 Mar 2025 23:29:44,194 TRACE ro.mpp2025.utils.JdbcUtils 25 getNewConnection - Enter
+20 Mar 2025 23:29:44,194 INFO  ro.mpp2025.utils.JdbcUtils 30 getNewConnection - trying to connect to database ... jdbc:sqlite:C:/Users/kappa/OneDrive/Desktop/JAVA/databases/concurs_atletism.db
+20 Mar 2025 23:29:44,194 INFO  ro.mpp2025.utils.JdbcUtils 31 getNewConnection - user: null
+20 Mar 2025 23:29:44,194 INFO  ro.mpp2025.utils.JdbcUtils 32 getNewConnection - pass: null
+20 Mar 2025 23:29:44,196 TRACE ro.mpp2025.utils.JdbcUtils 59 getConnection - Exit with(org.sqlite.jdbc4.JDBC4Connection@4a883b15)
+20 Mar 2025 23:29:44,197 TRACE ro.mpp2025.repository.database.EnrollmentDBRepository 108 findAll - Exit with([1|1|John Doe|5040607000000|SPRINT|50m])

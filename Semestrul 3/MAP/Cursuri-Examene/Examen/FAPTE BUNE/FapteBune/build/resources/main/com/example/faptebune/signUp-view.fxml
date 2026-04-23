@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.faptebune.Controller.SignUpController">
+   <children>
+      <Text layoutX="154.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nume" wrappingWidth="46.13671875" />
+      <TextField fx:id="numePersoana" layoutX="208.0" layoutY="63.0" />
+      <ComboBox fx:id="orase" layoutX="207.0" layoutY="14.0" prefWidth="150.0" />
+      <TextField fx:id="prenumePersoana" layoutX="210.0" layoutY="96.0" />
+      <Text layoutX="151.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenume" />
+      <TextField fx:id="usernamePersoana" layoutX="210.0" layoutY="135.0" />
+      <TextField fx:id="parolaPersoana" layoutX="210.0" layoutY="174.0" />
+      <TextField fx:id="stradaPersoana" layoutX="210.0" layoutY="215.0" />
+      <TextField fx:id="numarStradaPersoana" layoutX="210.0" layoutY="256.0" />
+      <TextField fx:id="telefonPersoana" layoutX="210.0" layoutY="293.0" />
+      <Text layoutX="150.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Text layoutX="160.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parola" />
+      <Text layoutX="160.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Strada" />
+      <Text layoutX="123.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numar Strada" />
+      <Text layoutX="150.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefon" />
+      <Button fx:id="signUpButton" layoutX="254.0" layoutY="338.0" mnemonicParsing="false" onAction="#onSignUpButtonClicked" text="SignUp" />
+   </children>
+</AnchorPane>

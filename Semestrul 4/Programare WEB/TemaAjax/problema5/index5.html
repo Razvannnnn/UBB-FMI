@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8" />
+<title>Tree-View Foldere XAMPP simplu</title>
+<style>
+  ul { list-style: none; padding-left: 20px; }
+  li.directory { font-weight: bold; cursor: pointer; }
+  li.directory::before { content: "▶ "; display: inline-block; width: 1em; }
+  li.directory.expanded::before { content: "▼ "; }
+</style>
+</head>
+<body>
+
+<h1>Foldere XAMPP</h1>
+<div style="display: flex;">
+  <div id="tree" style="width: 300px; border-right: 1px solid #ccc; padding-right: 10px;"></div>
+  <div id="fileContent" style="flex: 1; padding-left: 20px;">
+    <h2>Conținut fișier</h2>
+    <pre id="contentArea" style="background: #f8f8f8; padding: 10px; border: 1px solid #ccc;"></pre>
+  </div>
+</div>
+
+<script>
+const treeElem = document.getElementById('tree');
+
+function createNode(name, path, type) {
+  const li = document.createElement('li');
+  li.textContent = name;
+  li.dataset.path = path;
+
+  if(type === 'directory') {
+    li.classList.add('directory');
+    li.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if(li.classList.contains('expanded')) {
+        li.classList.remove('expanded');
+        const ul = li.querySelector('ul');
+        if(ul) li.removeChild(ul);
+      } else {
+        fetch('listFolders.php?path=' + encodeURIComponent(path))
+        .then(res => res.json())
+        .then(data => {
+          if(data.error) {
+            alert('Eroare server: ' + data.error);
+            return;
+          }
+          const ul = document.createElement('ul');
+          data.forEach(item => {
+            const itemPath = path + '\\' + item.name;
+            ul.appendChild(createNode(item.name, itemPath, item.type));
+          });
+          li.appendChild(ul);
+          li.classList.add('expanded');
+        })
+        .catch(() => alert('Eroare la comunicarea cu serverul'));
+      }
+    });
+  } else if(type === 'file') {
+  li.classList.add('file');
+  li.style.cursor = 'pointer';
+  li.addEventListener('click', function(e) {
+    e.stopPropagation();
+    if (type === 'file') {
+        fetch('getFile.php?path=' + encodeURIComponent(path))
+            .then(res => res.text())
+            .then(text => {
+                document.getElementById('fileContent').textContent = text;
+            });
+    }
+});
+
+}
+
+  return li;
+}
+
+function loadRoot() {
+  fetch('listFolders.php')
+    .then(res => res.json())
+    .then(data => {
+      if(data.error) {
+        alert('Eroare server: ' + data.error);
+        return;
+      }
+      const ul = document.createElement('ul');
+      const rootPath = 'C:\\xampp'; 
+      data.forEach(item => {
+        ul.appendChild(createNode(item.name, rootPath + '\\' + item.name, item.type));
+      });
+      treeElem.appendChild(ul);
+    })
+    .catch(() => alert('Eroare la comunicarea cu serverul'));
+}
+
+loadRoot();
+</script>
+
+</body>
+</html>

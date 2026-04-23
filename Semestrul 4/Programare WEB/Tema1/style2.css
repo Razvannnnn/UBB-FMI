@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.parallax {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.section {
+    padding: 50px;
+    background: black;
+}
+
+#welcome {
+    background-image: url(poza1.jpg)
+}
+
+#menu {
+    background-image: url(poza2.jpg);
+}
+
+#location {
+    background-image: url(poza3.webp)
+}
+
+#reservation {
+    background-image: url(poza4.jpg);
+}

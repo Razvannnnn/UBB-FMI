@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.comenzi2.Controllers.TableController">
+   <children>
+      <VBox fx:id="vboxtable" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="370.0" prefWidth="570.0">
+         <children>
+            <Button fx:id="order" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleOrder" text="Order" />
+         </children></VBox>
+   </children>
+</AnchorPane>

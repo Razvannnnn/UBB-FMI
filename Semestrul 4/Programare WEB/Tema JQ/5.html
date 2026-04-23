@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carusel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .carousel-container {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        li {
+            position:relative;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        li img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .buttons {
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: grey;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: lightskyblue;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h2>Carusel</h2>
+
+    <div class="carousel-container">
+        <ol id="carousel">
+            <li style="display: block;">
+                <img src="1.jpg" alt="Imagine 1">
+            </li>
+            <li>
+                <img src="2.jpg" alt="Imagine 2">
+            </li>
+            <li>
+                <img src="3.jpg" alt="Imagine 3">
+            </li>
+        </ol>
+    </div>
+
+    <div class="buttons">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var $items = $('#carousel li');
+            var currentIndex = 0;
+            var interval;
+
+            function showItem(index) {
+                $items.stop(true, true).fadeOut(400);
+                $items.eq(index).fadeIn(800);
+            }
+
+            function nextItem() {
+                currentIndex = (currentIndex + 1) % $items.length;
+                showItem(currentIndex);
+            }
+
+            function prevItem() {
+                currentIndex = (currentIndex - 1 + $items.length) % $items.length;
+                showItem(currentIndex);
+            }
+
+            $('#nextBtn').on('click', function () {
+                nextItem();
+                restartInterval();
+            });
+
+            $('#prevBtn').on('click', function () {
+                prevItem();
+                restartInterval();
+            });
+
+            function startInterval() {
+                interval = setInterval(nextItem, 3000);
+            }
+
+            function restartInterval() {
+                clearInterval(interval);
+                startInterval();
+            }
+
+            showItem(currentIndex);
+            startInterval();
+        });
+    </script>
+
+</body>
+</html>
